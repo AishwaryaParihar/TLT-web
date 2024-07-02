@@ -1,6 +1,6 @@
 import React from 'react'
-import Headings from './heading/Heading'
-import Button from './buttons/Button'
+import Headings from './utiliti/heading/Heading'
+import Button from './utiliti/buttons/Button'
 
 export const HeaderContent = () => {
   const handleClick = () => {
