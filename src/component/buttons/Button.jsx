@@ -9,7 +9,7 @@ const Button = ({ children, onClick, color }) => {
       bgColorClass = "bg-blue-500 hover:bg-blue-700";
       break;
     case "white":
-      bgColorClass = "bg-white hover:bg-primary text-red-400 uppercase ";
+      bgColorClass = "bg-white hover:bg-primary text-primaryuppercase ";
       break;
     case "red":
       bgColorClass = "bg-primary hover:bg-red-700 uppercase ";
