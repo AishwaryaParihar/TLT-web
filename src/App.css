@@ -1,0 +1,16 @@
+body{
+  background-color: rgb(241, 217, 221);
+}
+.text-primary{
+  color: #fa4a6a;
+}
+.bg-primary{
+  background-color: #d32a49;
+}
+.border-primary{
+  color: #fa4a6a;
+}
+.textWhite{
+  color: black;
+  font-weight: 600;
+}
