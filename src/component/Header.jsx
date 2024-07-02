@@ -7,8 +7,8 @@ const Header = () => {
  
 
   return (
-    <div className='h-dvh navbodycolor relative'>
-      <marquee width="100%" behavior="scroll" bgcolor="yellow">
+    <div className='h-dvh navbody relative'>
+      <marquee width="100%" behavior="scroll" bgcolor="bg-marquee">
         This is an example of a scroll marquee...
       </marquee>
       <Navbar/>

@@ -4,7 +4,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from "../Home";
+import { Home } from "../Home";
 
 
 export const router = createBrowserRouter([
@@ -12,8 +12,8 @@ export const router = createBrowserRouter([
     path: "/",
     element: <Home/>,
   },
-  {
-    path: "/",
-    element: <div>Hello world!</div>,
-  },
+  // {
+  //   path: "/",
+  //   element: <div>Hello world!</div>,
+  // },
 ]);
