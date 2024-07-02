@@ -11,7 +11,7 @@ const Navbar = () => {
           <a className="textWhite" href="#">Team</a>
         </div>
         <div className="flex space-x-4 items-center p-0 m-o">
-          <a href="#" className="bg-primary text-white  uppercase font-bold text-sm py-8 px-4  inline-block transition duration-300 ease-in-out hover:bg-[#e43f5d] m-0">Get Certificate</a>
+          <a href="#" className="bg-primary text-white  uppercase font-bold text-sm py-7 px-4  inline-block transition duration-300 ease-in-out hover:bg-[#e43f5d] m-0">Get Certificate</a>
     
         </div>
       </nav>
