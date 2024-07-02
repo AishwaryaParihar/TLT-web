@@ -18,7 +18,7 @@ export const HeaderContent = () => {
         </Headings>
         <p className=' tracking-wider py-3'>Far far away, behind the word mountains, far from the countries Vokalia <br /> and Consonantia, there live the blind texts.</p>
         <div className="flex gap-4 py-3">
-          <Button onClick={handleClick} color="red"> get startd now </Button>    <Button onClick={handleClick} color="white"> view course </Button>
+          <Button onClick={handleClick} color="red"> get startd now <i class="fa-solid fa-arrow-right"></i></Button>    <Button onClick={handleClick} color="white"> view course <i class="fa-solid fa-arrow-right"></i></Button>
         </div>
       </div>
     </div></div>
