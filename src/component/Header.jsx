@@ -8,7 +8,7 @@ const Header = () => {
  
 
   return (
-    <div className='h-dvh navbody relative'>
+    <div className=' navbody '>
       <marquee width="100%" behavior="scroll"  className=" bg-red-300">
         This is an example of a scroll marquee...
       </marquee>
