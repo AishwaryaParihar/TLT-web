@@ -1,5 +1,5 @@
 .slick-dots {
-    bottom: -100px; /* Adjust this value to position the dots below the carousel */
+    bottom: -50px; /* Adjust this value to position the dots below the carousel */
   }
   
   .slick-dots li button:before {
