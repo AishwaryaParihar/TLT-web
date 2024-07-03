@@ -8,7 +8,7 @@ export const Home = () => {
   return (
     <>
       <Testimony/>
-      <FeaturesCard/>
+      {/* <FeaturesCard/> */}
       {/* <Aboutus /> */}
     </>
   )

@@ -53,7 +53,7 @@ const Testimony = () => {
     <div className="m-5 md:m-20 h-full">
       <Headings heading={"h6"}>TESTIMONIALS</Headings>
       <Headings heading={"h1"}>What They Say</Headings>
-      <Slider {...settings}>
+      <Slider {...settings} className="testimony-slider">
         {data.map((item, index) => (
           <div
             className={`px-2 md:px-4 mb-10 ${
