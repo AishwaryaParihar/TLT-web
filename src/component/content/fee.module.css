@@ -24,6 +24,7 @@ flex-direction: column;
 box-shadow: 0 0 30px #0000000d;
 transition:all 0.4s ;
 padding: 5px;
+padding-block: 15px;
 
 }
 
@@ -53,6 +54,32 @@ font-weight: 700;
 font-size: 20px;
 margin-block: 10px;
 }
+
+.card_style .icons_div{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  height: 90px;
+  padding: 15px;
+}
+
+.card_style:hover .icons_div{
+  background-color: white;
+  border-bottom: 2px dashed rgb(239 68 68);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  height:90px;
+  padding: 15px;
+}
+
+.card_style .icons{
+background-position: center;
+background-repeat: no-repeat;
+  }
 
 .card_style:hover .price{
   color:rgb(239 68 68);
