@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.partial-border {
+    position: relative;
+  }
+  
+  .partial-border::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50px;
+    transform: translateX(-50%);
+    height: 4px; /* Border thickness */
+    width: 100px; /* Border length */
+    background-color: #EF4444; /* Border color */
+  }
+  
