@@ -3,7 +3,8 @@ import Slider from "react-slick";
 import { data } from "../data/testimony";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Headings from "../heading/Heading";
+import Headings from "../utiliti/heading/Heading";
+
 
 const Testimony = () => {
   const settings = {
@@ -19,8 +20,7 @@ const Testimony = () => {
 
   return (
     <div className="mx-5 md:mx-20">
-      <Headings heading="h6">TESTIMONIAL</Headings>
-      <Headings heading="h1">Our Successful Students</Headings>
+      <Headings></Headings>
       <Slider {...settings}>
         {data.map((item, index) => (
           <div className="px-2" key={index}>
