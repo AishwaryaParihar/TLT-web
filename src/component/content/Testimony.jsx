@@ -63,8 +63,8 @@ const Testimony = () => {
             key={index}
           >
             <div
-              className={`h-[350px] md:h-[300px] lg:h-[350px] ${
-                isMiddleSlide(index) ? "bg-red-500 text-white" : "bg-gray-100"
+              className={`h-[350px] ${
+                isMiddleSlide(index) ? "bg-primary text-white" : "bg-gray-100"
               } rounded-2xl p-5 md:p-8 gap-5 lg:gap-8 mt-10 transition-all duration-300`}
             >
               <div className="flex flex-col items-center text-center">
@@ -75,7 +75,7 @@ const Testimony = () => {
                 />
                 <div className="font-bold text-xl md:text-lg lg:text-xl mb-1">{item.name}</div>
                 <div className="mb-4 text-sm md:text-xs lg:text-sm">{item.rank}</div>
-                <div className="mt-2 text-base md:text-sm lg:text-base">{item.desc}</div>
+                <div className="mt-2 text-base md:text-sm lg:text-base truncated-text">{item.desc}</div>
               </div>
             </div>
           </div>
