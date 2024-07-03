@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className="flex space-x-4 ps-20 gap-8">
           <a className="text-red-500 font-semibold hover:text-red-500" href="#">Home</a>
           <a className="textWhite hover:text-red-500" href="#">All Courses</a>
-          <a className="textWhite hover:text-red-500" href="#">About</a>
+          <a className="textWhite hover:text-red-500" href="/about">About</a>
           <a className="textWhite hover:text-red-500" href="#">Team</a>
         </div>
         <div className="flex space-x-4 items-center p-0 m-o">
