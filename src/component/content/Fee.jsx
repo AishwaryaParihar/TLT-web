@@ -7,14 +7,14 @@ const freedata = [
     img: "image",
     title: "A-Z LEGAL GLOSSARY",
     price: "Rs-399/-",
-    description: "for Legal glossary (1500+ Words)",
+    description: "for Legal glossary (1500+ Words) (HANDPICKED)",
   },
   {
     img: "image",
     title: "TPM BASIC",
     price: "Rs-699/-",
     description:
-      "for the TPM Basic Pack(Total 200 one liners Criminal- 100 one liners Civil- 100 one liners)",
+      "the TPM Basic Pack(Total 200 one liners Criminal- 100 one liners Civil- 100 one liners)",
   },
   {
     img: "image",
@@ -35,7 +35,7 @@ const freedata = [
 const Fee = () => {
   return (
     <>
-      <div className="flex flex-col justify-items-center items-center mt-10 px-5">
+      <div className="flex flex-col justify-items-center items-center my-16">
         <div className="flex flex-col justify-items-start self-start md:ms-16">
           <Headings heading={"h2"}>MPCJ and CGCJ 2024 (Mains)</Headings>
 
@@ -44,13 +44,15 @@ const Fee = () => {
           <Headings heading={"h5"}>Starting From 2nd February 2024</Headings>
         </div>
 
-        <div className="flex justify-items-center flex-wrap gap-4 mt-10 ">
+        <div className="flex justify-center items-center flex-wrap">
           {freedata.map((items) => (
             <div className={styless.card_style}>
-              <div>{items.img}</div>
-              <div>{items.title}</div>
-              <div>{items.price}</div>
-              <div>{items.description}</div>
+              <div className={styless.content}>
+                <div>{items.img}</div>
+                <div className={styless.title}>{items.title}</div>
+                <div className={styless.price}>{items.price}</div>
+                <div className={styless.description}>{items.description}</div>
+              </div>
             </div>
           ))}
         </div>
