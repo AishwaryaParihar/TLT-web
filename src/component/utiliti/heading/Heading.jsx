@@ -24,11 +24,12 @@ const Headings = ({ children, heading, style }) => {
       break;
     case "h5":
       HeadingType = "h5";
-      className = "text-lg md:text-5xl font-medium";
+      className = "text-lg font-medium";
       break;
     case "h6":
       HeadingType = "h6";
-      className = "font-medium text-lg md:text-1xl text-primary-light md:text-start text-center";
+      className =
+        "font-medium text-lg md:text-1xl text-primary-light md:text-start text-center";
       break;
     default:
       HeadingType = "h2";
