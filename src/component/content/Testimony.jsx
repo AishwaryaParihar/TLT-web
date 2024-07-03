@@ -25,6 +25,7 @@ const Testimony = () => {
         <ul style={{ margin: "0px" }}> {dots} </ul>
       </div>
     ),
+    arrows: false,
     responsive: [
       {
         breakpoint: 1024, // medium screens
