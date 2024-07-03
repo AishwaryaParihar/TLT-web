@@ -1,18 +1,17 @@
 import React from 'react'
 import  Testimony  from './content/Testimony'
 import  FeaturesCard  from './content/FeaturesCard'
-import Facility  from './content/Facility';
-import Fee from "./content/Fee";
+import Aboutus from './content/Aboutus'
+
 
 
 export const Home = () => {
   return (
-    <div>
-      <Testimony />
-      <Fee />
-      <FeaturesCard />
-      <Facility/>
-    </div>
-  );
+    <>
+      <Testimony/>
+    
+      <FeaturesCard/>
+       <Aboutus /> 
+    </>
+  )
 }
-
