@@ -44,7 +44,7 @@ const Fee = () => {
           <Headings heading={"h5"}>Starting From 2nd February 2024</Headings>
         </div>
 
-        <div className="flex justify-center items-center flex-wrap">
+        <div className="flex justify-center items-center flex-wrap my-10">
           {freedata.map((items) => (
             <div className={styless.card_style}>
               <div className={styless.content}>
