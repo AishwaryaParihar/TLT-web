@@ -1,6 +1,7 @@
 import React from 'react'
 import  Testimony  from './content/Testimony'
 import  FeaturesCard  from './content/FeaturesCard'
+import Aboutus from './content/Aboutus'
 
 
 export const Home = () => {
@@ -8,6 +9,7 @@ export const Home = () => {
     <div>
       <Testimony/>
       <FeaturesCard/>
+      {/* <Aboutus /> */}
     </div>
   )
 }
