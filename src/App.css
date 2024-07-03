@@ -21,6 +21,12 @@ body{
   width: 100%;
   height: 100%;
 }
-.bg-marquee{
-  background-color: rgb(241, 217, 221);
+.about_img{
+  background-image: url(./assets/her2.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: multiply;
+  width: 100%;
+  height: 100%;
 }
