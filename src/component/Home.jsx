@@ -10,6 +10,9 @@ export const Home = () => {
       <Fee />
       {/* <FeaturesCard/> */}
       {/* <Aboutus /> */}
+      {/* <Contactus /> */}
+      <YoutubeGallery />
+      <Fc />
     </>
   );
 };

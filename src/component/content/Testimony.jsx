@@ -25,6 +25,7 @@ const Testimony = () => {
         <ul style={{ margin: "0px" }}> {dots} </ul>
       </div>
     ),
+    arrows: false,
     responsive: [
       {
         breakpoint: 1024, // medium screens
@@ -62,8 +63,8 @@ const Testimony = () => {
             key={index}
           >
             <div
-              className={`h-[350px] md:h-[300px] lg:h-[350px] ${
-                isMiddleSlide(index) ? "bg-red-500 text-white" : "bg-gray-100"
+              className={`h-[350px] ${
+                isMiddleSlide(index) ? "bg-primary text-white" : "bg-gray-100"
               } rounded-2xl p-5 md:p-8 gap-5 lg:gap-8 mt-10 transition-all duration-300`}
             >
               <div className="flex flex-col items-center text-center">

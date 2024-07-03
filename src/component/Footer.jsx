@@ -51,7 +51,7 @@ const Footer = () => {
                         {/* Download */}
                         <div>
                         <h2 className="mb-4 text-sm font-semibold text-gray-900 uppercase dark:text-white">Social Media</h2>
-                          <div className="flex gap-2"> <SocialMedia/></div>
+                          <div className="flex flex-wrap gap-2"> <SocialMedia/></div>
                         </div>
                     </div>
                 </div>
