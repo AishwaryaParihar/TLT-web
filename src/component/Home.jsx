@@ -5,6 +5,7 @@ import Aboutus from './content/Aboutus'
 import Contactus from './content/Contactus'
 // import ListItemHoverEffect from './content/ListItemHoverEffect'
 import Facility from './content/Facility'
+import YoutubeGallery from './content/YoutubeGallery'
 
 
 export const Home = () => {
@@ -14,6 +15,7 @@ export const Home = () => {
       {/* <FeaturesCard/> */}
       {/* <Aboutus /> */}
       <Contactus />
+      <YoutubeGallery/>
       <Facility />
     </>
   );
