@@ -73,9 +73,15 @@ const Testimony = () => {
                   alt={item.name}
                   className="w-20 h-20 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full object-cover mb-2"
                 />
-                <div className="font-bold text-xl md:text-lg lg:text-xl mb-1">{item.name}</div>
-                <div className="mb-4 text-sm md:text-xs lg:text-sm">{item.rank}</div>
-                <div className="mt-2 text-base md:text-sm lg:text-base truncated-text">{item.desc}</div>
+                <div className="font-bold text-xl md:text-lg lg:text-xl mb-1">
+                  {item.name}
+                </div>
+                <div className="mb-4 text-sm md:text-xs lg:text-sm">
+                  {item.rank}
+                </div>
+                <div className="mt-2 text-base md:text-sm lg:text-base">
+                  {item.desc}
+                </div>
               </div>
             </div>
           </div>

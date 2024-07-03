@@ -12,7 +12,7 @@ const Headings = ({ children, heading, style }) => {
       break;
     case "h2":
       HeadingType = "h2";
-      className = "text-lg md:text-4xl font-bold";
+      className = "xl:text-5xl lg:text-4xl sm:text-2xl text-2xl font-bold";
       break;
     case "h3":
       HeadingType = "h3";

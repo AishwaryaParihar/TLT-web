@@ -6,7 +6,7 @@ import SocialMedia from './utiliti/SocialMedia/SocialMedia';
 const Footer = () => {
     return (
         <footer className="bg-white rounded-lg shadow dark:bg-gray-900">
-            <div className="container mx-auto px-2 sm:px-4 md:px-6 lg:px-8 py-8 md:py-12">
+            <div className="container mx-auto px-5 md:px-6 lg:px-8 py-8 md:py-12">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     {/* Logo Section */}
                     <div className="md:col-span-1 flex items-center justify-center">
@@ -58,7 +58,7 @@ const Footer = () => {
                 {/* Divider and Copyright */}
                 <hr className="my-6 border-red-200 sm:mx-auto dark:border-red-700" />
                 <p className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-                Copyright   &copy; {new Date().getFullYear()} <a href="https://flowbite.com/" className="hover:underline">TLT </a>. All Rights Reserved  | This website is made with ❤ by SSS Techies
+                Copyright   &copy; {new Date().getFullYear()} <a href="#" className="hover:underline">TLT </a>. All Rights Reserved  |  <a href="#">made with ❤ by SSS Techies</a>
                 </p>
             </div>
         </footer>
