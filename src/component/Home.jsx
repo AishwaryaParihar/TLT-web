@@ -6,10 +6,11 @@ import Contactus from "./content/Contactus";
 // import ListItemHoverEffect from './content/ListItemHoverEffect'
 import Facility from "./content/Facility";
 import Fee from "./content/Fee";
+import Bestfeaturs from "./content/Bestfeaturs";
 
 export const Home = () => {
   return (
-    <>
+    <><Bestfeaturs/>
       <Testimony />
       {/* <FeaturesCard/> */}
       {/* <Aboutus /> */}
