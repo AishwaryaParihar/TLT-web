@@ -1,10 +1,11 @@
-body{
-  background-color: rgb(255, 255, 255);
-}
+
 .text-primary{
   color: rgb(239 68 68);
 }
 .bg-primary{
+  background-color: rgb(239 68 68);
+}
+.bg-primary-red{
   background-color: rgb(239 68 68);
 }
 .border-primary{
@@ -22,7 +23,7 @@ body{
   height: 100%;
 }
 .about_img{
-  background-image: url(./assets/her2.avif);
+  background-image: url(./assets/about.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
