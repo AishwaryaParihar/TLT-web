@@ -6,7 +6,7 @@ import Headings from "../utiliti/heading/Heading";
 
 const AboutFirm = () => {
   return (
-    <section className="m-3 md:m-20">
+    <section className="mx-3 md:mx-20">
       <div className="flex flex-wrap justify-center items-center md:gap-20 gap-8 relative ">
         <div className="flex flex-nowrap gap-3">
           <div className="flex flex-wrap flex-col md:gap-10 gap-3 md:mt-10 mt-[110px]">
