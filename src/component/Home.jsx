@@ -5,9 +5,8 @@ import  FeaturesCard  from './content/FeaturesCard'
 
 export const Home = () => {
   return (
-    <div>
+    <>
       <Testimony/>
-      <FeaturesCard/>
-    </div>
+    </>
   )
 }

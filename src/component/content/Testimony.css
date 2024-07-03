@@ -1,0 +1,12 @@
+.slick-dots {
+    bottom: -100px; /* Adjust this value to position the dots below the carousel */
+  }
+  
+  .slick-dots li button:before {
+    font-size: 12px; /* Adjust the size of the dots if needed */
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #FF0000; /* Change the color of the active dot if needed */
+  }
+  
