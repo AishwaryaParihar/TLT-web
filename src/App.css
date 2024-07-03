@@ -2,13 +2,13 @@ body{
   background-color: rgb(255, 255, 255);
 }
 .text-primary{
-  color: #fa4a6a;
+  color: rgb(239 68 68);
 }
 .bg-primary{
-  background-color: #d32a49;
+  background-color: rgb(239 68 68);
 }
 .border-primary{
-  color: #fa4a6a;
+  color: rgb(239 68 68);
 }
 .textWhite{
   color: black;

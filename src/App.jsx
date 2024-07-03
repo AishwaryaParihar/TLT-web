@@ -6,12 +6,14 @@ import Navbar from './component/Navbar.jsx'
 import Header from './component/Header.jsx'
 import Footer from './component/Footer.jsx'
 
+
 function App() {
   return (
     <>
    <Header/>
    <RouterProvider router={router}/>
    <Footer/>
+
     </>
   );
 }
