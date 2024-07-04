@@ -1,25 +1,24 @@
-
-import React from 'react'
-import ListItemHoverEffect from './ListItemHoverEffect'
-import fc from "../../assets/fc-img.avif"
+import React from "react";
+import ListItemHoverEffect from "./ListItemHoverEffect";
+import FacilityeImage from "./Facility-image";
 
 const Listsection = () => {
   return (
-  <>
-  <h2 className='text-black text-2xl text-center'>Amenities</h2>
-<div className="flex shadow-lg border-collapse">
+    <>
+      <h2 className="text-semibold text-5xl text-center hover:text-red-500">
+        Amenities
+      </h2>
+      <div className="flex  border-collapse">
+        <div className="mt-10 ">
+          <ListItemHoverEffect />
+        </div>
 
-<div className="mt-10">
-  <ListItemHoverEffect/>
-</div>
-
-<div className="">
-
-<img src={fc} alt="facility" className="w-[500px] h-[450px] items-center" />
-</div>
-</div>
-  </>
-  )
-}
+        <div className="mt-10">
+          <FacilityeImage />
+        </div>
+      </div>
+    </>
+  );
+};
 
 export default Listsection;
