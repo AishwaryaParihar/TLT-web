@@ -7,17 +7,20 @@ import Contactus from "./content/Contactus";
 import Facility from "./content/Facility";
 import Fee from "./content/Fee";
 import Bestfeaturs from "./content/Bestfeaturs";
-import YoutubeGallery from "./content/YoutubeGallery"
+import YoutubeGallery from "./content/YoutubeGallery";
+import Feature from "./content/Feature";
 
 export const Home = () => {
   return (
-    <><Bestfeaturs/>
+    <>
+      <Bestfeaturs />
       <Testimony />
+      <Feature />
       {/* <FeaturesCard/> */}
       {/* <Aboutus /> */}
       <Contactus />
       <Fee />
-      <YoutubeGallery/>
+      <YoutubeGallery />
       <Facility />
     </>
   );
