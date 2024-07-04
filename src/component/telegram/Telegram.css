@@ -1,17 +1,16 @@
-
-.whatsapp-img {
+.telegram-img {
   position: fixed;
   height: 42px;
   width: 42px;
   margin-bottom: 15px;
   border-radius: 90%;
- margin-bottom: 20px;
- margin-top:35px ;
+  margin-bottom: 90px;
+ margin-top:0px ;
  z-index: 99999; 
 }
 
 /* Default positioning for larger screens */
-.whatsapp-img {
+.telegram-img {
 
   top: calc(100% - 130px); 
   left: calc(100% - 50px); 
@@ -19,7 +18,7 @@
 
 /* For tablets */
 @media (max-width: 768px) {
-  .whatsapp-img {
+  .telegram-img {
     position: fixed;
     top: calc(100% - 95px); 
     left: calc(100% - 95px); 
@@ -30,7 +29,7 @@
 
 /* For mobile phones */
 @media (max-width: 480px) {
-  .whatsapp-img {
+  .telegram-img {
     position: fixed;
     top: calc(100% - 80px);
     left: calc(100% - 60px); 
@@ -38,4 +37,3 @@
     width: 38px;
   }
 }
-
