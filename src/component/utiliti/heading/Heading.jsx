@@ -24,7 +24,7 @@ const Headings = ({ children, heading, style }) => {
       break;
     case "h5":
       HeadingType = "h5";
-      className = "text-md font-bold";
+      className = "text-lg font-bold";
       break;
     case "h6":
       HeadingType = "h6";

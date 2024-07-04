@@ -7,6 +7,7 @@ import {
 import { Home } from "../Home";
 import About from "../About";
 import StudyEssentials from "../StudyEssentials";
+import PrivacyPolicy from "../PrivacyPolicy";
 
 
 
@@ -22,5 +23,9 @@ export const router = createBrowserRouter([
   {
     path : "/studyEssentials",
     element : <StudyEssentials/>,
+  },
+  {
+    path : "/privacy-policy",
+    element : <PrivacyPolicy/>,
   },
 ]);
