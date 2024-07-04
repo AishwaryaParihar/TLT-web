@@ -7,16 +7,17 @@ const ListItemHoverEffect = () => {
         <h2 className="text-white font-bold tracking-wide mb-2">
           List Item Hover Effect
         </h2>
-        <ul className="relative shadow-xl pr-4">
+        <ul className="relative  pr-4 mb-8">
           {[
             "Air Conditioned and ventilated classrooms.",
-            "eaching through interactive methods via Smartboard.",
-            "Supreme Court Live proceedings telecast on LED TVs",
-            " Speakers installed for better audio in Classroom.",
+            "Teaching through interactive methods via Smartboard.",
+            "Supreme Court Live proceedings telecast on LED TVs.",
+            "Speakers installed for better audio in Classroom.",
             "For Safety purposes, smoke detector, Fire alarms and extinguisher installed.",
-            "mplete library with systems for recovery classes",
-            " Biometric based entry and Exit system for enrolled students",
-            " vailability of Water Cooler for clean and cold water.",
+            "Complete library with systems for recovery classes.",
+            "Biometric based entry and Exit system for enrolled students",
+            "12 Cameras for surveillance and security purposes.",
+            "vailability of Water Cooler for clean and cold water.",
           ].map((text, index) => (
             <li
               key={index}
