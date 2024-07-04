@@ -39,7 +39,7 @@ const freedata = [
 const Fee = () => {
   return (
     <>
-      <div className="flex flex-col justify-items-center items-center my-16">
+      <div className="flex flex-col justify-items-center items-center">
         <div className="flex flex-col justify-items-start self-start md:ms-16">
           <Headings heading={"h2"}>MPCJ and CGCJ 2024 (Mains)</Headings>
 
@@ -48,7 +48,7 @@ const Fee = () => {
           <Headings heading={"h5"}>Starting From 2nd February 2024</Headings>
         </div>
 
-        <div className="flex justify-center items-center flex-wrap my-10">
+        <div className="flex justify-center items-center flex-wrap">
           {freedata.map((items) => (
             <div className={styless.card_style}>
               <div className={styless.content}>
