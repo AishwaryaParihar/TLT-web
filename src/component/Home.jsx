@@ -8,13 +8,17 @@ import Facility from "./content/Facility";
 import Fee from "./content/Fee";
 import Bestfeaturs from "./content/Bestfeaturs";
 import YoutubeGallery from "./content/YoutubeGallery"
+import EnrollButton from "./content/EnrollButton";
+import Hambergur from "./content/Hambergur";
 
 export const Home = () => {
   return (
     <><Bestfeaturs/>
       <Testimony />
+      <EnrollButton/>
       {/* <FeaturesCard/> */}
       {/* <Aboutus /> */}
+     
       <Contactus />
       <Fee />
       <YoutubeGallery/>
