@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const ContactUs = () => {
   return (
@@ -11,14 +11,13 @@ const ContactUs = () => {
           This form uses fabform.io to save form submissions.
         </p>
       </div>
-      <form
-     
-        method="post"
-        className="mx-auto mt-16 max-w-xl sm:mt-20"
-      >
+      <form method="post" className="mx-auto mt-16 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
-            <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label
+              htmlFor="first-name"
+              className="block text-sm font-semibold leading-6 text-gray-900"
+            >
               First name
             </label>
             <div className="mt-2.5">
@@ -32,7 +31,10 @@ const ContactUs = () => {
             </div>
           </div>
           <div>
-            <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label
+              htmlFor="last-name"
+              className="block text-sm font-semibold leading-6 text-gray-900"
+            >
               Last name
             </label>
             <div className="mt-2.5">
@@ -46,7 +48,10 @@ const ContactUs = () => {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="company" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label
+              htmlFor="company"
+              className="block text-sm font-semibold leading-6 text-gray-900"
+            >
               Company
             </label>
             <div className="mt-2.5">
@@ -60,7 +65,10 @@ const ContactUs = () => {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label
+              htmlFor="email"
+              className="block text-sm font-semibold leading-6 text-gray-900"
+            >
               Email
             </label>
             <div className="mt-2.5">
@@ -74,7 +82,10 @@ const ContactUs = () => {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label
+              htmlFor="phone-number"
+              className="block text-sm font-semibold leading-6 text-gray-900"
+            >
               Phone number
             </label>
             <div className="mt-2.5">
@@ -88,7 +99,10 @@ const ContactUs = () => {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label
+              htmlFor="message"
+              className="block text-sm font-semibold leading-6 text-gray-900"
+            >
               Message
             </label>
             <div className="mt-2.5">
