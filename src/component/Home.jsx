@@ -7,6 +7,7 @@ import Contactus from "./content/Contactus";
 import Facility from "./content/Facility";
 import Fee from "./content/Fee";
 import Bestfeaturs from "./content/Bestfeaturs";
+import YoutubeGallery from "./content/YoutubeGallery"
 
 export const Home = () => {
   return (
@@ -16,6 +17,7 @@ export const Home = () => {
       {/* <Aboutus /> */}
       <Contactus />
       <Fee />
+      <YoutubeGallery/>
       <Facility />
     </>
   );
