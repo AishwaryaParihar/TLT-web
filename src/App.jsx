@@ -15,7 +15,7 @@ function App() {
       <Header />
       <RouterProvider router={router} />
       <Hambergur />
-      
+      <Telegram/>
       <Whatshap />
       <Telegram/>
       <Footer />

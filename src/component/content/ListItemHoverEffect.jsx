@@ -2,12 +2,12 @@ import React from "react";
 
 const ListItemHoverEffect = () => {
   return (
-    <div className="flex mx-32 items-center ">
+    <div className="flex sm:mx-4 lg:mx-32 px-8 items-center ">
       <div className="relative">
         <h2 className="text-white font-bold tracking-wide mb-2">
           List Item Hover Effect
         </h2>
-        <ul className="relative  pr-4 mb-8">
+        <ul className="relative  mb-8">
           {[
             "Air Conditioned and ventilated classrooms.",
             "Teaching through interactive methods via Smartboard.",

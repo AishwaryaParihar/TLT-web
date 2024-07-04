@@ -8,7 +8,7 @@ const Listsection = () => {
       <h2 className="text-semibold text-5xl text-center hover:text-red-500">
         Amenities
       </h2>
-      <div className="flex flex-wrap border-collapse">
+      <div className="flex flex-wrap justify-center border-collapse">
         <div className="mt-10 ">
           <ListItemHoverEffect />
         </div>

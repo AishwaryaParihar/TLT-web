@@ -3,9 +3,9 @@ import React from "react";
 import fc from "../../assets/fc-img.webp";
 const FacilityeImage = () => {
   return (
-    <div className=" flex pt-6 pl-12 sm:pr-12">
+    <div className=" flex justify-center items-center pt-6 sm:p-12  px-8">
     
-      <img src={fc} alt="facality" className="w-full h-[400px]"></img>
+      <img src={fc} alt="facality" className="w-full sm:h-[400px] mb-10 h-[250px]"></img>
     </div>
   );
 };
