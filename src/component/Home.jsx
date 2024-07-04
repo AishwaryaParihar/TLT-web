@@ -7,28 +7,21 @@ import Contactus from "./content/Contactus";
 import Facility from "./content/Facility";
 import Fee from "./content/Fee";
 import Bestfeaturs from "./content/Bestfeaturs";
-<<<<<<< HEAD
 import YoutubeGallery from "./content/YoutubeGallery";
-import Feature from "./content/Feature";
-=======
-import YoutubeGallery from "./content/YoutubeGallery"
 import EnrollButton from "./content/EnrollButton";
 import Hambergur from "./content/Hambergur";
->>>>>>> e8928ad9378a8def65aaf7acc18d76659c90019d
+import Feature from "./content/Feature";
 
 export const Home = () => {
   return (
     <>
       <Bestfeaturs />
       <Testimony />
-<<<<<<< HEAD
       <Feature />
-=======
-      <EnrollButton/>
->>>>>>> e8928ad9378a8def65aaf7acc18d76659c90019d
+      <EnrollButton />
       {/* <FeaturesCard/> */}
       {/* <Aboutus /> */}
-     
+
       <Contactus />
       <Fee />
       <YoutubeGallery />
