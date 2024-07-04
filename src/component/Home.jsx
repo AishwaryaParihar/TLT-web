@@ -18,7 +18,7 @@ export const Home = () => {
       <Feature />
       {/* <FeaturesCard/> */}
       {/* <Aboutus /> */}
-     
+
       <Contactus />
       <Fee />
       <YoutubeGallery />
