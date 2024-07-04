@@ -5,15 +5,15 @@ const Navbar = () => {
     <div className="bg-gray-100 bg-opacity-50 mx-14 my-3 hidden md:block rounded-md">
       <nav className="container mx-auto flex justify-between items-center">
         <div className="flex space-x-4 ps-20 gap-8">
-          <a className="text-red-500 font-semibold hover:text-red-500" href="#">Home</a>
+          <a className="text-red-500 font-semibold hover:text-red-500" href="/">Home</a>
           <a className="textWhite hover:text-red-500" href="/about">About</a>
-          <a className="textWhite hover:text-red-500" href="#">Study Essentials</a>
+          <a className="textWhite hover:text-red-500" href="/studyEssentials">Study Essentials</a>
           <a className="textWhite hover:text-red-500" href="#">Gallery</a>
         </div>
         <div className="relative flex space-x-4 items-center p-0 m-0">
           <div className="group relative">
             <button
-              className="bg-primary text-white uppercase font-bold text-sm py-7 px-4 inline-block transition duration-300 ease-in-out hover:bg-[#e43f5d] m-0 rounded-e-md"
+              className="bg-primary text-white uppercase font-bold text-sm py-7 px-4 inline-block transition duration-300 ease-in-out hover:bg-red-600 m-0 rounded-e-md"
             >
               Registeration In
             </button>
