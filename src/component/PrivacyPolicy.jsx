@@ -1,21 +1,36 @@
 import React from 'react';
-import { privacyPolicy } from './data/privacyPolicy';
+import { privacyPolicyData } from './data/privacyPolicy';
 import Headings from './utiliti/heading/Heading';
 
 const PrivacyPolicy = () => {
     return (
-        <div className="container mx-auto px-4 py-8">
-            <Headings heading={'h2'} style={"text-2xl font-bold mb-6"}>Privacy Policy for <span className="text-primary">TLT Judicial Academy </span> Website</Headings>
-            {privacyPolicy.map((data, index) => (
-                <section className="mb-6" key={index}>
-                   <Headings heading={'h5'} >{data.title}</Headings>
-                   <Headings heading={'h6'}>{data.subtitle}</Headings>
-                   <ul>
-                    <li>{data.details}</li>
-                    <li>{data.details2}</li>
-                    <li>{data.details3}</li>
-                    <li>{data.details4}</li>
-                   </ul>
+        <div className="px-5 md:px-20 py-8">
+            <Headings heading={'h2'} style="pb-10">
+                <span className="text-primary">Privacy Policy</span> for TLT Judicial <span className="text-primary">Academy</span> Website
+            </Headings>
+            {privacyPolicyData.map((section, index) => (
+                        <section key={index}>
+                            <h2 className="text-2xl font-semibold mb-2 text-primary">{section.title}</h2>
+                            {section.details && (
+                                <ul className="list-disc pl-6">
+                                    {section.details.map((detail, idx) => (
+                                        <li key={idx} className="mb-2">{detail}</li>
+                                    ))}
+                                </ul>
+                            )}
+                            {section.items && section.items.map((item, idx) => (
+                                <div key={idx} className="mb-4">
+                                    {item.subtitle && <h3 className="text-lg font-medium mb-2">{item.subtitle}</h3>}
+                                    {item.details && (
+                                        <ul className="list-disc pl-6">
+                                            {item.details.map((detail, detailIdx) => (
+                                                <li key={detailIdx} className="mb-2">{detail}</li>
+                                            ))}
+                                        </ul>
+                                    )}
+                                </div>
+                            ))}
+                      
                 </section>
             ))}
         </div>
