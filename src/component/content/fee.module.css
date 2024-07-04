@@ -3,11 +3,26 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 290px;
+  width:290px;
+  height: 300px;
   color: black;
   position: relative;
   cursor: pointer;
   margin: 10px;
+}
+
+@media (max-width:732px){
+  .card_style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    color: black;
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+  }
 }
 
 .card_style .content{
