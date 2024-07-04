@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { navItems } from '../data/navItem';
 
 const Hamburger = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-
- 
+  const menuRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,6 +19,19 @@ const Hamburger = () => {
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
 
@@ -58,7 +70,7 @@ const Hamburger = () => {
       )}
 
       {isOpen && (
-        <div className="fixed top-1/2 right-12 transform translate-y-[-50%] bg-white border border-gray-200 rounded shadow-lg z-40">
+        <div ref={menuRef} className="fixed top-1/2 right-12 transform translate-y-[-50%] bg-white border border-gray-200 rounded shadow-lg z-40">
           <nav>
             <ul>
               {navItems.map((item) => (
