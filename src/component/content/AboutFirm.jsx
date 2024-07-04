@@ -7,22 +7,22 @@ import Headings from "../utiliti/heading/Heading";
 const AboutFirm = () => {
   return (
     <section className="mx-3 md:mx-20">
-      <div className="flex flex-wrap justify-evenly md:gap-10 items-center relative ">
-        <div className="flex flex-nowrap gap-5">
-          <div className="flex flex-wrap flex-col md:gap-10 gap-3 md:mt-10 mt-[110px]">
+      <div className="flex flex-wrap justify-evenly gap-10 items-center relative ">
+        <div className="flex flex-wrap justify-center gap-3">
+          <div className="flex flex-wrap flex-col md:gap-3 gap-3 md:mt-10 mt-[110px]">
             <div className="md:w-[250px] md:h-[200px] w-[150px] h-[150px]">
-              <img src={penImg} alt="pen image" />
+              <img src={penImg} alt="pen image" className="w-full h-full object-cover" />
             </div>
-            <div className="md:w-[250px] md:h-[300px] w-[150px] h-[150px] md:mt-8">
-              <img src={hammerImg} alt="hammer image" />
+            <div className="md:w-[250px] md:h-[250px] w-[150px] h-[150px]">
+              <img src={hammerImg} alt="hammer image" className="w-full h-full object-cover" />
             </div>
           </div>
-          <div className="mt-10">
-            <img src={justiceImg} alt="justice image" className="w-[250px] h-[350px] mt-10" />
+          <div className="mt-20 md:mt-0">
+            <img src={justiceImg} alt="justice image" className="md:w-[300px] md:h-[450px] w-[200px] h-[300px] object-cover mt-10 md:mt-12" />
           </div>
         </div>
 
-        <div className="w-full md:w-[700px] md:mb-20 partial-border ">
+        <div className="w-full md:w-[500px] partial-border mt-10 md:mt-12">
           <Headings heading={"h1"}>About <span className="text-primary">TLT</span></Headings>
           <div className="md:mt-10 mt-5 text-justify">
             The TLT Judicial Academy, founded by Mr. Shubham Upadhyay, aims to
