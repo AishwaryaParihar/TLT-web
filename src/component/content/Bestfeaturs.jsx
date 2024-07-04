@@ -22,7 +22,7 @@ export const Bestfeaturs = () => {
 
     return (
         <section className="py-0">
-            <div className="container mx-auto px-5 md:px-10">
+            <div className="container mx-auto px-5 md:px-10 ">
                 <div className="flex flex-wrap ">
                     <div className="w-full md:w-1/2 flex items-stretch">
                         <div
@@ -39,7 +39,7 @@ export const Bestfeaturs = () => {
                                 {features.map((feature, index) => (
                                     <div
                                         key={index}
-                                        className="w-full flex items-stretch mb-4 rounded-2xl border p-4 hover:bg-red-500 hover:text-white shadow-md hover:shadow-xl transition duration-500 ease-in-out hover:-translate-x-1 hover:scale-104"
+                                        className="w-full flex items-stretch mb-4 rounded-2xl border p-4 hover:bg-red-500 hover:text-white shadow-red-600 hover:shadow-xl transition duration-500 ease-in-out hover:translate-x-2 hover:scale-104"
                                     >
                                         <div className="flex">
                                             <div className="icon p-5 text-5xl">

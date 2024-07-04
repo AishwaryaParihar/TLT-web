@@ -7,7 +7,7 @@ export const HeaderContent = () => {
     alert("Button clicked!");
   };
   return (
-    <div> <div className=" my-16">
+    <div> <div className=" my-20">
       <div className="mx-5 md:mx-20">
         <div class="uppercase font-semibold  text-xs inline-block tracking-wider ">
           <Headings heading={'h6'}>WELCOME TO TLT JUDICIAL ACADEMY</Headings>
