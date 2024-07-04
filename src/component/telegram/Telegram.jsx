@@ -2,7 +2,7 @@ import React from "react";
 import "./Telegram.css";
 import Telegram from "../../assets/telegram.png";
 
-function Whatshap() {
+function Telegram() {
   return (
     <div>
       {" "}
@@ -13,4 +13,4 @@ function Whatshap() {
   );
 }
 
-export default Whatshap;
+export default Telegram;
