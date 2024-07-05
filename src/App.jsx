@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { RouterProvider } from "react-router-dom";
+import { Outlet, RouterProvider } from "react-router-dom";
 import { router } from "./component/router/index.jsx";
 
 import Header from "./component/Header.jsx";
@@ -13,7 +13,9 @@ function App() {
   return (
     <>
       <Header />
-      <RouterProvider router={router} />
+      <main>
+        <Outlet/>
+      </main>
       <Hambergur />
       <Telegram/>
       <Whatshap />
