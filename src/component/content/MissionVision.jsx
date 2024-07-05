@@ -1,25 +1,22 @@
 import React from "react";
-import Headings from "../utiliti/heading/Heading";
-import { data } from "../data/visiontext"; // Adjust the import if necessary
+import { cardData } from "../data/visiontext"; // Adjust the import if necessary
+import style from "./MissionVision.module.css"; // Import your CSS module
 
 const MissionVision = () => {
-  // Extract the vision content from the first object in the array
-
   return (
-    <div className="mx-3 md:mx-20 md:mt-10 mt-5">
-      <Headings heading={"h6"}>
-        <span className="text-primary">Vision:</span> Illuminating the{" "}
-        <span className="text-primary">Path</span> to{" "}
-        <span className="text-primary">Judicial Excellence</span>
-      </Headings>
-      <div className="mb-10">{data.vision}</div>
-      <Headings heading={"h6"}>
-        <span className="text-primary">Mission: </span> Nurturing {" "}
-        <span className="text-primary">Legal Luminary</span> 
-      </Headings>
-      <div className="text-justify mb-5">{data.mission}</div>
-      <div className="text-justify mb-5">{data.mission2}</div>
-      <div className="text-justify mb-10">{data.conclusion}</div>
+    <div className={style.container}>
+      {cardData.map((item, index) => (
+        <div className={style.card} key={index}>
+          <span className={style["card-number"]}>{item.number}</span>
+          <div className={style["card-block"]}>
+            <h2 className={style["card-title"]}>{item.title}</h2>
+            <p className={style["card-description"]}>{item.description}</p>
+          </div>
+          <div className={style["card-image-wrapper"]}>
+            <img src={item.image} alt={item.title} className={style["card-image"]} />
+          </div>
+        </div>
+      ))}
     </div>
   );
 };
