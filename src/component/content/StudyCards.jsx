@@ -1,9 +1,12 @@
 import React from 'react'
+import StudyEssentials from './StudyEssentials'
 
 
 const StudyCards = () => {
   return (
-    <div>StudyCards</div>
+    <>
+    <StudyEssentials/>
+    </>
   )
 }
 
