@@ -13,7 +13,7 @@ import RegistrationForm from './Registration-form';
         <RegistrationForm/>
        </div>
 
-     
+  
     </div>
   )
 }
