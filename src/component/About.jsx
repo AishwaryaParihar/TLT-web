@@ -9,8 +9,8 @@ const About = () => {
     <div>
      <Breadcrumbs>
      <AboutFirm />
-     <Mentor />
      <MissionVision/>
+     <Mentor />
      </Breadcrumbs>
     </div>
   );

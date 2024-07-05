@@ -25,9 +25,6 @@ const Mentor = () => {
           {data.text1}
         </div>
       </div>
-      <div className="w-full  mt-10 text-justify">
-          {data.text2}
-        </div>
     </section>
   );
 };
