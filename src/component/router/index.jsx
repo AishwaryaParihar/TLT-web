@@ -8,6 +8,7 @@ import { Home } from "../Home";
 import About from "../About";
 import StudyEssentials from "../StudyEssentials";
 import PrivacyPolicy from "../PrivacyPolicy";
+import ReturnAndRefund from "../content/ReturnAndRefund";
 
 
 
@@ -27,5 +28,9 @@ export const router = createBrowserRouter([
   {
     path : "/privacy-policy",
     element : <PrivacyPolicy/>,
+  },
+  {
+    path : "/Return-Refund",
+    element : <ReturnAndRefund/>,
   },
 ]);

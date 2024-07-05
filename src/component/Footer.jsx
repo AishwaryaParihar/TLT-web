@@ -16,6 +16,7 @@ const Footer = () => {
         { name: 'Return & Refund Policy', href: '#' },
         { name: 'Terms & Conditions', href: '#' },
         { name: 'Contact Support', href: '#' },
+        { name: 'Return Refund', href: '/Return-Refund'}
     ];
 
     return (
