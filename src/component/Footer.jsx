@@ -38,7 +38,7 @@ const Footer = () => {
                                 {helpCenterLinks.map((link, index) => (
                                     <li key={index} className="mb-2">
                                         <span className="text-red-500 text-xs"><i className="fa-solid fa-arrow-right-long"></i></span> 
-                                        <a href={link.href} className="hover:text-red-500">{link.name}</a>
+                                        {" "} <a href={link.href} className="hover:text-red-500">{link.name}</a>
                                     </li>
                                 ))}
                             </ul>
@@ -50,7 +50,7 @@ const Footer = () => {
                                 {legalLinks.map((link, index) => (
                                     <li key={index} className="mb-2">
                                         <span className="text-red-500 text-xs"><i className="fa-solid fa-arrow-right-long"></i></span> 
-                                        <a href={link.href} className="hover:text-red-500">{link.name}</a>
+                                       {" "} <a href={link.href} className="hover:text-red-500">{link.name}</a>
                                     </li>
                                 ))}
                             </ul>
