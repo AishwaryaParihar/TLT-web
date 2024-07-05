@@ -1,14 +1,14 @@
-import React from 'react'
-import AboutFirm from './content/AboutFirm'
-import Mentor from './content/Mentor'
+import React from "react";
+import AboutFirm from "./content/AboutFirm";
+import Mentor from "./content/Mentor";
 
 const About = () => {
   return (
     <div>
-      <AboutFirm/>
-      <Mentor/>
+      <AboutFirm />
+      <Mentor />
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
