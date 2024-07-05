@@ -8,6 +8,8 @@ import { Home } from "../Home";
 import About from "../About";
 import StudyEssentials from "../StudyEssentials";
 import PrivacyPolicy from "../PrivacyPolicy";
+import TnC from "../TnC"
+import ContactUs from "../content/Contactus";
 
 
 
@@ -28,4 +30,12 @@ export const router = createBrowserRouter([
     path : "/privacy-policy",
     element : <PrivacyPolicy/>,
   },
+  {
+    path : "/terms-conditions",
+    element : <TnC/>
+  },
+  {
+    path : "/contact-support",
+    element : <ContactUs/>
+  }
 ]);
