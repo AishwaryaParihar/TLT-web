@@ -4,7 +4,7 @@ import StudyEssentials from './StudyEssentials'
 
 const StudyCards = () => {
   return (
-    <>
+    < >
     <StudyEssentials/>
     </>
   )
