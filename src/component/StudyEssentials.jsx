@@ -1,10 +1,12 @@
 import React from 'react'
 import StudyCards from './content/StudyCards'
+import Breadcrumbs from './utiliti/breadcrumbs/Breadcrumbs'
 
 const StudyEssentials = () => {
   return (
     <>
-    <StudyCards/>
+   <Breadcrumbs heading={'Study Essentials'} >
+   <StudyCards/></Breadcrumbs>
     </>
   )
 }
