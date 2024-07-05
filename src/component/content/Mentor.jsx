@@ -21,10 +21,13 @@ const Mentor = () => {
         <div className="w-[400px] z-0">
           <img src={data.image} alt="" />
         </div>
-        <div className="md:w-[300px] w-full md:mt-12 mt-10 leading-loose text-justify">
-          {data.text}
+        <div className="md:w-[350px] w-full md:mt-16 mt-10 leading-loose text-justify">
+          {data.text1}
         </div>
       </div>
+      <div className="w-full  mt-10 text-justify">
+          {data.text2}
+        </div>
     </section>
   );
 };
