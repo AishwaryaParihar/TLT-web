@@ -10,7 +10,8 @@ import Bestfeaturs from "./content/Bestfeaturs";
 import YoutubeGallery from "./content/YoutubeGallery";
 import Feature from "./content/Feature";
 import ReturnAndRefund from "./content/ReturnAndRefund";
-import Registration from "./content/Registration-form";
+
+import RegistrationDetails from "./content/RegistrationDetails";
 
 export const Home = () => {
   return (
@@ -26,7 +27,8 @@ export const Home = () => {
       <YoutubeGallery />
       <Facility />
       <ReturnAndRefund/>
-      <Registration/>
+     
+      <RegistrationDetails/>
     </>
   );
 };

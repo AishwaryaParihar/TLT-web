@@ -1,0 +1,30 @@
+/* .container {
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} */
+
+.formBorder {
+  border:  2px solid red;
+  border-radius: 20px;
+  margin-left: 700px;
+  margin-right: 700px;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size:22px ;
+  }
+
+  @media ( max-width:480px)
+  {
+    .formBorder {
+      border:  2px solid red;
+      border-radius: 20px;
+     font-weight: 500;
+      font-size:22px ;
+      }
+  } 
