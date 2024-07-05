@@ -13,18 +13,10 @@ const Footer = () => {
     ];
 
     const legalLinks = [
-<<<<<<< HEAD
-        { name: 'Privacy Policy', href: '/privacy-policy' },
-        { name: 'Return & Refund Policy', href: '#' },
-        { name: 'Terms & Conditions', href: '#' },
-        { name: 'Contact Support', href: '#' },
-        { name: 'Return Refund', href: '/Return-Refund'}
-=======
         { name: 'Privacy Policy', to: '/privacy-policy' },
         { name: 'Return & Refund Policy', to: '#' },
         { name: 'Terms & Conditions', to: '/terms-conditions' },
         { name: 'Contact Support', to: '/contact-support' },
->>>>>>> 0c0103b3c820cef036a0e62381f1b09ed24a11d6
     ];
 
     return (
