@@ -1,22 +1,24 @@
 import React from "react";
 import { cardData } from "../data/visiontext"; // Adjust the import if necessary
-import style from "./MissionVision.module.css"; // Import your CSS module
 
 const MissionVision = () => {
   return (
-    <div className={style.container}>
-      {cardData.map((item, index) => (
-        <div className={style.card} key={index}>
-          <span className={style["card-number"]}>{item.number}</span>
-          <div className={style["card-block"]}>
-            <h2 className={style["card-title"]}>{item.title}</h2>
-            <p className={style["card-description"]}>{item.description}</p>
+    <div className="mx-3 md:mx-20 md:mt-20 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {cardData.map((item, index) => (
+          <div className="p-4 border border-gray-300 rounded-lg" key={index}>
+            <div className="flex items-center">
+              <div className="bg-red-500 w-full h-full rounded-lg overflow-hidden">
+                <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
+              </div>
+              <div className="ml-4">
+                <h2 className="text-xl font-bold">{item.title}</h2>
+                <p className="text-gray-700">{item.description}</p>
+              </div>
+            </div>
           </div>
-          <div className={style["card-image-wrapper"]}>
-            <img src={item.image} alt={item.title} className={style["card-image"]} />
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
