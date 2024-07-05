@@ -1,24 +1,26 @@
 import React from 'react';
-
+import cardImage1 from '../../assets/productImage3.jpg'
+import cardImage2 from '../../assets/productImage4.jpg'
 
 const products = [
   {
     id: 1,
     name: 'MPCJ Paper-2 & CGCJ',
-    href: '#',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+    href: '/MockTestCard',
+    imageSrc: cardImage1,
     imageAlt: "Front of men's Basic Tee in black.",
     subName: 'Translator Material',
-    price: 'Buy Now',
+    price: 'Know More',
   },
   {
     id: 2,
-    name: 'Basic Tee',
-    href: '#',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+    name: 'MPCJ offline mock test series',
+    href: '/MpcjproductCard',
+    imageSrc: cardImage2,
     imageAlt: "Front of men's Basic Tee in black.",
-    subName: 'Black',
-    price: 'Buy Now',
+    subName: 'Test Material',
+    price: 'Know More',
+
   },
 ];
 
@@ -27,7 +29,7 @@ const StudyEssentials = () => {
     <>
       <h1 className="text-6xl font-bold tracking-tight text-red-500 text-center mb-6 text-shadow"><span className="text-black">Our</span> Products</h1>
       <div className="bg-white min-h-auto flex flex-col items-center justify-center mb-16">
-        <div className="mx-auto max-w-2xl px-4 py-4 sm:px-6 sm:py-6 lg:max-w-7xl lg:px-8">
+        <div className="mx-auto max-w-2xl px-3 py-4 sm:px-6 sm:py-6 lg:max-w-7xl lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 gap-x-6 sm:gap-x-10 lg:gap-x-12">
             {products.map((product) => (
               <div key={product.id} className="group relative shadow-lg p-3">
