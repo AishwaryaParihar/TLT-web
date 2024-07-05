@@ -10,32 +10,42 @@ import StudyEssentials from "../StudyEssentials";
 import PrivacyPolicy from "../PrivacyPolicy";
 import TnC from "../TnC"
 import ContactUs from "../content/Contactus";
+import App from "../../App";
 
 
 
 export const router = createBrowserRouter([
+
+
   {
-    path: "/",
-    element: <Home/>,
-  },
-  {
-    path: "/about",
-    element: <About/>,
-  },
-  {
-    path : "/studyEssentials",
-    element : <StudyEssentials/>,
-  },
-  {
-    path : "/privacy-policy",
-    element : <PrivacyPolicy/>,
-  },
-  {
-    path : "/terms-conditions",
-    element : <TnC/>
-  },
-  {
-    path : "/contact-support",
-    element : <ContactUs/>
+    path:"/",
+    element : <App/>,
+    children : [
+      {
+        path: "",
+        element: <Home/>,
+      },
+      {
+        path: "about",
+        element: <About/>,
+      },
+      {
+        path : "study-Essentials",
+        element : <StudyEssentials/>,
+      },
+      {
+        path : "privacy-policy",
+        element : <PrivacyPolicy/>,
+      },
+      {
+        path : "terms-conditions",
+        element : <TnC/>
+      },
+      {
+        path : "contact-support",
+        element : <ContactUs/>
+      }
+    ]
   }
+  
 ]);
