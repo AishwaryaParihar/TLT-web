@@ -2,20 +2,21 @@ import React from 'react';
 import logo from '../assets/TLTlogo.png';
 import Headings from './utiliti/heading/Heading';
 import SocialMedia from './utiliti/SocialMedia/SocialMedia';
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     const helpCenterLinks = [
-        { name: 'Discord Server', href: '#' },
-        { name: 'Twitter', href: '#' },
-        { name: 'Facebook', href: '#' },
-        { name: 'Contact Us', href: '#' },
+        { name: 'Discord Server', to: '#' },
+        { name: 'Twitter', to: '#' },
+        { name: 'Facebook', to: '#' },
+        { name: 'Contact Us', to: '#' },
     ];
 
     const legalLinks = [
-        { name: 'Privacy Policy', href: '/privacy-policy' },
-        { name: 'Return & Refund Policy', href: '#' },
-        { name: 'Terms & Conditions', href: '/terms-conditions' },
-        { name: 'Contact Support', href: '/contact-support' },
+        { name: 'Privacy Policy', to: '/privacy-policy' },
+        { name: 'Return & Refund Policy', to: '#' },
+        { name: 'Terms & Conditions', to: '/terms-conditions' },
+        { name: 'Contact Support', to: '/contact-support' },
     ];
 
     return (
@@ -25,7 +26,7 @@ const Footer = () => {
                     {/* Logo Section */}
                     <div className="md:col-span-1 flex items-center justify-center">
                         <img src={logo} alt="Company Logo" className="h-12 md:h-20" />
-                        <Headings heading={'h6'} style={'uppercase pl-4'}>
+                        <Headings heading={'h6'} style={'uppercase pl-4 text-shadow'}>
                             <span className="text-red-500">tlt </span> judicial <br /> academy
                         </Headings>
                     </div>
@@ -38,7 +39,7 @@ const Footer = () => {
                                 {helpCenterLinks.map((link, index) => (
                                     <li key={index} className="mb-2">
                                         <span className="text-red-500 text-xs"><i className="fa-solid fa-arrow-right-long"></i></span> 
-                                        {" "} <a href={link.href} className="hover:text-red-500">{link.name}</a>
+                                        {" "} <NavLink to={link.to} className="hover:text-red-500">{link.name}</NavLink>
                                     </li>
                                 ))}
                             </ul>
@@ -50,7 +51,7 @@ const Footer = () => {
                                 {legalLinks.map((link, index) => (
                                     <li key={index} className="mb-2">
                                         <span className="text-red-500 text-xs"><i className="fa-solid fa-arrow-right-long"></i></span> 
-                                       {" "} <a href={link.href} className="hover:text-red-500">{link.name}</a>
+                                       {" "} <NavLink to={link.to} className="hover:text-red-500">{link.name}</NavLink>
                                     </li>
                                 ))}
                             </ul>
@@ -65,7 +66,7 @@ const Footer = () => {
                 {/* Divider and Copyright */}
                 <hr className="my-6 border-red-200 sm:mx-auto dark:border-red-700" />
                 <p className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-                    Copyright &copy; {new Date().getFullYear()} <a href="#" className="hover:underline">Thelawtales </a>. All Rights Reserved | <a href="#">made with ❤ by SSS Technologies</a>
+                    Copyright &copy; {new Date().getFullYear()} <a to="#" className="hover:underline">Thelawtales </a>. All Rights Reserved | <a to="#">made with ❤ by SSS Technologies</a>
                 </p>
             </div>
         </footer>
