@@ -17,7 +17,7 @@
   font-size: 41px;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
-  /* background: -webkit-linear-gradient(right, orange, orangered, orange, orangered);     */
+  /* background: -webkit-linear-gradient(right, orange, rgb(239 68 68), orange, rgb(239 68 68));     */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -52,7 +52,7 @@ form .form-row .textarea {
 .textarea textarea:valid ~ label {
   transform: translateY(-20px);
   font-size: 14px;
-  color: orangered;
+  color: rgb(239 68 68);
 }
 .textarea textarea {
   resize: none;
@@ -81,7 +81,7 @@ form .form-row .textarea {
   content: "";
   height: 2px;
   width: 100%;
-  background: orangered;
+  background: rgb(239 68 68);
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.3s ease;
