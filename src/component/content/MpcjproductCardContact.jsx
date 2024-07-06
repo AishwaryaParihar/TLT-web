@@ -4,7 +4,7 @@ import "tailwindcss/tailwind.css";
 
 const MpcjproductCardContact = () => {
   return (
-    <div className="form-container ">
+    <div className="form-container mx-5">
       <div className="form-box flex justify-center items-center min-h-screen ">
         <div className="container-main    p-6 rounded-lg max-w-lg mx-auto">
           <h2 className="text-4xl font-bold  bg-clip-text text-gray-900 text-center mb-6">
@@ -89,12 +89,7 @@ const MpcjproductCardContact = () => {
               >
                 Submit
               </button>
-              <button
-                type="submit"
-                className="relative inline-block text-white bg-gradient-to-r p-4 px-14 from-red-700 to-red-400 hover:from-red-400 hover:to-red-700 font-semibold py-2    rounded-full transition-ease-out "
-              >
-                Reset
-              </button>
+
             </div>
           </form>
         </div>
