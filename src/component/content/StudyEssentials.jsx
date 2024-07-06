@@ -1,6 +1,7 @@
 import React from 'react';
 import cardImage1 from '../../assets/productImage3.jpg'
 import cardImage2 from '../../assets/productImage4.jpg'
+import { NavLink } from 'react-router-dom';
 
 const products = [
   {
@@ -43,10 +44,10 @@ const StudyEssentials = () => {
                 <div className="mt-4 flex justify-between">
                   <div>
                     <h3 className="text-lg font-semibold text-black">
-                      <a href={product.href}>
+                      <NavLink to={`/study-Essentials/${(product.name)}`}>
                         <span aria-hidden="true" className="absolute inset-0"></span>
                         {product.name}
-                      </a>
+                      </NavLink>
                     </h3>
                     <p className="mt-1 text-sm text-red-500 font-bold">{product.subName}</p>
                   </div>

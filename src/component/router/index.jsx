@@ -13,6 +13,7 @@ import ContactUs from "../content/Contactus";
 import App from "../../App";
 import MpcjproductCard from "../content/MpcjproductCard";
 import MockTestCard from "../content/MockTestCard";
+import ReturnAndRefund from "../content/ReturnAndRefund";
 
 
 
@@ -20,44 +21,50 @@ export const router = createBrowserRouter([
 
 
   {
-    path:"/",
-    element : <App/>,
-    children : [
+    path: "/",
+    element: <App />,
+    children: [
       {
         path: "",
-        element: <Home/>,
+        element: <Home />,
       },
       {
         path: "about",
-        element: <About/>,
+        element: <About />,
       },
       {
-        path : "study-Essentials",
-        element : <StudyEssentials/>,
-        children : [
-          {
-          path : "MpcjproductCard",
-          element : <MpcjproductCard/>,
-        },
-          {
-          path : "MockTestCard",
-          element : <MockTestCard/>,
-        }
-        ],
+        path: "study-Essentials",
+        element: <StudyEssentials />,
       },
       {
-        path : "privacy-policy",
-        element : <PrivacyPolicy/>,
+        path: "study-Essentials/:id",
+        element: <MpcjproductCard />,
       },
       {
-        path : "terms-conditions",
-        element : <TnC/>
+        path: "MockTestCard",
+        element: <MockTestCard />,
+      } ,
+      {
+        path: "privacy-policy",
+        element: <PrivacyPolicy />,
       },
       {
-        path : "contact-support",
-        element : <ContactUs/>
+        path: "terms-conditions",
+        element: <TnC />
+      },
+      {
+        path: "contact-support",
+        element: <ContactUs />
+      },
+      {
+        path:'return-refund',
+        element:<ReturnAndRefund/>
+      },
+      {
+      path: 'empowerment',
+     element: '',
       }
     ]
   }
-  
+
 ]);
