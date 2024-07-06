@@ -7,7 +7,7 @@ const products = [
   {
     id: 1,
     name: 'MPCJ Paper-2 & CGCJ',
-    href: 'MockTestCard',
+    href: 'MpcjproductCard',
     imageSrc: cardImage1,
     imageAlt: "Front of men's Basic Tee in black.",
     subName: 'Translator Material',
@@ -16,7 +16,7 @@ const products = [
   {
     id: 2,
     name: 'MPCJ offline mock test series',
-    href: 'MpcjproductCard',
+    href: 'MockTestCard',
     imageSrc: cardImage2,
     imageAlt: "Front of men's Basic Tee in black.",
     subName: 'Test Material',

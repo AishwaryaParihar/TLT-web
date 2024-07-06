@@ -37,11 +37,11 @@ export const router = createBrowserRouter([
         element: <StudyEssentials />,
       },
       {
-        path: "study-Essentials/MockTestCard",
+        path: "study-Essentials/MpcjproductCard",
         element: <MpcjproductCard />,
       },
       {
-        path: "study-Essentials/MpcjproductCard",
+        path: "study-Essentials/MockTestCard",
         element: <MockTestCard />,
       },
       {
