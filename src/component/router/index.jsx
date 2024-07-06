@@ -11,6 +11,8 @@ import PrivacyPolicy from "../PrivacyPolicy";
 import TnC from "../TnC"
 import ContactUs from "../content/Contactus";
 import App from "../../App";
+import MpcjproductCard from "../content/MpcjproductCard";
+import MockTestCard from "../content/MockTestCard";
 
 
 
@@ -32,6 +34,16 @@ export const router = createBrowserRouter([
       {
         path : "study-Essentials",
         element : <StudyEssentials/>,
+        children : [
+          {
+          path : "MpcjproductCard",
+          element : <MpcjproductCard/>,
+        },
+          {
+          path : "MockTestCard",
+          element : <MockTestCard/>,
+        }
+        ],
       },
       {
         path : "privacy-policy",

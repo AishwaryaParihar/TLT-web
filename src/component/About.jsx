@@ -7,7 +7,7 @@ import MissionVision from "./content/MissionVision";
 const About = () => {
   return (
     <div>
-     <Breadcrumbs>
+     <Breadcrumbs   heading={'About'}>
      <AboutFirm />
      <MissionVision/>
      <Mentor />
