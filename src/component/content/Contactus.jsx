@@ -7,7 +7,7 @@ const ContactUs = () => {
     <div className="form-container ">
       <div className="form-box flex justify-center items-center min-h-screen">
         <div className="container-main shadow p-6 rounded-lg max-w-lg mx-auto">
-          <h2 className="text-4xl font-bold text-transparent bg-clip-text text-primary text-center mb-6">Grt In Touch</h2>
+          <h2 className="text-4xl font-bold text-transparent bg-clip-text text-shadow text-primary text-center mb-6">Get In Touch</h2>
           <form action="#">
             <div className="form-row flex space-x-4 mb-6">
               <div className="input-data w-full relative">
@@ -45,9 +45,7 @@ const ContactUs = () => {
                 <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-700 border-t-0 border-x-0   dark:border-red-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500">
                   <option></option>
                   <option>India</option>
-                  <option>Canada</option>
-                  <option>France</option>
-                  <option>Germany</option>
+                  
                 </select>
                 {/* <input
                   type="tel"
