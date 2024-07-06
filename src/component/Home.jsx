@@ -10,7 +10,7 @@ import Bestfeaturs from "./content/Bestfeaturs";
 import YoutubeGallery from "./content/YoutubeGallery";
 import Feature from "./content/Feature";
 import ReturnAndRefund from "./content/ReturnAndRefund";
-
+import EmpowermentBatch from "./content/Empowerment-batch"
 import RegistrationDetails from "./content/RegistrationDetails";
 
 export const Home = () => {
@@ -27,7 +27,7 @@ export const Home = () => {
       <YoutubeGallery />
       <Facility />
       <ReturnAndRefund/>
-     
+      <EmpowermentBatch/>
       <RegistrationDetails/>
     </>
   );
