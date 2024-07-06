@@ -7,7 +7,7 @@ const products = [
   {
     id: 1,
     name: 'MPCJ Paper-2 & CGCJ',
-    href: '/MockTestCard',
+    href: 'MockTestCard',
     imageSrc: cardImage1,
     imageAlt: "Front of men's Basic Tee in black.",
     subName: 'Translator Material',
@@ -16,7 +16,7 @@ const products = [
   {
     id: 2,
     name: 'MPCJ offline mock test series',
-    href: '/MpcjproductCard',
+    href: 'MpcjproductCard',
     imageSrc: cardImage2,
     imageAlt: "Front of men's Basic Tee in black.",
     subName: 'Test Material',
@@ -44,7 +44,7 @@ const StudyEssentials = () => {
                 <div className="mt-4 flex justify-between">
                   <div>
                     <h3 className="text-lg font-semibold text-black">
-                      <NavLink to={`/study-Essentials/${(product.name)}`}>
+                      <NavLink to={`/study-Essentials/${(product.href)}`}>
                         <span aria-hidden="true" className="absolute inset-0"></span>
                         {product.name}
                       </NavLink>
