@@ -4,7 +4,7 @@ import { data } from "../data/mentor";
 
 const Mentor = () => {
   return (
-    <section className="mx-3 md:mx-20 md:mt-20 mt-10">
+    <section className="mx-3 md:mx-20 md:my-20 mt-y0">
       <div className="flex flex-wrap gap-5 justify-center items-center">
         <div className="flex flex-wrap flex-col justify-center items-center">
           <div className="full-border">

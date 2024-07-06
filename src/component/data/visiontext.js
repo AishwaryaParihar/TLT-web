@@ -1,6 +1,7 @@
 import visionImg from "../../assets/gif/shared-vision.png"
-import ideaImg from "../../assets/gif/lightbulb.png"
-import missionImg from "../../assets/gif/target.png"
+import ideaImg from "../../assets/gif/idea.png"
+import missionImg from "../../assets/gif/targeting.png"
+import pathwayImg from "../../assets/gif/customer-behavior.png"
 export const cardData = [
   {
     title: "Vision",
@@ -21,9 +22,9 @@ export const cardData = [
     image: ideaImg,
   },
   {
-    title: "Brand strategy",
+    title: "Pathway",
     description:
-      "Develop a powerful brand identity with our strategic planning. We provide tailored solutions that encompass market research, brand voice, and visual storytelling to position you at the forefront of your industry.",
-    image: "",
+      "In the pursuit of judicial excellence, our academy will emerge as a beacon of guidance and support for aspiring legal luminaries. With a clear vision, a steadfast mission, and a well-defined pathway, our academy empowers students to realize their full potential, navigate the intricacies of the legal profession, and uphold the principles of justice with unwavering dedication. Aspiring judges and legal professionals who embark on this transformative journey emerge not only as proficient legal minds but also as custodians of justice, poised to make a meaningful impact on society.",
+    image: pathwayImg,
   },
 ];
