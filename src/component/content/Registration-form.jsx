@@ -2,12 +2,12 @@ import React from 'react';
 
 const RegistrationForm = () => {
   return (
-    <div className="text-justify mx-auto mx-6 sm:mx-20 sm:px-20 mt-10">
+    <div className="text-justify mx-auto mx-6 sm:mx-10 sm:px-20 mt-5">
       <div>
-        <h2 className="text-white bg-red-500 text-center text-3xl py-3 px-4 sm:px-10">SUPER 30 FAST TRACK BATCH</h2>
+        <h2 className="text-white bg-red-500 text-center text-3xl py-4 px-4 sm:px-10">SUPER 30 FAST TRACK BATCH</h2>
       </div>
       <form className='mt-10'>
-        <div className="space-y-6 sm:px-10">
+        <div className="space-y-8 sm:px-10">
           <div className='flex items-center'>
             <label htmlFor="choose-picture" className="block text-left font-bold text-lg w-1/5 ">Choose picture:</label>
             <input type="file" name="choose-picture" id="choose-picture" className="border rounded w-full p-2"/>

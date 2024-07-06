@@ -10,7 +10,7 @@ const Registration = () => {
         <h3 className='text-black text-1xl font-bold sm:font-semibold sm:text-3xl mt-3'>2ND FLOOR, JYOTI CINEPLEX, MP NAGAR</h3>
         <h3 className='text-black text-1xl font-bold sm:font-semibold sm:text-3xl mt-3'>ZONE 1, BHOPAL, MOB: 9238176156</h3>
         <h1  className={styles.formBorder} >REGISTRATION FORM</h1>
-        <h3  className='text-black text-1xl font-bold sm:font-semibold  sm:text-3xl mt-3'>2024-2025 Session</h3>
+        <h3  className='text-black text-1xl font-bold sm:font-semibold  sm:text-3xl mt-6'>2024-2025 Session</h3>
       </div>
     </div>
   );
