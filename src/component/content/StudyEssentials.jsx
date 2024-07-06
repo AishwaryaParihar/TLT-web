@@ -51,7 +51,7 @@ const StudyEssentials = () => {
                     </h3>
                     <p className="mt-1 text-sm text-red-500 font-bold">{product.subName}</p>
                   </div>
-                  <p className="text-sm font-medium bg-primary px-10 pt-4 rounded-lg text-white">{product.price}</p>
+                  <p className="text-sm font-medium bg-primary ms-1 px-10 pt-4 rounded-lg text-white">{product.price}</p>
                 </div>
               </div>
             ))}
