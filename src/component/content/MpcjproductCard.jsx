@@ -3,6 +3,7 @@ import cardImage1 from '../../assets/productImage3.jpg';
 import cardImage2 from '../../assets/productImage4.jpg';
 import cardImage3 from '../../assets/productImage.jpg';
 import cardImage4 from '../../assets/productImage2.jpg';
+import MpcjproductCardContact from './MpcjproductCardContact';
 
 const products = [
   {
@@ -12,7 +13,7 @@ const products = [
     imageSrc: cardImage1,
     imageAlt: "Front of men's Basic Tee in black.",
     subName: 'Translator Material',
-    price: 'Know More',
+    price: 'Buy Now',
   },
   {
     id: 2,
@@ -21,7 +22,7 @@ const products = [
     imageSrc: cardImage2,
     imageAlt: "Front of men's Basic Tee in black.",
     subName: 'Test Material',
-    price: 'Know More',
+    price: 'Buy Now',
   },
   {
     id: 3,
@@ -30,7 +31,7 @@ const products = [
     imageSrc: cardImage3,
     imageAlt: "Front of men's Basic Tee in black.",
     subName: 'Study Material',
-    price: 'Know More',
+    price: 'Buy Now',
   },
   {
     id: 4,
@@ -39,19 +40,20 @@ const products = [
     imageSrc: cardImage4,
     imageAlt: "Front of men's Basic Tee in black.",
     subName: 'Test Series',
-    price: 'Know More',
+    price: 'Buy Now',
   },
 ];
 
 const MpcjproductCard = () => {
   return (
+    <>
     <div className="bg-white">
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <h2 className="text-2xl font-bold tracking-tight text-gray-900">Our Products</h2>
+        <h2 className="text-5xl font-bold tracking-tight text-gray-900">Our <span className="text-red-500 ">Courses</span></h2>
 
         <div className="mt-6  grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {products.map((product) => (
-            <div key={product.id} className="group relative">
+            <div key={product.id} className="group relative rounded-md shadow-md p-3">
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden shadow-xl rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
                 <img
                   src={product.imageSrc}
@@ -76,6 +78,8 @@ const MpcjproductCard = () => {
         </div>
       </div>
     </div>
+<MpcjproductCardContact />
+    </>
   );
 };
 
