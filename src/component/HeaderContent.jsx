@@ -3,9 +3,7 @@ import Headings from './utiliti/heading/Heading';
 import Button from './utiliti/buttons/Button';
 
 export const HeaderContent = ({ isHome }) => {
-  const handleClick = () => {
-    alert('Button clicked!');
-  };
+
 
   return (
     <div>
@@ -24,19 +22,17 @@ export const HeaderContent = ({ isHome }) => {
               Far far away, behind the word mountains, far from the countries Vokalia <br /> and Consonantia, there live the blind texts.
             </p>
             <div className="flex gap-2 py-3">
-              <Button onClick={handleClick} color="red">
+              <Button color="red">
                 get started now <i className="fa-solid fa-arrow-right"></i>
               </Button>
-              <Button onClick={handleClick} color="white">
+              <Button  color="white">
                 view course <i className="fa-solid fa-arrow-right"></i>
               </Button>
             </div>
           </div>
         </div>
       ) : (
-        <div>
-          {/* Additional content if needed for non-home pages */}
-        </div>
+      ""
       )}
     </div>
   );
