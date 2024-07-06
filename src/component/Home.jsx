@@ -6,7 +6,7 @@ import Bestfeaturs from "./content/Bestfeaturs";
 import YoutubeGallery from "./content/YoutubeGallery";
 import Feature from "./content/Feature";
 import AboutUs from "./content/Aboutus";
-
+import  DropDown  from "./content/DropDown"
 
 export const Home = () => {
   return (
@@ -18,6 +18,7 @@ export const Home = () => {
       <YoutubeGallery />
       <Facility />
       <Testimony />
+      <DropDown />
     </>
   );
 };
