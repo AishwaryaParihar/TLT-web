@@ -39,9 +39,9 @@ const freedata = [
 const Fee = () => {
   return (
     <>
-      <div className="flex flex-col justify-items-center items-center">
+      <div className="flex flex-col justify-items-center items-center p-5 md:p-20 ">
         <div className="flex flex-col justify-items-start self-start md:ms-16">
-          <Headings heading={"h2"}>MPCJ and CGCJ 2024 (Mains)</Headings>
+          <Headings heading={"h2"} style={"text-shadow"}> <span className="text-primary">MPCJ</span> and <span className="text-primary">CGCJ</span> 2024 (Mains)</Headings>
 
           <Headings heading={"h3"}>Exclusive Practice Material</Headings>
 
