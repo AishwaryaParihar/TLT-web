@@ -1,32 +1,23 @@
 import React from "react";
 import Testimony from "./content/Testimony";
-import FeaturesCard from "./content/FeaturesCard";
-import Aboutus from "./content/Aboutus";
-import Contactus from "./content/Contactus";
-// import ListItemHoverEffect from './content/ListItemHoverEffect'
 import Facility from "./content/Facility";
 import Fee from "./content/Fee";
 import Bestfeaturs from "./content/Bestfeaturs";
 import YoutubeGallery from "./content/YoutubeGallery";
 import Feature from "./content/Feature";
-import ReturnAndRefund from "./content/ReturnAndRefund";
-import Registration from "./content/Registration-form";
+import AboutUs from "./content/Aboutus";
+
 
 export const Home = () => {
   return (
     <>
       <Bestfeaturs />
-      <Testimony />
       <Feature />
-      {/* <FeaturesCard/> */}
-      {/* <Aboutus /> */}
-
-      <Contactus />
+      <AboutUs/>
       <Fee />
       <YoutubeGallery />
       <Facility />
-      <ReturnAndRefund/>
-      <Registration/>
+      <Testimony />
     </>
   );
 };
