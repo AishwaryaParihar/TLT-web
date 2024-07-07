@@ -50,9 +50,9 @@ const Testimony = () => {
     return index === middleSlideIndex;
   };
 
-  return (
+  return (  
     <div className="m-3 md:m-20">
-      <Headings heading={"h6"}>TESTIMONIALS</Headings>
+      <Headings heading={"h5"}>Testimonials</Headings>
       <Headings heading={"h1"}>What They Say</Headings>
       <Slider {...settings} className="testimony-slider">
         {data.map((item, index) => (
