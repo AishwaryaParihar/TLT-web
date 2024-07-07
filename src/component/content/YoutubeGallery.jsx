@@ -51,25 +51,26 @@ const YoutubeGallery = () => {
   };
 
   return (
-    <section className="">
-      <div className="mx-3 md:mx-20 py-12">
-        <Headings heading={"h5"} style={"text-shadow"}>From our</Headings>
-        <Headings heading={"h2"} style={"text-shadow"}>Youtube <span className="text-primary">Gallery</span></Headings>
-        <Slider {...settings} className="testimony-slider mt-10">
+    <section className="bg-gray-100">
+      <div className="m-3 md:m-20 py-12">
+        <Headings heading={"h6"} style={"text-shadow"}>FROM OUR</Headings>
+        <Headings heading={"h1"} style={"text-shadow"}>Youtube <span className="text-primary">Gallery</span></Headings>
+        <Slider {...settings} className="testimony-slider mt-20">
           {videos.map((video, index) => (
             <div
               key={video.id}
-              className={` ${
+              className={`px-1 md:px-2 mb-10 ${
                 isMiddleSlide(index) ? "scale-110" : "scale-100"
               } transition-transform duration-300`}
             >
-              <div className="h-[250px] mx-3 p-3 md:p-4">
+              <div className="h-[300px] rounded-lg p-3 md:p-4">
                 <iframe
                   title={video.title}
                   width="100%"
                   height="100%"
                   src={video.embedUrl}
                   allowFullScreen
+                  className="rounded-2xl"
                 ></iframe>
               </div>
             </div>

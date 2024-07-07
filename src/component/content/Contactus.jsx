@@ -47,7 +47,12 @@ const ContactUs = () => {
                   <option>India</option>
                   
                 </select>
-                
+                {/* <input
+                  type="tel"
+                  className="block w-full focus:border-red-500 outline-none"
+                  required
+                />
+                <label className="absolute left-0 bottom-1 text-gray-500 transition-all">Contact No.</label> */}
                 <div className="underline"></div>
               </div>
             </div>
@@ -74,7 +79,12 @@ const ContactUs = () => {
                   <option>Accommodation</option>
                   <option>Other</option>
                 </select>
-               
+                {/* <input
+                  type="tel"
+                  className="block w-full focus:border-red-500 outline-none"
+                  required
+                />
+                <label className="absolute left-0 bottom-1 text-gray-500 transition-all">Contact No.</label> */}
                 <div className="underline"></div>
               </div>
             </div>

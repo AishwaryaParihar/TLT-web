@@ -50,10 +50,10 @@ const Testimony = () => {
     return index === middleSlideIndex;
   };
 
-  return (  
-    <div className="mx-3 md:mx-20 mt-10 md:my-20">
-      <Headings heading={"h5"} style={"text-shadow"}>Testimonials</Headings>
-      <Headings heading={"h2"} style={"text-shadow"}>What They <span className="text-primary text-shadow">Say</span> </Headings>
+  return (
+    <div className="m-3 md:m-20">
+      <Headings heading={"h6"}>TESTIMONIALS</Headings>
+      <Headings heading={"h1"}>What They Say</Headings>
       <Slider {...settings} className="testimony-slider">
         {data.map((item, index) => (
           <div
@@ -63,9 +63,9 @@ const Testimony = () => {
             key={index}
           >
             <div
-              className={`h-[325px] ${
+              className={`h-[360px] ${
                 isMiddleSlide(index) ? "bg-primary text-white" : "bg-gray-100"
-              } rounded-2xl p-5 md:p-6 gap-5 lg:gap-8 mt-10 transition-all duration-300`}
+              } rounded-2xl p-5 md:p-8 gap-5 lg:gap-8 mt-10 transition-all duration-300`}
             >
               <div className="flex flex-col items-center  text-justify">
                 <img

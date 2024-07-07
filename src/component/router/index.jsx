@@ -14,6 +14,8 @@ import App from "../../App";
 import MpcjproductCard from "../content/MpcjproductCard";
 import MockTestCard from "../content/MockTestCard";
 import ReturnAndRefund from "../content/ReturnAndRefund";
+import EmpowermentBatch from "../content/Empowerment-batch";
+import RegistrationDetails from "../content/RegistrationDetails";
 
 
 
@@ -62,8 +64,12 @@ export const router = createBrowserRouter([
       },
       {
       path: 'empowerment',
-     element: '',
-      }
+     element: <EmpowermentBatch/>
+      },
+      {
+      path: 'fastTrack',
+       element: <RegistrationDetails/>
+        }
     ]
   }
 

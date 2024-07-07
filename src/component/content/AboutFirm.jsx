@@ -20,7 +20,7 @@ const AboutFirm = () => {
         </div>
 
         <div className="w-full md:w-[500px] partial-border mt-10 md:mt-12">
-          <Headings heading={"h2"} style={"text-shadow"}>About <span className="text-primary text-shadow">TLT</span></Headings>
+          <Headings heading={"h1"}>About <span className="text-primary">TLT</span></Headings>
           <div className="md:mt-10 mt-5 text-justify">
             {data.desc}
           </div>
