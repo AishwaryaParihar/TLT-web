@@ -1,6 +1,7 @@
 import React from "react";
 import Headings from "../utiliti/heading/Heading";
 import writtenImg from "../../assets/written.jpg";
+import MpcjContactForm from "./MpcjContactForm";
 
 const MockTestCard = () => {
   return (
@@ -11,21 +12,28 @@ const MockTestCard = () => {
       </Headings>
       <div className="flex flex-col md:flex-row mt-10">
         <div className="md:w-1/2 space-y-4">
-          <Headings heading={"h6"}>Total 14 Offline Mock (3Hrs Each)</Headings>
+          <Headings heading={"h6"}><span className="text-red-500 text-xs mr-3">
+          <i className="fa-solid fa-arrow-right-long"></i></span>Total 14 Offline Mock (3Hrs Each)</Headings>
           <ul className="list-disc list-inside ml-5">
             <li>6 Sectional Mocks</li>
             <li>4 Fully Syllabus Mocks</li>
             <li>1 Replica Mock of MPCJ Mains (including all the 4 papers)</li>
           </ul>
-          <Headings heading={"h6"}>Personalised Audio Reviews on Mail by Shubham Sir</Headings>
-          <Headings heading={"h6"}>Instant Paper Evaluation within 3 days</Headings>
-          <Headings heading={"h6"}>Leaderboard Projection after every week</Headings>
-          <Headings heading={"h6"}>In Both Languages Hindi + English</Headings>
+          <Headings heading={"h6"}><span className="text-red-500 text-xs mr-3">
+          <i className="fa-solid fa-arrow-right-long"></i></span>Personalised Audio Reviews on Mail by Shubham Sir</Headings>
+          <Headings heading={"h6"}><span className="text-red-500 text-xs mr-3">
+          <i className="fa-solid fa-arrow-right-long"></i></span>Instant Paper Evaluation within 3 days</Headings>
+          <Headings heading={"h6"}><span className="text-red-500 text-xs mr-3">
+          <i className="fa-solid fa-arrow-right-long"></i></span>Leaderboard Projection after every week</Headings>
+          <Headings heading={"h6"}><span className="text-red-500 text-xs mr-3">
+          <i className="fa-solid fa-arrow-right-long"></i></span>In Both Languages Hindi + English</Headings>
         </div>
         <div className="md:w-1/2 flex justify-center mt-5 md:mt-0">
           <img src={writtenImg} alt="Written Test" className="object-cover" />
         </div>
       </div>
+
+      <MpcjContactForm/>
     </section>
   );
 };
