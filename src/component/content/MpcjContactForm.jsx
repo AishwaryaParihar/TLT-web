@@ -1,6 +1,5 @@
 import React from "react";
 import "tailwindcss/tailwind.css";
-// import './ContactUs.css';
 
 const MpcjContactForm = () => {
   return (
@@ -64,7 +63,7 @@ const MpcjContactForm = () => {
                   class="bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-700 border-t-0 border-x-0   dark:border-red-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500"
                 >
                   <option>
-                    MPCJ Mains Offline Mock Test Series - ₹ 4999{" "}
+                    MPCJ Mains Offline Mock Test Series - ₹ 4999
                   </option>
                 </select>
 

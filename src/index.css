@@ -44,4 +44,7 @@
     }
   }
   
-  
+select option {
+  background-color: #f87171; /* Tailwind's red-400 color */
+  color: white;
+}
