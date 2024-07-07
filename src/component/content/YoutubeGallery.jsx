@@ -53,8 +53,8 @@ const YoutubeGallery = () => {
   return (
     <section className="bg-gray-100">
       <div className="m-3 md:m-20 py-12">
-        <Headings heading={"h6"}>FROM OUR</Headings>
-        <Headings heading={"h1"}>Youtube Gallery</Headings>
+        <Headings heading={"h6"} style={"text-shadow"}>FROM OUR</Headings>
+        <Headings heading={"h1"} style={"text-shadow"}>Youtube <span className="text-primary">Gallery</span></Headings>
         <Slider {...settings} className="testimony-slider mt-20">
           {videos.map((video, index) => (
             <div

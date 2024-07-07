@@ -5,16 +5,15 @@ import FacilityeImage from "./Facility-image";
 const Listsection = () => {
   return (
     <>
-      <h2 className="text-semibold text-5xl text-center hover:text-red-500">
-        Amenities
-      </h2>
-      <div className="flex flex-wrap justify-center border-collapse">
+     
+      <h2 className="text-center font-bold text-4xl text-black mb-8 text-shadow">Amenities</h2>
+      <div className="flex flex-wrap justify-between  sm:mr-20 border-collapse">
         <div className="mt-10 ">
           <ListItemHoverEffect />
         </div>
 
-        <div className="mt-10">
-          <FacilityeImage />
+        <div className="mt-10  ">
+        {/* <FacilityeImage /> */}  
         </div>
       </div>
     </>

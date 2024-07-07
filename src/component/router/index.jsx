@@ -8,24 +8,63 @@ import { Home } from "../Home";
 import About from "../About";
 import StudyEssentials from "../StudyEssentials";
 import PrivacyPolicy from "../PrivacyPolicy";
+import TnC from "../TnC"
+import ContactUs from "../content/Contactus";
+import App from "../../App";
+import MpcjproductCard from "../content/MpcjproductCard";
+import MockTestCard from "../content/MockTestCard";
+import ReturnAndRefund from "../content/ReturnAndRefund";
 
 
 
 export const router = createBrowserRouter([
+
+
   {
     path: "/",
-    element: <Home/>,
-  },
-  {
-    path: "/about",
-    element: <About/>,
-  },
-  {
-    path : "/studyEssentials",
-    element : <StudyEssentials/>,
-  },
-  {
-    path : "/privacy-policy",
-    element : <PrivacyPolicy/>,
-  },
+    element: <App />,
+    children: [
+      {
+        path: "",
+        element: <Home />,
+      },
+      {
+        path: "about",
+        element: <About />,
+      },
+      {
+        path: "study-Essentials",
+        element: <StudyEssentials />,
+      },
+      {
+        path: "study-Essentials/MpcjproductCard",
+        element: <MpcjproductCard />,
+      },
+      {
+        path: "study-Essentials/MockTestCard",
+        element: <MockTestCard />,
+      },
+      {
+        path: "privacy-policy",
+        element: <PrivacyPolicy />,
+      },
+      {
+        path: "terms-conditions",
+        element: <TnC />
+      },
+      {
+        path: "contact-support",
+        element: <ContactUs />
+      },
+      {
+        path:'return-refund',
+        element:<ReturnAndRefund/>
+      },
+      {
+      path: 'empowerment',
+     element: '',
+      }
+    ]
+  }
+
 ]);

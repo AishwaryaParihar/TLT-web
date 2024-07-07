@@ -3,7 +3,7 @@ import Headings from "../utiliti/heading/Heading";
 import { data } from "../data/aboutFirm";
 const AboutFirm = () => {
   return (
-    <section className="mx-3 md:mx-10">
+    <section className="mx-3 md:mx-10 mb-20">
       <div className="flex flex-wrap justify-evenly gap-10 items-center relative ">
         <div className="flex flex-wrap justify-center gap-3">
           <div className="flex flex-wrap flex-col md:gap-3 gap-3 md:mt-10 mt-[110px]">
