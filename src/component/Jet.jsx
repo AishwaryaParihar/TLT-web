@@ -10,7 +10,7 @@ import ThankYou from "./content/ThankYou";
 
 const Jet = () => {
   return (
-    <BrowserRouter>
+
       <div className="bg-white sm:w-[79rem]  w-[100%] sm:h-[40rem]  h-[44rem] mt-[100px] sm:mt-[0px] rounded-xl shadow-xl p-4 flex flex-col sm:flex sm:flex-row justify-between">
         <Sidebar />
         <Routes>
@@ -23,7 +23,7 @@ const Jet = () => {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    
   );
 };
 

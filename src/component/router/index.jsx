@@ -1,14 +1,11 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home } from "../Home";
 import About from "../About";
 import StudyEssentials from "../StudyEssentials";
 import PrivacyPolicy from "../PrivacyPolicy";
-import TnC from "../TnC"
+import TnC from "../TnC";
 import ContactUs from "../content/Contactus";
 import App from "../../App";
 import MpcjproductCard from "../content/MpcjproductCard";
@@ -16,12 +13,9 @@ import MockTestCard from "../content/MockTestCard";
 import ReturnAndRefund from "../content/ReturnAndRefund";
 import EmpowermentBatch from "../content/Empowerment-batch";
 import RegistrationDetails from "../content/RegistrationDetails";
-
-
+import Jet from "../Jet";
 
 export const router = createBrowserRouter([
-
-
   {
     path: "/",
     element: <App />,
@@ -52,25 +46,33 @@ export const router = createBrowserRouter([
       },
       {
         path: "terms-conditions",
-        element: <TnC />
+        element: <TnC />,
       },
       {
         path: "contact-support",
-        element: <ContactUs />
+        element: <ContactUs />,
       },
       {
-        path:'return-refund',
-        element:<ReturnAndRefund/>
+        path: "return-refund",
+        element: <ReturnAndRefund />,
       },
       {
-      path: 'empowerment',
-     element: <EmpowermentBatch/>
+        path: "empowerment",
+        element: <EmpowermentBatch />,
       },
       {
-      path: 'fastTrack',
-       element: <RegistrationDetails/>
-        }
-    ]
-  }
+        path: "fastTrack",
+        element: <RegistrationDetails />,
+      },
+      {
+        path: "jet",
+        element: <Jet/>,
+        // children:[
+        //   {
 
+        //   }
+        // ]
+      },
+    ],
+  },
 ]);
