@@ -6,7 +6,7 @@ function Whatshap() {
   return (
    <div>
       {" "}
-      <a target="_blank" href="https://wa.me/+918602440712">
+      <a target="_blank" href="https://wa.me/+919238176156">
         <img src={Whatsapp} className="whatsapp-img" alt="" />{" "}
       </a>
     </div>
