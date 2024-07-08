@@ -50,7 +50,7 @@ const Documents = () => {
               </label>
               <input
                 onChange={(e) => setPhoto(e.target.value)}
-                className={` ${
+                className={` jinput ${
                   photoAlert
                     ? "focus:outline-primary-strawberryRed"
                     : "focus:outline-primary-marineBlue"
@@ -73,7 +73,7 @@ const Documents = () => {
               </label>
               <input
                 onChange={(e) => setAddhar(e.target.value)}
-                className={` ${
+                className={` jinput ${
                   addharAlert
                     ? "focus:outline-primary-strawberryRed"
                     : "focus:outline-primary-marineBlue"
@@ -82,7 +82,7 @@ const Documents = () => {
                 placeholder="city"
               />
               <span
-                className={`${
+                className={` jinput ${
                   addharAlert ? "inline" : "hidden"
                 } text-primary-strawberryRed font-[500] absolute top-[112px] right-[360px]`}
               >
@@ -100,7 +100,7 @@ const Documents = () => {
             </button>
 
             <button
-              className="bg-primary-marineBlue text-white border-0 rounded-md px-6 py-3 transition-all duration-300 hover:opacity-75"
+              className="bg-primary text-white border-0 rounded-md px-6 py-3 transition-all duration-300 hover:opacity-75"
               type="sumbit"
             >
               Next Step

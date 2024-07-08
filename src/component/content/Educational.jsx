@@ -72,7 +72,7 @@ const Educational = () => {
                 </label>
                 <input
                   onChange={(e) => setDegree(e.target.value)}
-                  className={`${
+                  className={` jinput ${
                     degreeAlert
                       ? "focus:outline-primary-strawberryRed"
                       : "focus:outline-primary-marineBlue"
@@ -93,7 +93,7 @@ const Educational = () => {
                 </label>
                 <input
                   onChange={(e) => setCollege(e.target.value)}
-                  className={`${
+                  className={` jinput ${
                     collegeAlert
                       ? "focus:outline-primary-strawberryRed"
                       : "focus:outline-primary-marineBlue"
@@ -116,7 +116,7 @@ const Educational = () => {
                 </label>
                 <input
                   onChange={(e) => setYear(e.target.value)}
-                  className={`${
+                  className={` jinput ${
                     yearAlert
                       ? "focus:outline-primary-strawberryRed"
                       : "focus:outline-primary-marineBlue"
@@ -137,7 +137,7 @@ const Educational = () => {
                 </label>
                 <input
                   onChange={(e) => setMyear(e.target.value)}
-                  className={`${
+                  className={` jinput ${
                     myearAlert
                       ? "focus:outline-primary-strawberryRed"
                       : "focus:outline-primary-marineBlue"
@@ -160,7 +160,7 @@ const Educational = () => {
               </label>
               <input
                 onChange={(e) => setmud(e.target.value)}
-                className={`w-full ${
+                className={`w-full jinput ${
                   mudAlert
                     ? "focus:outline-primary-strawberryRed"
                     : "focus:outline-primary-marineBlue"
@@ -183,7 +183,7 @@ const Educational = () => {
               </button>
 
               <button
-                className="bg-primary-marineBlue text-white border-0 rounded-md px-6 py-3 transition-all duration-300 hover:opacity-75"
+                className="bg-primary text-white border-0 rounded-md px-6 py-3 transition-all duration-300 hover:opacity-75"
                 type="submit"
               >
                 Next Step
