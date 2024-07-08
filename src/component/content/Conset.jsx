@@ -24,7 +24,7 @@ const Conset = () => {
       setrequirdAlert(false);
     }
     if (annualincome !== "" && required !== "") {
-      navigate("/thankyou");
+      navigate("/jet/thankyou");
     } else {
       alert("Please fill in all fields");
     }
@@ -46,7 +46,7 @@ const Conset = () => {
                 </label>
                 <input
                   onChange={(e) => setAnualincome(e.target.value)}
-                  className={`${
+                  className={` jinput ${
                     anuualAlert
                       ? "focus:outline-primary-strawberryRed"
                       : "focus:outline-primary-marineBlue"
@@ -69,7 +69,7 @@ const Conset = () => {
                   <label className="flex justify-center items-center text-primary-marineBlue font-medium mb-2">
                     <input
                       onChange={(e) => setRequird(e.target.value)}
-                      className={`${
+                      className={` jinput ${
                         requirdAlert
                           ? "focus:outline-primary-strawberryRed"
                           : "focus:outline-primary-marineBlue"
@@ -89,7 +89,7 @@ const Conset = () => {
                   <label className="flex justify-center items-center text-primary-marineBlue font-medium mb-2 ml-5">
                     <input
                       onChange={(e) => setRequird(e.target.value)}
-                      className={`${
+                      className={` jinput ${
                         requirdAlert
                           ? "focus:outline-primary-strawberryRed"
                           : "focus:outline-primary-marineBlue"
@@ -117,10 +117,7 @@ const Conset = () => {
                 Go back
               </button>
 
-              <button
-                className="bg-primary-purplishBlue text-white border-0 rounded-md px-6 py-3 transition-all duration-300 hover:opacity-75"
-                onClick={() => navigate("/jet/thankyou")}
-              >
+              <button className="bg-primary  text-white border-0 rounded-md px-6 py-3 transition-all duration-300 hover:opacity-75">
                 Confirm
               </button>
             </div>

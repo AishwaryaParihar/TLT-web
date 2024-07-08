@@ -48,3 +48,15 @@ select option {
   background-color: #f87171; /* Tailwind's red-400 color */
   color: white;
 }
+
+
+.jinput{
+  width: 90%;
+  height: 40px;
+}
+
+@media (max-width:700px){
+  .jinput{
+  width: 90%;
+  height: 30px;
+}}

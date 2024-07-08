@@ -158,7 +158,7 @@ const Guardiandetails = () => {
               </label>
               <input
                 onChange={(e) => setGuardianname(e.target.value)}
-                className={`${
+                className={` jinput ${
                   guardiannameAlert
                     ? "focus:outline-primary-strawberryRed"
                     : "focus:outline-primary-marineBlue"
@@ -179,7 +179,7 @@ const Guardiandetails = () => {
               </label>
               <input
                 onChange={(e) => setGuardianpro(e.target.value)}
-                className={`${
+                className={` jinput ${
                   guardianproAlert
                     ? "focus:outline-primary-strawberryRed"
                     : "focus:outline-primary-marineBlue"
@@ -204,7 +204,7 @@ const Guardiandetails = () => {
             </button>
 
             <button
-              className="bg-primary-marineBlue text-white border-0 rounded-md px-6 py-3 transition-all duration-300 hover:opacity-75"
+              className="bg-primary text-white  border-0 rounded-md px-6 py-3 transition-all duration-300 hover:opacity-75"
               type="submit"
             >
               Next Step

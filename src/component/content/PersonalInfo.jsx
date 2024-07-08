@@ -83,7 +83,7 @@ const PersonalInfo = () => {
   };
 
   return (
-    <div className="flex row w-full h-full sm:pl-[120px]">
+    <div className="flex row w-full h-full mb-28 sm:pl-[120px]">
       <div className="w-full sm:w-[60%] p-4  pl-[0px]">
         <h1 className="mt-10 text-3xl font-[800] mb-2 text-primary-marineBlue">
           Personal info
@@ -98,18 +98,18 @@ const PersonalInfo = () => {
                 </label>
                 <input
                   onChange={(e) => setName(e.target.value)}
-                  className={`${
+                  className={`jinput ${
                     nameAlert
                       ? "focus:outline-primary-strawberryRed"
                       : "focus:outline-primary-marineBlue"
-                  } mb-3 outline outline-1 outline-neutral-lightGray rounded-[4px] p-3 `}
+                  } outline outline-1 outline-neutral-lightGray rounded-[4px] p-3 `}
                   type="text"
                   placeholder="e.g.Stephen King"
                 />
                 <span
                   className={`${
                     nameAlert ? "inline" : "hidden"
-                  } text-primary-strawberryRed font-[500] absolute right-[10px]`}
+                  } text-primary-strawberryRed font-[500] text-sm `}
                 >
                   This field is required
                 </span>
@@ -120,7 +120,7 @@ const PersonalInfo = () => {
                   Male
                   <input
                     onChange={(e) => setName(e.target.value)}
-                    className={`mx-2 ${
+                    className={`mx-2 jinput ${
                       nameAlert
                         ? "focus:outline-primary-strawberryRed"
                         : "focus:outline-primary-marineBlue"
@@ -133,7 +133,7 @@ const PersonalInfo = () => {
                 <span
                   className={`${
                     nameAlert ? "inline" : "hidden"
-                  } text-primary-strawberryRed font-[500] absolute right-[10px]`}
+                  } text-primary-strawberryRed font-[500] text-sm `}
                 >
                   This field is required
                 </span>
@@ -143,7 +143,7 @@ const PersonalInfo = () => {
                   Female
                   <input
                     onChange={(e) => setName(e.target.value)}
-                    className={`mx-2 ${
+                    className={`mx-2 jinput ${
                       nameAlert
                         ? "focus:outline-primary-strawberryRed"
                         : "focus:outline-primary-marineBlue"
@@ -156,7 +156,7 @@ const PersonalInfo = () => {
                 <span
                   className={`${
                     nameAlert ? "inline" : "hidden"
-                  } text-primary-strawberryRed font-[500] absolute right-[10px]`}
+                  } text-primary-strawberryRed font-[500] text-sm `}
                 >
                   This field is required
                 </span>
@@ -165,7 +165,7 @@ const PersonalInfo = () => {
                   Other
                   <input
                     onChange={(e) => setName(e.target.value)}
-                    className={` mx-2 ${
+                    className={` jinput mx-2 ${
                       nameAlert
                         ? "focus:outline-primary-strawberryRed"
                         : "focus:outline-primary-marineBlue"
@@ -178,7 +178,7 @@ const PersonalInfo = () => {
                 <span
                   className={`${
                     nameAlert ? "inline" : "hidden"
-                  } text-primary-strawberryRed font-[500] absolute right-[10px]`}
+                  } text-primary-strawberryRed font-[500] text-sm `}
                 >
                   This field is required
                 </span>
@@ -192,18 +192,18 @@ const PersonalInfo = () => {
                 </label>
                 <input
                   onChange={(e) => setcategory(e.target.value)}
-                  className={`${
+                  className={` jinput ${
                     categoryAlert
                       ? "focus:outline-primary-strawberryRed"
                       : "focus:outline-primary-marineBlue"
-                  } mb-3 outline outline-1 outline-neutral-lightGray rounded-[4px] p-3 `}
+                  } outline outline-1 outline-neutral-lightGray rounded-[4px] p-3 `}
                   type="text"
                   placeholder="e.g.General"
                 />
                 <span
                   className={`${
                     categoryAlert ? "inline" : "hidden"
-                  } text-primary-strawberryRed font-[500] absolute right-[10px]`}
+                  } text-primary-strawberryRed text-sm `}
                 >
                   This field is required
                 </span>
@@ -215,17 +215,17 @@ const PersonalInfo = () => {
                 </label>
                 <input
                   onChange={(e) => setDOB(e.target.value)}
-                  className={`${
+                  className={` jinput ${
                     dobAlert
                       ? "focus:outline-primary-strawberryRed"
                       : "focus:outline-primary-marineBlue"
-                  } mb-3 outline outline-1 outline-neutral-lightGray rounded-[4px] `}
+                  } outline outline-1 outline-neutral-lightGray rounded-[4px] `}
                   type="date"
                 />
                 <span
                   className={`${
-                    dob ? "inline" : "hidden"
-                  } text-primary-strawberryRed font-[500] absolute right-[10px]`}
+                    dobAlert ? "inline" : "hidden"
+                  } text-primary-strawberryRed text-sm  `}
                 >
                   This field is required
                 </span>
@@ -240,18 +240,18 @@ const PersonalInfo = () => {
                 </label>
                 <input
                   onChange={(e) => setEmail(e.target.value)}
-                  className={`${
+                  className={` jinput ${
                     email
                       ? "focus:outline-primary-strawberryRed"
                       : "focus:outline-primary-marineBlue"
-                  } mb-3 outline outline-1 outline-neutral-lightGray rounded-[4px] p-3 `}
+                  } outline outline-1 outline-neutral-lightGray rounded-[4px] p-3 `}
                   type="email"
                   placeholder="e.g.stephenking@lorem.com"
                 />
                 <span
                   className={`${
                     emailAlert ? "inline" : "hidden"
-                  } text-primary-strawberryRed font-[500] absolute top-[100px] right-[10px]`}
+                  } text-primary-strawberryRed font-[500] text-sm `}
                 >
                   This field is required
                 </span>
@@ -263,18 +263,18 @@ const PersonalInfo = () => {
                 </label>
                 <input
                   onChange={(e) => setNumber(e.target.value)}
-                  className={`${
+                  className={` jinput ${
                     numberAlert
                       ? "focus:outline-primary-strawberryRed"
                       : "focus:outline-primary-marineBlue"
-                  } mb-3 outline outline-1 outline-neutral-lightGray rounded-[4px] p-3 `}
+                  } outline outline-1 outline-neutral-lightGray rounded-[4px] p-3 `}
                   type="text"
                   placeholder="e.g. +1 234 567 890"
                 />
                 <span
                   className={`${
                     numberAlert ? "inline" : "hidden"
-                  } text-primary-strawberryRed font-[500] absolute top-[200px] right-[10px]`}
+                  } text-primary-strawberryRed font-[500] text-sm `}
                 >
                   This field is required
                 </span>
@@ -287,18 +287,18 @@ const PersonalInfo = () => {
               </label>
               <input
                 onChange={(e) => setaddress(e.target.value)}
-                className={` ${
+                className={` jinput ${
                   addressAlert
                     ? "focus:outline-primary-strawberryRed"
                     : "focus:outline-primary-marineBlue"
-                } mb-3 outline outline-1 outline-neutral-lightGray rounded-[4px] w-[95%] p-7 `}
+                } outline outline-1 outline-neutral-lightGray rounded-[4px] w-[95%] p-7 `}
                 type="text"
                 placeholder="e.g.Address"
               />
               <span
                 className={`${
-                  name ? "inline" : "hidden"
-                } text-primary-strawberryRed font-[500] top-[600px]  absolute right-[10px]`}
+                  addressAlert ? "inline" : "hidden"
+                } text-primary-strawberryRed font-[500] text-sm`}
               >
                 This field is required
               </span>
@@ -312,18 +312,18 @@ const PersonalInfo = () => {
                 </label>
                 <input
                   onChange={(e) => setState(e.target.value)}
-                  className={`${
+                  className={` jinput ${
                     StateAlert
                       ? "focus:outline-primary-strawberryRed"
                       : "focus:outline-primary-marineBlue"
-                  } mb-3 outline outline-1 outline-neutral-lightGray rounded-[4px] p-3 `}
+                  } outline outline-1 outline-neutral-lightGray rounded-[4px] p-3 `}
                   type="text"
                   placeholder="State"
                 />
                 <span
-                  className={`${
+                  className={` jinput ${
                     StateAlert ? "inline" : "hidden"
-                  } text-primary-strawberryRed font-[500] absolute top-[100px] right-[10px]`}
+                  } text-primary-strawberryRed font-[500] text-sm `}
                 >
                   This field is required
                 </span>
@@ -335,27 +335,27 @@ const PersonalInfo = () => {
                 </label>
                 <input
                   onChange={(e) => setCity(e.target.value)}
-                  className={`${
+                  className={` jinput ${
                     cityAlert
                       ? "focus:outline-primary-strawberryRed"
                       : "focus:outline-primary-marineBlue"
-                  } mb-3 outline outline-1 outline-neutral-lightGray rounded-[4px] p-3 `}
+                  } outline outline-1 outline-neutral-lightGray rounded-[4px] p-3 `}
                   type="text"
                   placeholder="city"
                 />
                 <span
                   className={`${
                     cityAlert ? "inline" : "hidden"
-                  } text-primary-strawberryRed font-[500] absolute top-[200px] right-[10px]`}
+                  } text-primary-strawberryRed font-[500] text-sm`}
                 >
                   This field is required
                 </span>
               </div>
             </div>
           </div>
-          <div className="flex justify-end items-end mt-[0px] sm:mt-[0px]">
+          <div className="flex justify-end items-end sm:mt-2 ">
             <button
-              className="bg-primary-marineBlue text-white border-0 rounded-md px-6 py-3 transition-all duration-300 hover:opacity-75"
+              className="bg-primary  text-white border-0 rounded-md px-6 py-3 transition-all duration-300 hover:opacity-75"
               type="sumbit"
             >
               Next Step
