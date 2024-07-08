@@ -6,10 +6,11 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   const helpCenterLinks = [
-    { name: "Discord Server", to: "#" },
-    { name: "Twitter", to: "#" },
-    { name: "Facebook", to: "#" },
-    { name: "Contact Us", to: "#" },
+    { name: "Study Essentials", to: "/study-Essentials" },
+    { name: "Empowement Batch", to: "/empowerment" },
+    { name: "Fast Track Batch", to: "/fastTrack" },
+    { name: "JET", to: "/jet/personalInfo" },
+   
   ];
 
   const legalLinks = [
