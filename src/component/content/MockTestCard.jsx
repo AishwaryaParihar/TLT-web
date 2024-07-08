@@ -12,8 +12,8 @@ const MockTestCard = () => {
 
   return (
     <section className="mx-3 md:mx-20 my-20">
-      <Headings heading={"h2"}>
-        <span className="text-primary">MPCJ</span>Mains Offline{" "}
+      <Headings heading={"h2"} style={"text-shadow"}>
+        <span className="text-primary">MPCJ</span> Mains Offline{" "}
         <span className="text-primary">Test Series</span>
       </Headings>
       <div className="flex flex-col md:flex-row mt-5 md:mt-14">

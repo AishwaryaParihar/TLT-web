@@ -52,8 +52,12 @@ const Testimony = () => {
 
   return (
     <div className="m-3 md:m-20">
-      <Headings heading={"h6"}>TESTIMONIALS</Headings>
-      <Headings heading={"h1"}>What They Say</Headings>
+      <Headings heading={"h6"} style={"text-shadow"}>
+        Testimonials
+      </Headings>
+      <Headings heading={"h2"} style={"text-shadow"}>
+        What <span className="text-primary">They</span> Say
+      </Headings>
       <Slider {...settings} className="testimony-slider">
         {data.map((item, index) => (
           <div
@@ -63,7 +67,7 @@ const Testimony = () => {
             key={index}
           >
             <div
-              className={`h-[360px] ${
+              className={`h-[330px] ${
                 isMiddleSlide(index) ? "bg-primary text-white" : "bg-gray-100"
               } rounded-2xl p-5 md:p-8 gap-5 lg:gap-8 mt-10 transition-all duration-300`}
             >

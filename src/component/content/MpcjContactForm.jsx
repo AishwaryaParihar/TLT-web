@@ -7,7 +7,7 @@ const MpcjContactForm = () => {
     <div className="form-container mx-5 md:my-20 my-10">
       <div className="form-box flex justify-center items-center min-h-screen ">
         <div className="container-main    p-6 rounded-lg max-w-lg mx-auto">
-          <h2 className="text-4xl font-bold  bg-clip-text text-gray-900 text-center mb-6">
+          <h2 className="text-4xl font-bold text-shadow bg-clip-text text-gray-900 text-center mb-6">
             Get your MPCJ Mains Offline Mock Test Series,
             <span className="text-red-500">Today!</span>
           </h2>
