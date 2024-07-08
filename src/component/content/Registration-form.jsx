@@ -93,38 +93,38 @@ const RegistrationForm = () => {
         </div>
         <form className="mt-10">
           <div className="space-y-6 sm:px-10">
-            <div className="flex items-center">
+            <div className="sm:flex items-center">
               <label htmlFor="choose-picture" className="block text-left font-bold text-lg sm:w-1/5">
                 Choose picture:
               </label>
               <input type="file" name="choose-picture" id="choose-picture" className="border rounded w-full p-2" />
             </div>
-            <div className="flex items-center">
+            <div className="sm:flex items-center">
               <label htmlFor="name" className="block text-left font-bold text-lg sm:w-1/5">
                 Name:
               </label>
               <input type="text" name="name" id="name" className="border rounded w-full p-2" />
             </div>
-            <div className="flex items-center">
+            <div className="sm:flex items-center">
               <label htmlFor="place-of-birth" className="block text-left font-bold text-lg sm:w-1/5">
                 Place Of Birth:
               </label>
               <input type="text" name="place-of-birth" id="place-of-birth"  className="border rounded w-full p-2" />
             </div>
-            <div className="flex items-center">
+            <div className="sm:flex items-center">
               <label htmlFor="date-of-birth" className="block text-left font-bold text-lg sm:w-1/5">
                 Date Of Birth:
               </label>
               <input type="date" name="date-of-birth" id="date-of-birth" className="border rounded w-full p-2" />
             </div>
-            <div className="flex items-center">
+            <div className="sm:flex items-center">
               <label htmlFor="full-address" className="block text-left font-bold text-lg sm:w-1/5">
                 Full Address:
               </label>
               <input type="text" name="full-address" id="full-address"  className="border rounded w-full p-2" />
             </div>
 
-            <div className="flex items-center">
+            <div className="sm:flex items-center">
               <label htmlFor="state" className="block text-left font-bold text-lg sm:w-1/5">
                 State:
               </label>
@@ -144,7 +144,7 @@ const RegistrationForm = () => {
                 ))}
               </select>
             </div>
-            <div className="flex items-center">
+            <div className="sm:flex items-center">
               <label htmlFor="city" className="block text-left font-bold text-lg sm:w-1/5">
                 City:
               </label>
@@ -166,26 +166,26 @@ const RegistrationForm = () => {
               </select>
             </div>
 
-            <div className="flex items-center">
+            <div className="sm:flex items-center">
               <label htmlFor="pin-code" className="block text-left font-bold text-lg sm:w-1/5">
                 Pin Code:
               </label>
               <input type="number" name="pin-code" id="pin-code" className="border rounded w-full p-2" />
             </div>
-            <div className="flex items-center">
+            <div className="sm:flex items-center">
               <label htmlFor="qualification" className="block text-left font-bold text-lg sm:w-1/5">
                 Qualification:
               </label>
               <input type="text" name="qualification" id="qualification"  className="border rounded w-full p-2" />
             </div>
-            <div className="flex items-center">
+            <div className="sm:flex items-center">
               <label htmlFor="college-university" className="block text-left font-bold text-lg sm:w-1/5">
                 College/University:
               </label>
               <input type="text" name="college-university" id="college-university"  className="border rounded w-full p-2" />
             </div>
        
-            <div className='flex items-center'>
+            <div className='sm:flex items-center'>
          <label className="block text-left font-bold text-lg sm:w-1/6">Pursuing LL.B:</label>
           <div className="flex space-x-4">
             <label>
@@ -196,11 +196,11 @@ const RegistrationForm = () => {
            </label>
            </div>
         </div>
-         <div className='flex items-center'>
+         <div className='sm:flex items-center'>
           <label htmlFor="year-of-passing" className="block text-left font-bold text-lg sm:w-1/5">Year Of Passing:</label>
           <input type="number" name="year-of-passing" id="year-of-passing"  className="border rounded w-full p-2"/>
         </div>
-        <div className='flex items-center'>
+        <div className='sm:flex items-center'>
           <label htmlFor="email" className="block text-left font-bold text-lg sm:w-1/5">Email:</label>
           <input type="email" name="email" id="email"  className="border rounded w-full p-2"/>
           </div>
@@ -284,17 +284,17 @@ const RegistrationForm = () => {
              <input type="radio" name="mains" value="yes" className="mx-2 mt-1"/> </label>
            </div>
            </div>
-           <div className='flex items-center space-x-4'>
+           <div className='sm:flex items-center space-x-4'>
           
              <label htmlFor="state" className="block text-left font-bold text-lg w-1/6">State:</label>
              <input type="text" name="state" id="state" className="border rounded p-2 w-full"/>
           </div>
-           <div className='flex items-center space-x-4'>
+           <div className='sm:flex items-center space-x-4'>
              <label htmlFor="score" className="block text-left font-bold text-lg w-1/6">Score:</label>
             <input type="number" name="score" id="score" className="border rounded p-2 w-full"/>
           </div>
-           <div className='flex items-center space-x-4'>
-            <label htmlFor="year" className="block text-left font-bold text-lg w-1/6">Year:</label>
+           <div className='sm:flex items-center space-x-4'>
+            <label htmlFor="year" className="block text-left font-bold text-lg w-1/4">Year:</label>
              <input type="number" name="year" id="year" className="border rounded p-2 w-full"/>
            </div>
    {/* fees paid  */}
@@ -306,10 +306,12 @@ const RegistrationForm = () => {
        <label className="flex text-left font-bold text-lg sm:w-1/6"> Online / UPI:
          <input type="radio" name="mains" value="yes" className="mx-2 mt-1"/> </label>
       </div>
-       <div className='flex items-center space-x-4'>
-      <label htmlFor="score" className="block text-left font-bold text-lg sm:w-1/6">Amount Paid :</label>
-       <input type="number" name="score" id="score" className="border rounded p-2 w-full"/>
-    </div>
+    
+      <div className='sm:flex items-center'>
+      <label htmlFor=" amount-paid" className="block text-left font-bold text-lg sm:w-1/5">Amount Paid :</label>
+      <input type="number" name=" amount-paid" id=" amount-paid "  className="border rounded w-full p-2"/>
+      </div>
+
     <div className='flex items-center'>
     <label className="block text-left font-bold text-lg sm:w-1/6">Old Student of<br></br> Shubham Sir :</label>
      <div className="flex space-x-4">
@@ -321,12 +323,12 @@ const RegistrationForm = () => {
       </label>
     </div>
   </div>
-  <div className='flex items-center space-x-4'>
-        
-  <label htmlFor="state" className="block text-left font-bold text-lg sm:w-1/6">Institution :</label>
-   <input type="text" name="state" id="state" className="border rounded p-2 w-full"/>
- </div>
-         
+
+  
+  <div className='sm:flex items-center'>
+          <label htmlFor="email" className="block text-left font-bold text-lg sm:w-1/5">Institution :</label>
+          <input type="text" name="Institution " id="Institution "  className="border rounded w-full p-2"/>
+          </div>
  
  <div className="flex justify-center mt-6">
  <button type='submit' className='bg-red-500 border text-white font-bold py-2 px-4 rounded mb-10'>

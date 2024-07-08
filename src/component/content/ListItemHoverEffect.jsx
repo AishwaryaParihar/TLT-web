@@ -40,11 +40,11 @@ import React from "react";
 
 const ListItemHoverEffect = () => {
   return (
+
     <div className="flex flex-col items-center px-4 sm:px-8 lg:px-18 sm:mx-4 lg:mx-20">
+   
       <div className="relative w-full max-w-4xl">
-        <h2 className="text-white font-bold tracking-wide mb-4 text-center sm:text-left">
-          List Item Hover Effect
-        </h2>
+     
         <ul className="relative mb-8 w-full">
           {[
             "Air Conditioned and ventilated classrooms.",
