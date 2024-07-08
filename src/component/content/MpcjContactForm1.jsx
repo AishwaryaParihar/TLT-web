@@ -1,8 +1,10 @@
 import React from "react";
 import "tailwindcss/tailwind.css";
+import productCards from "../../component/data/productCards";
+
 // import './ContactUs.css';
 
-const MpcjproductCardContact = () => {
+const MpcjContactForm1 = () => {
   return (
     <div className="form-container mx-5">
       <div className="form-box flex justify-center items-center min-h-screen ">
@@ -63,17 +65,14 @@ const MpcjproductCardContact = () => {
                   id="countries"
                   class="bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-700 border-t-0 border-x-0   dark:border-red-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500"
                 >
-                  <option> {items.title} {items.price} </option>
-                  <option> {items.title} {items.price}  </option>
-                  <option>{items.title} {items.price} </option>
-                  <option>{items.title} {items.price}  </option>
+                  {productCards.map((items, index) => (
+                    <option key={index}>
+                      {" "}
+                      {items.title} {items.price}{" "}
+                    </option>
+                  ))}
                 </select>
-                {/* <input
-  type="tel"
-  className="block w-full focus:border-red-500 outline-none"
-  required
-/>
-<label className="absolute left-0 bottom-1 text-gray-500 transition-all">Contact No.</label> */}
+               
                 <div className="underline"></div>
               </div>
             </div>
@@ -92,4 +91,4 @@ const MpcjproductCardContact = () => {
   );
 };
 
-export default MpcjproductCardContact;
+export default MpcjContactForm1;
