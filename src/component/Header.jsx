@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <div className='navbody'>
       <marquee width="100%" behavior="scroll" className="bg-red-300">
-        This is an example of a scroll marquee...
+      Admissions are open :- Empowerment batch is going to start from 1st of July 2024....!!!!   Hurry up get yourself registered 
       </marquee>
       <Navlogo />
       <Navbar />
