@@ -353,7 +353,7 @@ const PersonalInfo = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-end items-end sm:mt-2 ">
+          <div className="flex justify-end items-end mt-2 ">
             <button
               className="bg-primary  text-white border-0 rounded-md px-6 py-3 transition-all duration-300 hover:opacity-75"
               type="sumbit"

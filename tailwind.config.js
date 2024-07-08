@@ -13,7 +13,7 @@ export default {
         // purplishBlue: "hsl(243, 100%, 62%)",
         // pastelBlue: "hsl(228, 100%, 84%)",
         // lightBlue: "hsl(206, 94%, 87%)",
-        strawberryRed: "hsl(354, 84%, 57%)",
+        strawberryRed: "rgb(239,68,68)",
       },
     },
   },

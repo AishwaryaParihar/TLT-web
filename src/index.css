@@ -53,6 +53,35 @@ select option {
 .jinput{
   width: 90%;
   height: 40px;
+  outline-color:rgb(239,68,68);
+}
+
+
+.jinput:focus::placeholder{
+color: white;
+}
+
+.jinput:focus{
+  outline-offset:2px;
+  outline-width: 2px;
+  outline-color:rgb(239,68,68);
+  width: 90%;
+  height: 40px;
+  background-color:rgb(239,68,68);
+  color: white;
+
+}
+
+@media (max-width:700px){
+  .jinput:focus{
+    outline-offset:2px;
+    outline-width: 2px;
+    width: 90%;
+    height: 30px;
+    outline-color:rgb(239,68,68);
+    background-color:rgb(239,68,68);
+    color: white;
+  }
 }
 
 @media (max-width:700px){
