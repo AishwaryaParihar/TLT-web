@@ -30,6 +30,7 @@ const Navbar = () => {
             <button className="bg-primary text-white uppercase font-bold text-sm py-7 px-4 inline-block transition duration-300 ease-in-out hover:bg-red-600 m-0 rounded-e-md">
               Registeration In
             </button>
+<<<<<<< HEAD
             <div className="absolute top-full mt-2  bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
               <NavLink
                 className="block px-4 py-2 text-gray-800 hover:bg-red-500 hover:text-white transition-colors duration-300 ease-in-out font-semibold rounded-md"
@@ -49,6 +50,12 @@ const Navbar = () => {
               >
                 JET
               </NavLink>
+=======
+            <div className="absolute top-full mt-2  bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out z-10">
+              <NavLink className="block px-4 py-2 text-gray-800 hover:bg-red-500 hover:text-white transition-colors duration-300 ease-in-out font-semibold rounded-md" to="/empowerment">Empowerment Batch</NavLink>
+              <NavLink className="block px-4 py-2 text-gray-800 hover:bg-red-500 hover:text-white transition-colors duration-300 ease-in-out font-semibold rounded-md" to="fastTrack">Fast Track Batch</NavLink>
+              <NavLink className="block px-4 py-2 text-gray-800 hover:bg-red-500 hover:text-white transition-colors duration-300 ease-in-out font-semibold rounded-md" to="jet">JET</NavLink>
+>>>>>>> d94bf76533388391d1a36135da4a0edf3a802f66
             </div>
           </div>
         </div>

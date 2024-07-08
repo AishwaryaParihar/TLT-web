@@ -2,14 +2,14 @@ import React from 'react';
 
 const ReturnAndRefund = () => {
   return (
-    <div className="px-5 md:px-20 py-8">
-    <div className="sm:m-20 sm:p-8 p-4 bg-white  rounded-lg">
-      <h2 className="text-center font-bold text-4xl text-black mb-8 ">Refund <span className='text-primary'>Policy</span></h2>
-      <p className="pt-6 text-lg leading-relaxed">
+    <div className="px-5 md:px-20 ">
+    <div className="sm:m-20 sm:p-0 p-4 bg-white  rounded-lg">
+      <h2 className="text-center font-bold text-4xl text-black mb-4 ">Refund <span className='text-primary'>Policy</span></h2>
+      <p className="pt-2 text-lg leading-relaxed">
         We at The Law Tales always aim at identifying the issue and helping you fix it. However, if the issue still persists, email us your concerns & course details from your registered email ID to <a href="mailto:support@thelawtales.in" className="text-blue-500 underline">support@thelawtales.in</a>. Our team will connect with you.
       </p>
       
-      <h1 className="font-bold text-2xl sm:pt-8 pt-6 ">Our refund policy is:</h1>
+      <h1 className="font-bold text-2xl sm:pt-8 pt-4 ">Our refund policy is:</h1>
       <ul className="text-lg list-disc list-inside mt-4 space-y-4">
         <li>
           Refunds are only allowed within 3 days of enrollment. A 100% refund (after deducting GST and payment gateway charges) will be paid to the candidate. Refund requests will not be processed after 3 days of enrollment. No refund requests shall be made with respect to the Tests & Course modules.
