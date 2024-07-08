@@ -6,6 +6,7 @@ import tbmbasic from "../../assets/notes.png";
 import tbmplus from "../../assets/copy-writing.png";
 import tbmad from "../../assets/creative-writing.png";
 
+
 const freedata = [
   {
     img: atoz,
@@ -68,6 +69,7 @@ const MpcjproductCard = () => {
           ))}
         </div>
       </div>
+
     </>
   );
 };
