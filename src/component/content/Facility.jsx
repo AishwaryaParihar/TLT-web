@@ -5,9 +5,11 @@ import FacilityeImage from "./Facility-image";
 const Listsection = () => {
   return (
     <>
+    <div className="px-5 md:px-20 py-0">
+    <h2 className="text-center font-bold text-4xl text-primary mb-8 ">Amenities</h2>
+    <div className="flex flex-wrap justify-between  border-collapse">
      
-      <h2 className="text-center font-bold text-4xl text-black mb-8 text-shadow">Amenities</h2>
-      <div className="flex flex-wrap justify-between  sm:mr-20 border-collapse">
+     
         <div className="mt-10 ">
           <ListItemHoverEffect />
         </div>
@@ -15,7 +17,9 @@ const Listsection = () => {
         <div className="mt-10  ">
         {/* <FacilityeImage /> */}  
         </div>
+
       </div>
+    </div>
     </>
   );
 };
