@@ -30,7 +30,7 @@ const Fee = () => {
     
         </div>
 
-      <NavLink>
+      <NavLink  to="/study-Essentials">
       <div className="flex justify-center items-center flex-wrap">
           {freedata.map((items) => (
             <div className={styless.card_style}>
