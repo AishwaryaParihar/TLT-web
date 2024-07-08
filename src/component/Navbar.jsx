@@ -18,7 +18,7 @@ const Navbar = () => {
             >
               Registeration In
             </button>
-            <div className="absolute top-full mt-2  bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out z-40">
+            <div className="absolute top-full mt-2  bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out z-10">
               <NavLink className="block px-4 py-2 text-gray-800 hover:bg-red-500 hover:text-white transition-colors duration-300 ease-in-out font-semibold rounded-md" to="/empowerment">Empowerment Batch</NavLink>
               <NavLink className="block px-4 py-2 text-gray-800 hover:bg-red-500 hover:text-white transition-colors duration-300 ease-in-out font-semibold rounded-md" to="fastTrack">Fast Track Batch</NavLink>
               <NavLink className="block px-4 py-2 text-gray-800 hover:bg-red-500 hover:text-white transition-colors duration-300 ease-in-out font-semibold rounded-md" to="jet">JET</NavLink>
