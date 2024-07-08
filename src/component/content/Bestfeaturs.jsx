@@ -21,8 +21,8 @@ export const Bestfeaturs = () => {
     ];
 
     return (
-        <section className="py-0">
-            <div className="container mx-auto px-5 md:px-10 ">
+        <section className="py-5">
+            <div className="container mx-auto px-5 md:px-20 ">
                 <div className="flex flex-wrap ">
                     <div className="w-full md:w-1/2 flex items-stretch">
                         <div
@@ -33,7 +33,7 @@ export const Bestfeaturs = () => {
                     </div>
                     <div className="w-full md:w-1/2 flex items-center ps-0 md:ps-10">
                         <div className="mt-0">
-                            <Headings heading={'h4'} style={'inline-block tracking-wider text-shadow'}>Learn with us</Headings>
+                            <Headings heading={'h4'} style={'inline-block tracking-wider text-shadow '}>Learn with us</Headings>
                             <Headings heading={'h2'} style={'inline-block tracking-wider text-shadow'}>Benefits About<span className="text-primary"> TLT Expertise</span></Headings>
                             <div className="mt-4">
                                 {features.map((feature, index) => (

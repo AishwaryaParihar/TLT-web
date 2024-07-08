@@ -8,7 +8,7 @@ const Headings = ({ children, heading, style }) => {
   switch (heading) {
     case "h1":
       HeadingType = "h1";
-      className = "xl:text-6xl lg:text-6xl sm:text-4xl text-2xl font-semibold";
+      className = "xl:text-6xl lg:text-6xl text-4xl  font-semibold";
       break;
     case "h2":
       HeadingType = "h2";
@@ -29,7 +29,7 @@ const Headings = ({ children, heading, style }) => {
     case "h6":
       HeadingType = "h6";
       className =
-        "font-medium text-lg md:text-1xl text-primary-light md:text-start text-center";
+        "font-medium text-lg md:text-1xl text-primary-light ";
       break;
     default:
       HeadingType = "h2";

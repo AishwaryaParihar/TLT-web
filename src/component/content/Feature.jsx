@@ -63,7 +63,13 @@ const facalitydata = [
 const Feature = () => {
   return (
     <>
-      <div className="flex justify-center items-center  flex-wrap gap-5 pb-16">
+      <div className="mt-16">
+        <div className="py-5 px-5 md:px-20">
+        <Headings heading={'h6'} style={'text-shadow'}>Let's make your dream into reality</Headings>
+        <Headings heading={'h2'} style={'text-shadow'}>Our Best <span className="text-primary">
+        Features</span></Headings>
+        </div>
+      <div className="flex justify-center items-center  flex-wrap gap-5 pb-16 ">
         {facalitydata.map((items, index) => (
           <div key={index} className={stylees.card}>
             <img className={stylees.imgbox} src={items.fimg} />
@@ -76,6 +82,7 @@ const Feature = () => {
             </div>
           </div>
         ))}
+      </div>
       </div>
     </>
   );
