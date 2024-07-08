@@ -117,8 +117,8 @@ const Conset = () => {
                 Go back
               </button>
 
-              <button className="bg-primary  text-white border-0 rounded-md px-6 py-3 transition-all duration-300 hover:opacity-75">
-                Confirm
+              <button className="bg-primary  text-white border-0 rounded-md px-6 py-3 transition-all duration-300  hover:opacity-75 ">
+                Submit
               </button>
             </div>
           </form>

@@ -9,9 +9,7 @@ const ThankYou = () => {
         Thank you!
       </h1>
       <p className="text-neutral-coolGray mt-3 text-center">
-        Thanks for confirming your subscription! We hope you have fun using our
-        platform. If you ever need support, please feel free to email us at
-        support@loremgaming.com
+        Thanks for Enrollment
       </p>
     </div>
   );
