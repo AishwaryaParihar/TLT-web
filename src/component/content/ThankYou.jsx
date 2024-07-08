@@ -1,5 +1,5 @@
 import React from "react";
-import icon from "../assets/icon-thank-you.svg";
+import icon from "../../assets/icon-thank-you.svg";
 
 const ThankYou = () => {
   return (
