@@ -301,7 +301,7 @@ const RegistrationForm = () => {
            
            <div className='sm:flex items-center'>
            <label htmlFor="state" className="block text-left font-bold text-lg sm:w-1/5">State:</label>
-           <input type="number" name="state" id="state"  className="border rounded w-full p-2"/>
+           <input type="number" name="state" id=""  className="border rounded w-full p-2"/>
          </div>
            
           
