@@ -1,9 +1,10 @@
 import React from "react";
 import "tailwindcss/tailwind.css";
+// import './ContactUs.css';
 
-const MpcjContactForm1 = () => {
+const MpcjproductCardContact = () => {
   return (
-    <div className="form-container mx-5 my-10 md:my-20">
+    <div className="form-container mx-5">
       <div className="form-box flex justify-center items-center min-h-screen ">
         <div className="container-main    p-6 rounded-lg max-w-lg mx-auto">
           <h2 className="text-4xl font-bold  bg-clip-text text-gray-900 text-center mb-6">
@@ -62,11 +63,17 @@ const MpcjContactForm1 = () => {
                   id="countries"
                   class="bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-700 border-t-0 border-x-0   dark:border-red-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500"
                 >
-                  <option>
-                    MPCJ Mains Offline Mock Test Series - ₹ 4999
-                  </option>
+                  <option> {items.title} {items.price} </option>
+                  <option> {items.title} {items.price}  </option>
+                  <option>{items.title} {items.price} </option>
+                  <option>{items.title} {items.price}  </option>
                 </select>
-
+                {/* <input
+  type="tel"
+  className="block w-full focus:border-red-500 outline-none"
+  required
+/>
+<label className="absolute left-0 bottom-1 text-gray-500 transition-all">Contact No.</label> */}
                 <div className="underline"></div>
               </div>
             </div>
@@ -85,4 +92,4 @@ const MpcjContactForm1 = () => {
   );
 };
 
-export default MpcjContactForm1;
+export default MpcjproductCardContact;

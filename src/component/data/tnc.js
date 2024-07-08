@@ -1,6 +1,6 @@
 const courseDetails = [
   {
-    section: "Eligibility Criteria",
+    section: "Eligibility Criteria :",
     details: [
       { content: "Applicants must meet the specified eligibility requirements for the course or program they intend to enroll in." },
       { content: "1.1.1 The applicant must hold a degree in law with minimum passing percentage of 60% from a recognised university." },
@@ -10,7 +10,7 @@ const courseDetails = [
     ]
   },
   {
-    section: "Admission Procedure",
+    section: "Admission Procedure :",
     details: [
       { content: "Submission of a completed application form along with the necessary supporting documents is mandatory for admission consideration." },
       { content: "Admissions are subject to availability of seats and compliance with the institute's admission criteria." },
@@ -19,7 +19,7 @@ const courseDetails = [
     ]
   },
   {
-    section: "Fee Structure and Payment",
+    section: "Fee Structure and Payment :",
     details: [
       { content: "Details regarding course fees, payment schedule, and any applicable discounts or scholarships will be provided upon admission." },
       { content: "All fees must be paid within the specified timelines to confirm enrollment." },
@@ -29,14 +29,14 @@ const courseDetails = [
     ]
   },
   {
-    section: "Attendance and Punctuality",
+    section: "Attendance and Punctuality :",
     details: [
       { content: "Regular attendance and punctuality are essential for effective learning and progress." },
       { content: "Students are expected to adhere to the institute's attendance policies and regulations." }
     ]
   },
   {
-    section: "Code of Conduct",
+    section: "Code of Conduct :",
     details: [
       { content: "Students are required to conduct themselves in a respectful, courteous, and professional manner at all times." },
       { content: "Students are not allowed to stop and stay at the corridors or staircases." },
@@ -45,21 +45,21 @@ const courseDetails = [
     ]
   },
   {
-    section: "Intellectual Property Rights",
+    section: "Intellectual Property Rights :",
     details: [
       { content: "All course materials, including but not limited to lectures, study materials, and online resources, are the intellectual property of the institute and are provided solely for educational purposes." },
       { content: "Students are prohibited from reproducing, distributing, or sharing course materials without prior authorization from the institute." }
     ]
   },
   {
-    section: "Confidentiality",
+    section: "Confidentiality :",
     details: [
       { content: "Students are required to maintain the confidentiality of any proprietary or confidential information shared during the course of their studies." },
       { content: "Unauthorized disclosure or misuse of confidential information may result in disciplinary action." }
     ]
   },
   {
-    section: "Withdrawal and Refund Policy",
+    section: "Withdrawal and Refund Policy :",
     details: [
       { content: "Requests for withdrawal from the program must be submitted in writing to the institute's administration." },
       { content: "Refund of fees, if applicable, will be processed according to the institute's refund policy, as outlined in the admission brochure or prospectus." },
@@ -71,13 +71,13 @@ const courseDetails = [
     ]
   },
   {
-    section: "Finance for the Course",
+    section: "Finance for the Course :",
     details: [
       { content: "Our institute will also help you to finance your course from various financial institutions." }
     ]
   },
   {
-    section: "Disclaimer",
+    section: "Disclaimer :",
     details: [
       { content: "The institute reserves the right to make changes to the curriculum, schedule, faculty, or any other aspect of the program, as deemed necessary." },
       { content: "The institute shall not be liable for any loss, damage, or inconvenience arising from such changes." },

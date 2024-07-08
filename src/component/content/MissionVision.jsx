@@ -8,7 +8,7 @@ const MissionVision = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {cardData.map((item, index) => (
           <div className="rounded-lg flex bg-gray-50 overflow-hidden shadow-md group hover:border-red-500 hover:shadow-lg transition duration-300" key={index}>
-            <div className="bg-red-500 flex justify-center w-full items-center p-3"> 
+            <div className="bg-red-500 flex justify-center w-[500px] items-center p-3"> 
               <img
                 src={item.image}
                 alt={item.title}
