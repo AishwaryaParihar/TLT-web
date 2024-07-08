@@ -173,7 +173,7 @@ const EmpowermentBatch = () => {
             </div>
 
             <div className="flex items-center">
-              <label htmlFor="pin-code" className="block text-left font-bold text-lg w-1/5">
+              <label htmlFor="pin-code" className="block text-left font-bold text-lg sm:w-1/5">
                 Pin Code:
               </label>
               <input type="number" name="pin-code" id="pin-code" className="border rounded w-full p-2" />

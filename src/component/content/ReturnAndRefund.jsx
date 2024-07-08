@@ -3,7 +3,7 @@ import React from 'react';
 const ReturnAndRefund = () => {
   return (
     <div className="sm:m-20 sm:p-8 p-4 bg-white shadow-lg rounded-lg">
-      <h2 className="text-center font-bold text-4xl text-primary mb-8 text-shadow">Refund Policy</h2>
+      <h2 className="text-center font-bold text-4xl text-black mb-8 ">Refund <span className='text-primary'>Policy</span></h2>
       <p className="pt-6 text-lg leading-relaxed">
         We at The Law Tales always aim at identifying the issue and helping you fix it. However, if the issue still persists, email us your concerns & course details from your registered email ID to <a href="mailto:support@thelawtales.in" className="text-blue-500 underline">support@thelawtales.in</a>. Our team will connect with you.
       </p>
