@@ -2,9 +2,9 @@ import React from "react";
 import "tailwindcss/tailwind.css";
 // import './ContactUs.css';
 
-const MpcjproductCardContact = () => {
+const MpcjContactForm = () => {
   return (
-    <div className="form-container mx-5">
+    <div className="form-container mx-5 md:my-20 my-10">
       <div className="form-box flex justify-center items-center min-h-screen ">
         <div className="container-main    p-6 rounded-lg max-w-lg mx-auto">
           <h2 className="text-4xl font-bold  bg-clip-text text-gray-900 text-center mb-6">
@@ -39,9 +39,7 @@ const MpcjproductCardContact = () => {
                 <div className="underline"></div>
               </div>
             </div>
-            <div className="form-row flex space-x-4 mb-6">
-
-            </div>
+            <div className="form-row flex space-x-4 mb-6"></div>
             <div className="form-row flex space-x-4 mb-6">
               <div className="input-data w-full relative">
                 <input
@@ -60,25 +58,14 @@ const MpcjproductCardContact = () => {
                 <label
                   for="countries"
                   class="block mb-2 text-sm font-medium text-gray-500 dark:text-white pl-4 "
-                >
-                 
-                </label>
+                ></label>
                 <select
                   id="countries"
                   class="bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-700 border-t-0 border-x-0   dark:border-red-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500"
                 >
-                  <option> TPM Advance - ₹ 1299 </option>
-                  <option> TPM Plus ₹ 999 </option>
-                  <option> TPM Basic - ₹ 699 </option>
-                  <option>A-Z TPM Legal Glossary- ₹ 399 </option>
-                  
+                  <option> MPCJ Mains Offline Mock Test - ₹ 4999 </option>
                 </select>
-                {/* <input
-  type="tel"
-  className="block w-full focus:border-red-500 outline-none"
-  required
-/>
-<label className="absolute left-0 bottom-1 text-gray-500 transition-all">Contact No.</label> */}
+
                 <div className="underline"></div>
               </div>
             </div>
@@ -89,7 +76,6 @@ const MpcjproductCardContact = () => {
               >
                 Submit
               </button>
-
             </div>
           </form>
         </div>
@@ -98,4 +84,4 @@ const MpcjproductCardContact = () => {
   );
 };
 
-export default MpcjproductCardContact;
+export default MpcjContactForm;
