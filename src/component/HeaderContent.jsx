@@ -1,6 +1,7 @@
 import React from 'react';
 import Headings from './utiliti/heading/Heading';
 import Button from './utiliti/buttons/Button';
+import { Link } from 'react-router-dom';
 
 export const HeaderContent = ({ isHome }) => {
 
@@ -22,12 +23,12 @@ export const HeaderContent = ({ isHome }) => {
               Far far away, behind the word mountains, far from the countries Vokalia <br /> and Consonantia, there live the blind texts.
             </p>
             <div className="flex gap-2 py-3">
-              <Button color="red">
+              <Link to="/contact-support"><Button color="red">
                 get started now <i className="fa-solid fa-arrow-right"></i>
-              </Button>
-              <Button  color="white">
+              </Button></Link>
+              <Link to="study-Essentials"><Button  color="white">
                 view course <i className="fa-solid fa-arrow-right"></i>
-              </Button>
+              </Button></Link>
             </div>
           </div>
         </div>
