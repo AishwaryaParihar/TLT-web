@@ -25,7 +25,7 @@ const Documents = () => {
     }
 
     if (photo !== "" && addhar !== "") {
-      navigate("/Educational Details");
+      navigate("/jet/educational");
     } else {
       alert("Please upload documents");
     }
@@ -93,7 +93,7 @@ const Documents = () => {
 
           <div className="flex justify-between items-center pt-[20px] sm:pt-[35px]">
             <button
-              onClick={() => navigate("/selectplan")}
+              onClick={() => navigate("/jet/guardiandetails")}
               className="text-neutral-coolGray font-[500] capitalize transition-all duration-300 hover:text-primary-marineBlue cursor-pointer"
             >
               Go back

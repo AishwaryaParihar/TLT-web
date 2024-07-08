@@ -50,7 +50,7 @@ const Educational = () => {
       myear !== "" &&
       mud !== ""
     ) {
-      navigate("/summary");
+      navigate("/jet/conset");
     } else {
       alert("Please fill in all fields");
     }
@@ -176,7 +176,7 @@ const Educational = () => {
             </div>
             <div className="flex justify-between items-center">
               <button
-                onClick={() => navigate("/addons")}
+                onClick={() => navigate("/jet/documents")}
                 className="text-neutral-coolGray font-medium capitalize transition-all duration-300 hover:text-primary-marineBlue"
               >
                 Go back

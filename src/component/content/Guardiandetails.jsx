@@ -138,9 +138,7 @@ const Guardiandetails = () => {
       setguardianproAlert(false);
     }
     if (guardianname !== "" && guardianpro !== "") {
-      navigate("/Documents");
-    } else {
-      alert("Please fill in all fields");
+      navigate("/jet/documents");
     }
   };
 
@@ -199,7 +197,7 @@ const Guardiandetails = () => {
 
           <div className="flex justify-between items-center">
             <button
-              onClick={() => navigate("/")}
+              onClick={() => navigate("/jet/personalInfo")}
               className="text-neutral-coolGray font-medium capitalize transition-all duration-300 hover:text-primary-marineBlue"
             >
               Go back

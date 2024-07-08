@@ -111,7 +111,7 @@ const Conset = () => {
 
             <div className="flex justify-around sm:justify-between items-center pt-[7px] sm:pt-[29px]">
               <button
-                onClick={() => navigate("/Educational")}
+                onClick={() => navigate("/jet/Educational")}
                 className="text-neutral-coolGray font-[500] capitalize transition-all duration-300 hover:text-primary-marineBlue cursor-pointer"
               >
                 Go back
@@ -119,7 +119,7 @@ const Conset = () => {
 
               <button
                 className="bg-primary-purplishBlue text-white border-0 rounded-md px-6 py-3 transition-all duration-300 hover:opacity-75"
-                onClick={() => navigate("/thankyou")}
+                onClick={() => navigate("/jet/thankyou")}
               >
                 Confirm
               </button>

@@ -78,7 +78,7 @@ const PersonalInfo = () => {
       city !== "" &&
       dob !== ""
     ) {
-      navigate("/Guardiandetails");
+      navigate("/jet/guardiandetails");
     }
   };
 
@@ -317,7 +317,7 @@ const PersonalInfo = () => {
                       ? "focus:outline-primary-strawberryRed"
                       : "focus:outline-primary-marineBlue"
                   } mb-3 outline outline-1 outline-neutral-lightGray rounded-[4px] p-3 `}
-                  type="email"
+                  type="text"
                   placeholder="State"
                 />
                 <span

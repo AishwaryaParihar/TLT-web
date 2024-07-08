@@ -14,6 +14,12 @@ import ReturnAndRefund from "../content/ReturnAndRefund";
 import EmpowermentBatch from "../content/Empowerment-batch";
 import RegistrationDetails from "../content/RegistrationDetails";
 import Jet from "../Jet";
+import Guardiandetails from "../content/Guardiandetails";
+import Documents from "../content/Documents";
+import Conset from "../content/Conset";
+import Educational from "../content/Educational";
+import ThankYou from "../content/ThankYou";
+import PersonalInfo from "../content/PersonalInfo";
 
 export const router = createBrowserRouter([
   {
@@ -65,13 +71,34 @@ export const router = createBrowserRouter([
         element: <RegistrationDetails />,
       },
       {
-        path: "jet",
-        element: <Jet/>,
-        // children:[
-        //   {
-
-        //   }
-        // ]
+        path: "jet/*",
+        element: <Jet />,
+        children: [
+          {
+            path: "personalInfo",
+            element: <PersonalInfo />,
+          },
+          {
+            path: "guardiandetails",
+            element: <Guardiandetails />,
+          },
+          {
+            path: "documents",
+            element: <Documents />,
+          },
+          {
+            path: "conset",
+            element: <Conset />,
+          },
+          {
+            path: "educational",
+            element: <Educational />,
+          },
+          {
+            path: "thankyou",
+            element: <ThankYou />,
+          },
+        ],
       },
     ],
   },
