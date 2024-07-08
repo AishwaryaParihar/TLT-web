@@ -12,6 +12,7 @@ const freedata = [
     title: "A-Z LEGAL GLOSSARY",
     price: "Rs-399/-",
     description: "for Legal glossary (1500+ Words) (HANDPICKED)",
+    buy: "Buy Now"
   },
   {
     img: tbmbasic,
@@ -19,6 +20,7 @@ const freedata = [
     price: "Rs-699/-",
     description:
       "the TPM Basic Pack(Total 200 one liners Criminal- 100 one liners Civil- 100 one liners)",
+    buy: "Buy Now"  
   },
   {
     img: tbmplus,
@@ -26,6 +28,7 @@ const freedata = [
     price: "Rs-999/-",
     description:
       " for the TPM Plus Pack (Total 400 one liners Criminal- 200 one liners Civil- 200 one liners)",
+    buy: "Buy Now"  
   },
   {
     img: tbmad,
@@ -33,6 +36,7 @@ const freedata = [
     price: "Rs-1299/-",
     description:
       " for the TPM Advanced (Total 400 one liners Criminal- 200 one liners Civil- 200 one liners with Legal glossary of 1500+ words)",
+    buy: "Buy Now" 
   },
 ];
 
@@ -58,6 +62,7 @@ const MpcjproductCard = () => {
                 <div className={styless.title}>{items.title}</div>
                 <div className={styless.price}>{items.price}</div>
                 <div className={styless.description}>{items.description}</div>
+                <div className={styless.buy}>{items.buy}</div>
               </div>
             </div>
           ))}
