@@ -85,7 +85,7 @@ const RegistrationForm = () => {
   return (
     
     <div className="px-5 md:px-20 py-0">
-     <div className="text-justify mx-auto mx-8 sm:px-20 ">
+     <div className="text-justify mx-auto mx-8 sm:px-10 ">
         <div className='mt-10'>
           <h2 className="text-white bg-red-500 text-center text-3xl py-3 px-4 sm:px-20">
           SUPER 30 FAST TRACK BATCH
