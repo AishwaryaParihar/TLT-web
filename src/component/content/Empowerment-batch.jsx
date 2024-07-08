@@ -101,14 +101,14 @@ const EmpowermentBatch = () => {
         <form className="mt-10">
           <div className="space-y-6 sm:px-10">
             <div className="sm:flex items-center">
-              <label htmlFor="choose-picture" className="block text-left font-bold text-lg sm:w-1/5">
+              <label htmlFor="choose-picture" className="block text-left font-bold text-lg w-1/5 sm:w-1/5">
                 Choose picture:
               </label>
               <input type="file" name="choose-picture" id="choose-picture" className="border rounded w-full p-2" />
             </div>
 
             <div className="sm:flex items-center">
-              <label htmlFor="name" className="block text-left font-bold text-lg sm:w-1/5">
+              <label htmlFor="name" className="block text-left font-bold text-lg w-1/5 sm:w-1/5">
                 Name:
               </label>
               <input type="text" name="name" id="name" className="border rounded w-full p-2" />
