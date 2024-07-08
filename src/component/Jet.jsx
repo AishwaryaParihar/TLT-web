@@ -10,7 +10,7 @@ import ThankYou from "./content/ThankYou";
 
 const Jet = () => {
   return (
-    <div className="bg-white sm:w-[79rem]  w-[100%] sm:h-[40rem]  h-[50%] mt-[0px] sm:mt-[0px] rounded-xl shadow-xl p-4 flex flex-col sm:flex sm:flex-row justify-between items-center">
+    <div className="bg-white  w-[100%] sm:h-[40rem]  h-[50%] mt-[0px] sm:mt-[0px] rounded-xl shadow-xl p-4 flex flex-col sm:flex sm:flex-row justify-between items-center">
       <Sidebar />
       {/* <a className="justify-center items-center" href={"/jet/personalInfo"}>
         <button>Fill out a form</button>
