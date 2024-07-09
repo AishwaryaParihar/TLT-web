@@ -4,13 +4,15 @@ import { data } from "../data/testimony";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Headings from "../utiliti/heading/Heading";
-import "./Testimony.css"; // Import custom CSS
+import "./Testimony.css"; 
+import quoteImg from "../../assets/gif/quotation-mark.png";
+import quoteImgRed from "../../assets/gif/quotation-mark-red.png"; 
 
 const Testimony = () => {
   const [activeSlide, setActiveSlide] = useState(0);
   const slidesToShow = 3;
 
-  const settings = {
+  const settings = { 
     dots: true,
     infinite: true,
     speed: 1000,
@@ -66,10 +68,10 @@ const Testimony = () => {
             } transition-transform duration-300`}
             key={index}
           >
-            <div
-              className={`h-[330px] ${
+           <div
+              className={`h-[320px] ${
                 isMiddleSlide(index) ? "bg-primary text-white" : "bg-gray-100"
-              } rounded-2xl p-5 md:p-8 gap-5 lg:gap-8 mt-10 transition-all duration-300`}
+              } p-5 md:p-7 gap-5 lg:gap-10 mt-10 transition-all duration-300 relative`}
             >
               <div className="flex flex-col items-center  text-justify">
                 <img
