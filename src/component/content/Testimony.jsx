@@ -69,7 +69,7 @@ const Testimony = () => {
             key={index}
           >
            <div
-              className={`h-[320px] ${
+              className={`h-[320px] mt-10 md:mt-20 ${
                 isMiddleSlide(index) ? "bg-primary text-white" : "bg-gray-100"
               } p-5 md:p-7 gap-5 lg:gap-10 mt-10 transition-all duration-300 relative`}
             >
@@ -85,6 +85,11 @@ const Testimony = () => {
                 <div className="mb-4 text-sm md:text-xs lg:text-sm">
                   {item.rank}
                 </div>
+                {/* <img
+                    src={isMiddleSlide(index) ? quoteImg : quoteImgRed}
+                    alt="Quotation Mark"
+                    className="w-8 h-8 mb-2"
+                  /> */}
                 <div className="mt-1 text-base md:text-sm lg:text-base truncated-text">
                   {item.desc}
                 </div>
