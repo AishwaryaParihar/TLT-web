@@ -28,6 +28,8 @@
 
 import React from "react";
 import court from "../../assets/court.jpg";
+import fc from "../../assets/fc-img.webp";
+import facility from "../../assets/facility.webp";
 
 const FacilityeImage = () => {
   return (
@@ -36,11 +38,11 @@ const FacilityeImage = () => {
         <div className="flex flex-col px- gap-3 md:gap-4 mt-[50px] md:mt-0 lg:mt-[0px]">
 
           <div className="w-[150px] h-[120px] sm:w-[150px] sm:h-[150px] md:w-[300px] md:h-[220px]">
-            <img src={court} alt="pen image" className="w-full h-full object-cover rounded-lg" />
+            <img src={facility} alt="pen image" className="w-full h-full object-cover rounded-lg" />
           </div>
 
           <div className="w-[150px] h-[120px] sm:w-[150px] sm:h-[150px] md:w-[300px] md:h-[220px]">
-            <img src={court} alt="hammer image" className="w-full h-full object-cover rounded-lg" />
+            <img src={fc} alt="hammer image" className="w-full h-full object-cover rounded-lg" />
           </div>
         </div>
 
