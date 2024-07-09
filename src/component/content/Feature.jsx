@@ -60,7 +60,7 @@ const Feature = () => {
             Our Best <span className="text-primary">Features</span>
           </Headings>
         </div>
-        <div className="flex justify-center items-center  flex-wrap gap-14 pb-16 ">
+        <div className="flex justify-center items-center  flex-wrap gap-20 pb-16 ">
           {facalitydata.map((items, index) => (
             <div key={index} className={stylees.card}>
               <img className={stylees.imgbox} src={items.fimg} />

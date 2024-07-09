@@ -2,8 +2,8 @@
 
   .card{
     position: relative;
-    width: 310px;
-    height: 400px;
+    width: 330px;
+    height: 410px;
     background-color: #fff;
     display: flex ;
     flex-direction: column;
@@ -76,7 +76,7 @@
   position: absolute;
   top: -80px;
   height: 80px;
-  width: 65%;
+  width: 60%;
   background:rgb(239 68 68) ;
   color: white;
   border-top: 10px solid #fff;
@@ -90,7 +90,7 @@
     position: absolute;
     top: -80px;
     height: 80px;
-    width: 65%;
+    width: 60%;
     background:white ;
     color: rgb(239 68 68);
     border-top: 10px solid rgb(239 68 68);
