@@ -102,42 +102,42 @@ const EmpowermentBatch = () => {
         <form className="mt-8">
           <div className="space-y-6 sm:px-10">
             <div className="sm:flex items-center">
-              <label htmlFor="choose-picture" className="block text-left font-bold text-lg  sm:w-1/5">
+              <label htmlFor="choose-picture" className="block text-left font-bold text-lg  sm:w-1/4">
                 Choose picture:
               </label>
               <input type="file" name="choose-picture" id="choose-picture" className="border rounded w-full p-2" />
             </div>
 
             <div className="sm:flex items-center">
-              <label htmlFor="name" className="block text-left font-bold text-lg  sm:w-1/5">
+              <label htmlFor="name" className="block text-left font-bold text-lg  sm:w-1/4">
                 Name:
               </label>
               <input type="text" name="name" id="name" className="border rounded w-full p-2" />
             </div>
 
             <div className="sm:flex items-center">
-              <label htmlFor="place-of-birth" className="block text-left font-bold text-lg   sm:w-1/5">
+              <label htmlFor="place-of-birth" className="block text-left font-bold text-lg   sm:w-1/4">
                 Place Of Birth:
               </label>
               <input type="text" name="place-of-birth" id="place-of-birth"  className="border rounded w-full p-2" />
             </div>
 
             <div className="sm:flex items-center">
-              <label htmlFor="date-of-birth" className="block text-left font-bold text-lg  sm:w-1/5">
+              <label htmlFor="date-of-birth" className="block text-left font-bold text-lg  sm:w-1/4">
                 Date Of Birth:
               </label>
               <input type="date" name="date-of-birth" id="date-of-birth" className="border rounded w-full p-2" />
             </div>
 
             <div className="sm:flex items-center">
-              <label htmlFor="full-address" className="block text-left font-bold text-lg   sm:w-1/5">
+              <label htmlFor="full-address" className="block text-left font-bold text-lg   sm:w-1/4">
                 Full Address:
               </label>
               <input type="text" name="full-address" id="full-address"  className="border rounded w-full p-2" />
             </div>
 
             <div className="sm:flex items-center">
-              <label htmlFor="state" className="block text-left font-bold text-lg   sm:w-1/5">
+              <label htmlFor="state" className="block text-left font-bold text-lg   sm:w-1/4">
                 State:
               </label>
               <select
@@ -158,7 +158,7 @@ const EmpowermentBatch = () => {
             </div>
 
             <div className="sm:flex items-center">
-              <label htmlFor="city" className="block text-left font-bold text-lg w-1/5   sm:w-1/5">
+              <label htmlFor="city" className="block text-left font-bold text-lg  sm:w-1/4">
                 City:
               </label>
               <select
@@ -180,28 +180,28 @@ const EmpowermentBatch = () => {
             </div>
 
             <div className="sm:flex items-center">
-              <label htmlFor="pin-code" className="block text-left font-bold text-lg   sm:w-1/5">
+              <label htmlFor="pin-code" className="block text-left font-bold text-lg   sm:w-1/4">
                 Pin Code:
               </label>
               <input type="number" name="pin-code" id="pin-code" className="border rounded w-full p-2" />
             </div>
 
             <div className="sm:flex items-center">
-              <label htmlFor="qualification" className="block text-left font-bold text-lg   sm:w-1/5">
+              <label htmlFor="qualification" className="block text-left font-bold text-lg   sm:w-1/4">
                 Qualification:
               </label>
               <input type="text" name="qualification" id="qualification"  className="border rounded w-full p-2" />
             </div>
 
             <div className="sm:flex items-center">
-              <label htmlFor="college-university" className="block text-left font-bold text-lg   sm:w-1/5">
+              <label htmlFor="college-university" className="block text-left font-bold text-lg   sm:w-1/4">
                 College/University:
               </label>
               <input type="text" name="college-university" id="college-university"  className="border rounded w-full p-2" />
             </div>
        
             <div className='sm:flex items-center'>
-         <label className="block text-left font-bold text-lg   sm:w-1/6">Pursuing LL.B:</label>
+         <label className="block text-left font-bold text-lg   sm:w-1/5">Pursuing LL.B:</label>
           <div className="flex space-x-4">
             <label>
               <input type="radio" name="pursuingLLB" value="yes" className="mr-2"/> Yes
@@ -213,12 +213,12 @@ const EmpowermentBatch = () => {
         </div>
 
          <div className='sm:flex items-center'>
-          <label htmlFor="year-of-passing" className="block text-left font-bold text-lg   sm:w-1/5">Year Of Passing:</label>
+          <label htmlFor="year-of-passing" className="block text-left font-bold text-lg   sm:w-1/4">Year Of Passing:</label>
           <input type="number" name="year-of-passing" id="year-of-passing"  className="border rounded w-full p-2"/>
         </div>
 
         <div className='sm:flex items-center'>
-          <label htmlFor="email" className="block text-left font-bold text-lg    sm:w-1/5">Email:</label>
+          <label htmlFor="email" className="block text-left font-bold text-lg sm:w-1/4">Email:</label>
           <input type="email" name="email" id="email"  className="border rounded w-full p-2"/>
           </div>
           {/* personal details */} 
@@ -228,22 +228,22 @@ const EmpowermentBatch = () => {
           <h2 className="text-white bg-red-500 text-center text-3xl py-3 px-4">Personal Information</h2>
         </div>
         <div className='sm:flex items-center'>
-          <label htmlFor="father-name" className="block text-left font-bold text-lg   sm:w-1/5">Father's Name:</label>
+          <label htmlFor="father-name" className="block text-left font-bold text-lg sm:w-1/4">Father's Name:</label>
           <input type="text" name="father-name" id="father-name" className="border rounded w-full p-2"/>
         </div>
 
         <div className='sm:flex items-center'>
-          <label htmlFor="mother-name" className="block text-left font-bold text-lg   sm:w-1/5">Mother's Name:</label>
+          <label htmlFor="mother-name" className="block text-left font-bold text-lg   sm:w-1/4">Mother's Name:</label>
           <input type="text" name="mother-name" id="mother-name" className="border rounded w-full p-2"/>
         </div>
 
         <div className='sm:flex items-center'>
-          <label htmlFor="permanent-address" className="block text-left font-bold text-lg   sm:w-1/5">Permanent Address:</label>
+          <label htmlFor="permanent-address" className="block text-left font-bold text-lg   sm:w-1/4">Permanent Address:</label>
           <input type="text" name="permanent-address" id="permanent-address" className="border rounded w-full p-2"/>
         </div>
 
         <div className='sm:flex items-center'>
-          <label htmlFor="state" className="block text-left font-bold text-lg    sm:w-1/5">State:</label>
+          <label htmlFor="state" className="block text-left font-bold text-lg    sm:w-1/4">State:</label>
          
           <select
           className="form-control border rounded w-full p-2"
@@ -263,7 +263,7 @@ const EmpowermentBatch = () => {
      
         </div>
         <div className='sm:flex items-center'>
-          <label htmlFor="city" className="block text-left font-bold text-lg    sm:w-1/5">City:</label>
+          <label htmlFor="city" className="block text-left font-bold text-lg    sm:w-1/4">City:</label>
 
           <select
           className="form-control border rounded w-full p-2"
@@ -284,7 +284,7 @@ const EmpowermentBatch = () => {
          
         </div>
         <div className='sm:flex items-center'>
-          <label htmlFor="aadhar-card" className="block text-left font-bold text-lg sm:w-1/5">Upload Aadhar (Front and Back):</label>
+          <label htmlFor="aadhar-card" className="block text-left font-bold text-lg sm:w-1/4">Upload Aadhar (Front and Back):</label>
           <input type="file" name="aadhar-card" id="aadhar-card" className="border rounded w-full p-2"/>
         </div>
    
@@ -293,16 +293,16 @@ const EmpowermentBatch = () => {
          </div>
         <div className='flex justify-between items-center'>
 
-       <label className="flex text-left font-bold text-lg sm:w-1/6"> Online / UPI:
+       <label className="flex text-left font-bold text-lg sm:w-1/5"> Online / UPI:
          <input type="radio" name="mains" value="yes" className="mx-2 mt-1"/> </label>
       </div>
       <div className='sm:flex items-center'>
-      <label htmlFor=" amount-paid" className="block text-left font-bold text-lg sm:w-1/5">Amount Paid :</label>
+      <label htmlFor=" amount-paid" className="block text-left font-bold text-lg sm:w-1/4">Amount Paid :</label>
       <input type="number" name=" amount-paid" id=" amount-paid "  className="border rounded w-full p-2"/>
       </div>
   
       <div className='sm:flex items-center'>
-      <label className="block text-left font-bold text-lg sm:w-1/6">Old Student of Shubham Sir :</label>
+      <label className="block text-left font-bold text-lg sm:w-1/5">Old Student of Shubham Sir :</label>
        <div className="flex space-x-4">
          <label>
            <input type="radio" name="pursuingLLB" value="yes" className="mr-2"/> Yes
@@ -314,7 +314,7 @@ const EmpowermentBatch = () => {
       </div>
  
   <div className='sm:flex items-center'>
-          <label htmlFor="email" className="block text-left font-bold text-lg    sm:w-1/5">Institution :</label>
+          <label htmlFor="email" className="block text-left font-bold text-lg    sm:w-1/4">Institution :</label>
           <input type="text" name="Institution " id="Institution "  className="border rounded w-full p-2"/>
           </div>
           
