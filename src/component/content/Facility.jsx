@@ -6,18 +6,19 @@ const Listsection = () => {
   return (
     <>
     <h2 className="text-center font-bold text-4xl text-primary mb-0 ">Amenities</h2>
-    <div className="px-5 md:px-20 py-0">
+    <div className="px- md:px-20 py-0">
    
-    <div className="flex flex-wrap justify-between  border-collapse">
+    <div className="flex flex-wrap justify-between mt-20  border-collapse">
      
+    <div className="  ">
+    <FacilityeImage />  
+   </div>
      
-        <div className="mt-10 ">
+        <div className=" ">
           <ListItemHoverEffect />
         </div>
 
-        <div className="mt-10  ">
-       {/*  <FacilityeImage />   */}
-        </div>
+      
 
       </div>
     </div>
