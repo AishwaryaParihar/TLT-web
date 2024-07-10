@@ -63,7 +63,7 @@ const YoutubeGallery = () => {
                 isMiddleSlide(index) ? "scale-110" : "scale-100"
               } transition-transform duration-300`}
             >
-              <div className="h-[250px] p-3 md:p-4">
+              <div className="h-[270px] p-3 md:p-4">
                 <iframe
                   title={video.title}
                   width="100%"

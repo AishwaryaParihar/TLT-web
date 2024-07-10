@@ -7,6 +7,8 @@ import img5 from '../../assets/Coaching5.webp';
 import img6 from '../../assets/Coaching6.webp';
 import img7 from '../../assets/Coaching4.webp';
 import img8 from '../../assets/Coaching8.jpg';
+import backImg from "../../assets/gif/back.png";
+import nextImg from "../../assets/gif/next.png"
 import styles from './Slider.module.css';
 
 const Slider = () => {
@@ -48,8 +50,8 @@ const Slider = () => {
         ))}
       </div>
 
-      <button id="prev" onClick={prevSlider} className={styles.prev}>&lt;</button>
-      <button id="next" onClick={nextSlider} className={styles.next}>&gt;</button>
+      <button id="prev" onClick={prevSlider} className={styles.prev}><img src={"backImg"} alt="" /></button>
+      <button id="next" onClick={nextSlider} className={styles.next}><img src={"nextImg"} alt="" /></button>
     </div>
   );
 };

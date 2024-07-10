@@ -69,7 +69,7 @@ const Testimony = () => {
             key={index}
           >
            <div
-              className={`h-[320px] mt-10 md:mt-20 ${
+              className={`h-[325px] mt-10 md:mt-20 ${
                 isMiddleSlide(index) ? "bg-primary text-white" : "bg-gray-100"
               } p-5 md:p-7 gap-5 lg:gap-10 mt-10 transition-all duration-300 relative`}
             >
