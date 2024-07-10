@@ -21,7 +21,7 @@ const Navbar = () => {
           >
             Study Essentials
           </NavLink>
-          <NavLink className="textWhite hover:text-red-500" to="#">
+          <NavLink className="textWhite hover:text-red-500" to="/gallery">
             Gallery
           </NavLink>
         </div>

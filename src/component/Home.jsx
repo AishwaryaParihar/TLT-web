@@ -9,6 +9,7 @@ import AboutUs from "./content/Aboutus";
 import  DropDown  from "./content/DropDown"
 import RegistrationDetails from "./content/RegistrationDetails"
 import  EmpowermentBatch from "./content/Empowerment-batch"
+import Slider from './content/Slider'
 export const Home = () => {
   return (
     <>
@@ -22,6 +23,7 @@ export const Home = () => {
       {/* <RegistrationDetails/> */}
       <Testimony />
       {/* <DropDown /> */}
+      <Slider/>
     </>
   );
 };

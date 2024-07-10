@@ -20,6 +20,7 @@ import Conset from "../content/Conset";
 import Educational from "../content/Educational";
 import ThankYou from "../content/ThankYou";
 import PersonalInfo from "../content/PersonalInfo";
+import Gallery from "../Gallery";
 
 export const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ export const router = createBrowserRouter([
       {
         path: "terms-conditions",
         element: <TnC />,
+      },
+      {
+        path: "gallery",
+        element: <Gallery/>,
       },
       {
         path: "contact-support",
@@ -103,3 +108,4 @@ export const router = createBrowserRouter([
     ],
   },
 ]);
+
