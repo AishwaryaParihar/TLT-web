@@ -1,9 +1,11 @@
 import React from 'react';
 import 'tailwindcss/tailwind.css';
 import './ContactUs.css';
-
+import ContactDetails from "./ContactDetails"
+import Map from "./Map"
 const ContactUs = () => {
   return (
+    <section>
     <div className="form-container ">
       <div className="form-box flex justify-center items-center min-h-screen">
         <div className="container-main shadow p-6 rounded-lg max-w-lg mx-auto">
@@ -121,6 +123,9 @@ const ContactUs = () => {
         </div>
       </div>
     </div>
+    <ContactDetails/>
+    <Map/>
+    </section>
   );
 };
 
