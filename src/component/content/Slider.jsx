@@ -34,13 +34,10 @@ const Slider = () => {
     setRotate((prevRotate) => prevRotate - rotateAdd);
   };
 
-  // Calculate the middle image index
-  const middleImageIndex = (active + Math.floor(images.length / 3)) % images.length;
-
   return (
     <div 
       className={styles.slider} 
-      style={{ backgroundImage: `url(${images[middleImageIndex]})` }}
+      style={{ backgroundImage: `url(${images[active]})` }}
     >
       <div className={styles.images} style={{ transform: `translate(-50%, 50%) rotate(${rotate}deg)` }}>
         {images.map((src, index) => (
@@ -50,8 +47,8 @@ const Slider = () => {
         ))}
       </div>
 
-      <button id="prev" onClick={prevSlider} className={styles.prev}><img src={"backImg"} alt="" /></button>
-      <button id="next" onClick={nextSlider} className={styles.next}><img src={"nextImg"} alt="" /></button>
+      <button id="prev" onClick={prevSlider} className={styles.prev}><img src={backImg} alt="Previous" /></button>
+      <button id="next" onClick={nextSlider} className={styles.next}><img src={nextImg} alt="Next" /></button>
     </div>
   );
 };
