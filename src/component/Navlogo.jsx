@@ -19,11 +19,11 @@ const navlogo = () => {
           <div className="flex gap-11 items-center ">
             <div className=" items-center gap-2 hidden lg:flex">
                <div className=""><i class="fa-regular fa-clock fa-xl text-4xl text-red-500"></i></div>
-               <div className="font-semibold ">Monday - Friday <br /> 8:00AM-8:00PM</div>
+               <div className="font-semibold ">Monday - Saturday <br /> 8:00AM-8:00PM</div>
             </div>
             <div className=" items-center gap-2 hidden md:flex">
                <div className=""><i class="fa-solid fa-phone fa-xl text-4xl text-red-500"></i></div>
-               <div className="font-semibold "> Call Us <br />+2 392 3929 210</div>
+               <div className="font-semibold "> Call Us <br />9238176156 </div>
             </div>
             <div className="gap-2 hidden sm:flex">
               <SocialMedia />

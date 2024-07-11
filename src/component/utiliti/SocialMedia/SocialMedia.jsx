@@ -4,7 +4,7 @@ const SocialMedia = () => {
   return (
     <>
       <a href="#" className="w-10 h-10 bg-gray-200 bg-opacity-50 border-primary rounded-full flex items-center justify-center transform hover:scale-109 hover:bg-red-600 border-0 transition-colors duration-500">
-        <i className="fab fa-facebook-f text-red-500 p-6 fa-lg transition-colors duration-500 hover:text-white"></i>
+        <i className="fab fa-youtube text-red-500 p-6 fa-lg transition-colors duration-500 hover:text-white"></i>
       </a>
 
       <a href="#" className="w-10 h-10 bg-gray-200 bg-opacity-50 border-primary rounded-full flex items-center justify-center transform hover:scale-109 hover:bg-red-600 border-0 transition-colors duration-500">
@@ -16,8 +16,10 @@ const SocialMedia = () => {
       </a>
 
       <a href="#" className="w-10 h-10 bg-gray-200 bg-opacity-50 border-primary rounded-full flex items-center justify-center transform hover:scale-109 hover:bg-red-600 border-0 transition-colors duration-500">
-        <i className="fab fa-twitter text-red-500 p-6 fa-lg transition-colors duration-500 hover:text-white"></i>
+        <i className="fab fa-telegram-plane text-red-500 p-6 fa-lg transition-colors duration-500 hover:text-white"></i>
       </a>
+
+      
     </>
   );
 };
