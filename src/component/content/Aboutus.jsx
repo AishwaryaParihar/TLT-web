@@ -90,7 +90,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <section className="about-us md:my-20 my-5" id="about">
+    <section className="md:my-20 my-5" id="about">
       <div className="container mx-auto px-5 md:px-20 mb-10 md:mb-20">
         <div className="md:mb-16 mb-7">
           <Headings heading={"h5"} style={"text-shadow"}>
@@ -102,7 +102,7 @@ const AboutUs = () => {
         </div>
         <div className="w-full flex flex-col lg:flex-row gap-10">
           <div className="w-full lg:w-2/3">
-            <div className="tabs">
+            <div className="">
               <div className="flex flex-wrap justify-center lg:justify-start mb-6">
                 <div className="menu flex flex-wrap gap-4 md:gap-6">
                   {tabContent.map((tab, index) => (
