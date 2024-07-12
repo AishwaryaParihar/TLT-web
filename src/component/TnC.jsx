@@ -11,11 +11,12 @@ const TnC = () => {
       </Headings>
       {courseDetails.map((section, index) => (
         <div key={index} className="section">
-          <h2 className="text-2xl font-semibold mb-2">{section.section}</h2>
-          <ul className="list-disc pl-6">
+          <Headings heading={"h4"} className="text-2xl font-semibold mb-2">{section.section}</Headings>
+          <ul className="mb-8">
             {section.details.map((detail, detailIndex) => (
-              <li key={detailIndex} className="mb-2">
-                <p>{detail.content}</p>
+              <li key={detailIndex} className="mb-2 flex items-start">
+                <i className="fas fa-arrow-right text-primary mr-2 mt-2"></i>
+                <div>{detail.content}</div>
               </li>
             ))}
           </ul>

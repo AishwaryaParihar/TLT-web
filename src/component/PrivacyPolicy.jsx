@@ -5,19 +5,18 @@ import Headings from "./utiliti/heading/Heading";
 const PrivacyPolicy = () => {
   return (
     <div className="px-5 md:px-20 py-8">
-      <Headings heading={"h2"} style="pb-10  text-center">
+      <Headings heading={"h2"} style="pb-10 text-center">
         <span className="text-primary">Privacy Policy</span> for TLT Judicial{" "}
         <span className="text-primary">Academy</span>
       </Headings>
       {privacyPolicyData.map((section, index) => (
         <section key={index}>
-          <h2 className="text-2xl font-semibold mb-2 ">
-            {section.title}
-          </h2>
+          <Headings heading={"h4"} className="mb-2">{section.title}</Headings>
           {section.details && (
-            <ul className="list-disc pl-6">
+            <ul className="mb-8">
               {section.details.map((detail, idx) => (
-                <li key={idx} className="mb-2">
+                <li key={idx} className="mb-2 flex items-start">
+                  <i className="fas fa-arrow-right text-primary mr-2"></i>
                   {detail}
                 </li>
               ))}
@@ -30,9 +29,10 @@ const PrivacyPolicy = () => {
                   <h3 className="text-lg font-medium mb-2">{item.subtitle}</h3>
                 )}
                 {item.details && (
-                  <ul className="list-disc pl-6">
+                  <ul className="pl-6">
                     {item.details.map((detail, detailIdx) => (
-                      <li key={detailIdx} className="mb-2">
+                      <li key={detailIdx} className="mb-2 flex items-start">
+                        <i className="fas fa-arrow-right text-primary mr-2 mt-2"></i>
                         {detail}
                       </li>
                     ))}
