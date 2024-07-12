@@ -1,28 +1,21 @@
 import React from "react";
 import ListItemHoverEffect from "./ListItemHoverEffect";
-import FacilityeImage from "./Facility-image";
+import FacilityImage from "./FacilityImage";
+import Headings from "../utiliti/heading/Heading";
 
 const Listsection = () => {
   return (
-    <>
-    <h2 className=" font-bold text-5xl text-black sm:mt-5 text-shadow">Amenities</h2>
-    <div className="px-0 md:px-20 py-0">
-   
-    <div className="flex flex-wrap sm:flex-nowrap justify-between sm:mt-30 sm:pt-20  border-collapse">
-     
-    <div className="  ">
-    <FacilityeImage />  
-   </div>
-     
-        <div className="mt-10 ">
+    <div className="mx-5 md:mx-20">
+      <Headings heading={"h2"}>Amenities</Headings>
+      <div className=" w-full flex flex-wrap lg:gap-10 lg:flex-nowrap mt-5">
+        <div className="lg:w-1/2 w-full">
+          <FacilityImage />
+        </div>
+        <div className="lg:w-1/2 w-full mt-10 lg:mt-8">
           <ListItemHoverEffect />
         </div>
-
-      
-
       </div>
     </div>
-    </>
   );
 };
 
