@@ -8,57 +8,109 @@ const AboutUs = () => {
     {
       title: "Foundation Batch",
       content: (
-        <div className="leading-loose">
-          <span>• Comprehensive batch covering foundation subjects for all state judicial services examination</span><br />
-          <span>• Especially designed to build a concrete conceptual clarity</span><br />
-          <span>• Exhaustive dictation and note making</span><br />
-          <span>• Aid in semester exam preparation</span><br />
-          <span>• Validity: 12+3 Months</span><br />
+        <div className="leading-loose space-y-2">
+          <div className="flex items-center">
+            <i className="fa-solid fa-arrow-right-long mr-2 text-red-500 text-xs"></i>
+            Comprehensive batch covering foundation subjects for all state
+            judicial services examination
+          </div>
+          <div className="flex items-center">
+            <i className="fa-solid fa-arrow-right-long mr-2 text-red-500 text-xs"></i>
+            Especially designed to build a concrete conceptual clarity
+          </div>
+          <div className="flex items-center">
+            <i className="fa-solid fa-arrow-right-long mr-2 text-red-500 text-xs"></i>
+            Exhaustive dictation and note making
+          </div>
+          <div className="flex items-center">
+            <i className="fa-solid fa-arrow-right-long mr-2 text-red-500 text-xs"></i>
+            Aid in semester exam preparation
+          </div>
+          <div className="flex items-center">
+            <i className="fa-solid fa-arrow-right-long mr-2 text-red-500 text-xs"></i>
+            Validity: 12+3 Months
+          </div>
         </div>
       ),
     },
     {
       title: "Fast-Track Batch",
       content: (
-        <div className="leading-loose">
-          <span>• Especially curated for short and rapid preparation</span><br />
-          <span>• Subject coverage through rigorous practice and regular tests</span><br />
-          <span>• Target-based revision</span><br />
-          <span>• Validity: 6 Months</span><br />
-          <span>• Validity: 3 Months (From the date of notification)</span><br />
+        <div className="leading-loose space-y-2">
+          <div className="flex items-center">
+            <i className="fa-solid fa-arrow-right-long mr-2 text-red-500 text-xs"></i>
+            Especially curated for short and rapid preparation
+          </div>
+          <div className="flex items-center">
+            <i className="fa-solid fa-arrow-right-long mr-2 text-red-500 text-xs"></i>
+            Subject coverage through rigorous practice and regular tests
+          </div>
+          <div className="flex items-center">
+            <i className="fa-solid fa-arrow-right-long mr-2 text-red-500 text-xs"></i>
+            Target-based revision
+          </div>
+          <div className="flex items-center">
+            <i className="fa-solid fa-arrow-right-long mr-2 text-red-500 text-xs"></i>
+            Validity: 6 Months
+          </div>
+          <div className="flex items-center">
+            <i className="fa-solid fa-arrow-right-long mr-2 text-red-500 text-xs"></i>
+            Validity: 3 Months (From the date of notification)
+          </div>
         </div>
       ),
     },
     {
       title: "Crash Course Batch",
       content: (
-        <div className="leading-loose">
-          <span>• Rapid revision batches targeting prelims exams</span><br />
-          <span>• Tips and tricks to master a variety of MCQs</span><br />
-          <span>• Skeleton notes for last-minute revision</span><br />
-          <span>• Rigorous MCQ practice</span><br />
-          <span>• Validity: 3 Months (From the date of notification)</span><br />
+        <div className="leading-loose space-y-2">
+          <div className="flex items-center">
+            <i className="fa-solid fa-arrow-right-long mr-2 text-red-500 text-xs"></i>
+            Rapid revision batches targeting prelims exams
+          </div>
+          <div className="flex items-center">
+            <i className="fa-solid fa-arrow-right-long mr-2 text-red-500 text-xs"></i>
+            Tips and tricks to master a variety of MCQs
+          </div>
+          <div className="flex items-center">
+            <i className="fa-solid fa-arrow-right-long mr-2 text-red-500 text-xs"></i>
+            Skeleton notes for last-minute revision
+          </div>
+          <div className="flex items-center">
+            <i className="fa-solid fa-arrow-right-long mr-2 text-red-500 text-xs"></i>
+            Rigorous MCQ practice
+          </div>
+          <div className="flex items-center">
+            <i className="fa-solid fa-arrow-right-long mr-2 text-red-500 text-xs"></i>
+            Validity: 3 Months (From the date of notification)
+          </div>
         </div>
       ),
     },
   ];
 
   return (
-    <section className="about-us" id="about">
-      <div className="container mx-5 md:mx-20 py-16">
-        <div className="mb-12">
-          <Headings style="h6">About Us</Headings>
-          <Headings style="h1">Know Us Better</Headings>
+    <section className="about-us mb-10" id="about">
+      <div className="container mx-auto px-5 md:px-20 mb-10 md:mb-20">
+        <div className="mb-16">
+          <Headings heading={"h5"} style={"text-shadow"}>
+            About Us
+          </Headings>
+          <Headings heading={"h2"}>
+            Know Us <span className="text-shadow text-primary">Better</span>{" "}
+          </Headings>
         </div>
-        <div className="w-full flex flex-col lg:flex-row">
-          <div className="w-full lg:w-1/2">
+        <div className="w-full flex flex-col lg:flex-row gap-10">
+          <div className="w-full lg:w-2/3">
             <div className="tabs">
-              <div className="flex justify-center mb-6">
-                <div className="menu flex space-x-4">
+              <div className="flex flex-wrap justify-center lg:justify-start mb-6">
+                <div className="menu flex flex-wrap gap-4 md:gap-6">
                   {tabContent.map((tab, index) => (
                     <div
                       key={index}
-                      className={`gradient-border cursor-pointer py-2 px-4 rounded ${activeTab === index ? "bg-gray-200" : ""}`}
+                      className={`shadow-md cursor-pointer py-3 px-5 md:px-7 rounded font-bold ${
+                        activeTab === index ? "bg-primary text-white " : ""
+                      }`}
                       onClick={() => setActiveTab(index)}
                     >
                       <span>{tab.title}</span>
@@ -66,22 +118,43 @@ const AboutUs = () => {
                   ))}
                 </div>
               </div>
-              <div
-                className="nacc bg-white p-6 rounded shadow-md transition-all duration-500 ease-in-out"
-                key={activeTab}
-              >
-                {tabContent[activeTab].content}
+              <div className="relative">
+                {tabContent.map((tab, index) => (
+                  <div
+                    key={index}
+                    className={`absolute top-0 left-0 w-full p-6 bg-white rounded transition-all duration-300 ease-in-out transform ${
+                      activeTab === index
+                        ? "opacity-100 translate-x-0"
+                        : "opacity-0 -translate-x-10"
+                    }`}
+                  >
+                    {tab.content}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
-          <div className="w-full lg:w-1/2 mt-10 lg:mt-0 lg:pl-10">
-            <div className="text-center lg:text-left">
-              <h4 className="text-2xl font-semibold">Traditional methods to achieve great Heights/ Building a Gurukul to embrace the Judiciary Students</h4>
-              <p className="mt-5">
-                At TLT Judicial Academy, we are proud to be an emerging institute dedicated to nurturing aspiring judiciary professionals. We envision our academy as a modern-day gurukul, where judiciary aspirants are embraced with innovative learning methods, unparalleled mentorship, and meticulously curated study material.
-              </p>
+          <div className="w-full lg:w-1/2">
+            <div className="text-justify">
+              <Headings heading={"h4"} style={"font-bold"}>
+                Traditional methods to achieve great Heights/ Building a Gurukul
+                to embrace the Judiciary Students
+              </Headings>
               <div className="mt-5">
-                <a href="#" className="inline-block bg-green-500 text-white py-2 px-4 rounded">Chat with Us</a>
+                At TLT Judicial Academy, we are proud to be an emerging
+                institute dedicated to nurturing aspiring judiciary
+                professionals. We envision our academy as a modern-day gurukul,
+                where judiciary aspirants are embraced with innovative learning
+                methods, unparalleled mentorship, and meticulously curated study
+                material.
+              </div>
+              <div className="mt-7">
+                <a
+                  href="#"
+                  className="inline-block bg-primary text-white py-2 px-6 font-bold rounded"
+                >
+                  Chat with Us
+                </a>
               </div>
             </div>
           </div>
