@@ -100,8 +100,8 @@ const AboutUs = () => {
             Know Us <span className="text-shadow text-primary">Better</span>{" "}
           </Headings>
         </div>
-        <div className="w-full flex flex-col md:flex-col lg:flex-row gap-10">
-          <div className="w-full lg:w-2/3">
+        <div className="w-full flex flex-col lg:flex-row gap-10">
+          <div className="w-full lg:w-1/2">
             <div className="">
               <div className="flex flex-wrap justify-center lg:justify-start mb-6">
                 <div className="menu flex flex-wrap gap-4 md:gap-6">
@@ -149,12 +149,27 @@ const AboutUs = () => {
                 material.
               </div>
               <div className="mt-7">
+              <div className="lg:hidden block">
+              <Headings heading={"h4"} style={"font-bold"}>
+                Traditional methods to achieve great Heights/ Building a Gurukul
+                to embrace the Judiciary Students
+              </Headings>
+              <div className="my-5">
+                At TLT Judicial Academy, we are proud to be an emerging
+                institute dedicated to nurturing aspiring judiciary
+                professionals. We envision our academy as a modern-day gurukul,
+                where judiciary aspirants are embraced with innovative learning
+                methods, unparalleled mentorship, and meticulously curated study
+                material.
+              </div>
+              </div>
                 <a
                   href="#"
                   className="inline-block bg-primary text-white py-2 px-6 font-bold rounded"
                 >
                   Chat with Us
                 </a>
+                
               </div>
             </div>
           </div>
