@@ -100,7 +100,7 @@ const AboutUs = () => {
             Know Us <span className="text-shadow text-primary">Better</span>{" "}
           </Headings>
         </div>
-        <div className="w-full flex flex-col lg:flex-row gap-10">
+        <div className="w-full flex flex-col md:flex-col lg:flex-row gap-10">
           <div className="w-full lg:w-2/3">
             <div className="">
               <div className="flex flex-wrap justify-center lg:justify-start mb-6">
