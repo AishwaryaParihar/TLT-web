@@ -34,7 +34,7 @@ const Documents = () => {
   return (
     <div className="flex w-full h-full sm:pl-[120px]">
       <div className="w-full sm:w-[60%] p-4  pl-[0px]">
-        <h1 className="mt-16 text-3xl font-[800] text-primary-marineBlue">
+        <h1 className="mt-16 text-3xl font-[800] mb-5 text-primary-marineBlue">
           Document Upload
         </h1>
 
@@ -100,7 +100,7 @@ const Documents = () => {
             </button>
 
             <button
-              className="bg-primary text-white border-0 rounded-md px-6 py-3 transition-all duration-300 hover:opacity-75"
+              className="bg-primary lg:mr-16 text-white border-0 rounded-md px-6 py-3 transition-all duration-300 hover:opacity-75"
               type="sumbit"
             >
               Next Step

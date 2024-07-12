@@ -26,7 +26,7 @@ export const data = [
   {
     id: 5,
     step: "step 5",
-    title: "Conset",
+    title: "Consent",
     linkTo: "conset",
   },
 ];
