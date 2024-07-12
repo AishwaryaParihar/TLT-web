@@ -1,80 +1,271 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const RegistrationForm = () => {
-  const [selectedState, setSelectedState] = useState('');
-  const [selectedCity, setSelectedCity] = useState('');
-  
+  const [selectedState, setSelectedState] = useState("");
+  const [selectedCity, setSelectedCity] = useState("");
+
   const states = [
-    { id: 1, name: 'Andaman and Nicobar Islands' },
-    { id: 2, name: 'Andhra Pradesh' },
-    { id: 3, name: 'Arunachal Pradesh' },
-    { id: 4, name: 'Assam' },
-    { id: 5, name: 'Bihar' },
-    { id: 6, name: 'Chandigarh' },
-    { id: 7, name: 'Chhattisgarh' },
-    { id: 8, name: 'Dadra and Nagar Haveli' },
-    { id: 9, name: 'Daman and Diu' },
-    { id: 10, name: 'Delhi' },
-    { id: 11, name: 'Goa' },
-    { id: 12, name: 'Gujarat' },
-    { id: 13, name: 'Haryana' },
-    { id: 14, name: 'Himachal Pradesh' },
-    { id: 15, name: 'Jammu and Kashmir' },
-    { id: 16, name: 'Jharkhand' },
-    { id: 17, name: 'Karnataka' },
-    { id: 18, name:  'Kenmore'},
-    { id: 19, name: 'Kerala' },
-    { id: 20, name: 'Lakshadweep' },
-    { id: 21, name: 'Madhya Pradesh' },
-    { id: 22, name: 'Maharashtra' },
-    { id: 23, name: 'Manipur' },
-    { id: 24, name: 'Meghalaya' },
-    { id: 25, name: 'Mizoram' },
-    { id: 26, name: 'Nagaland' },
-  
-    { id: 27, name: 'Odisha' },
-    { id: 28, name: 'Paschim Medinipur ' },
-    { id: 29, name: 'Pondicherry' },
-    { id: 30, name: 'Punjab' },
-    { id: 31, name: 'Rajasthan' },
-    { id: 32, name: 'Sikkim' },
-    { id: 33, name: 'Tamil Nadu' },
-    { id: 34, name: 'Telangana' },
-    { id: 35, name: 'Tripura' },
-    { id: 36, name: 'Uttar Pradesh' },
-    { id: 37, name: 'Uttarakhand' },
-    { id: 38, name: 'Vaisali' },
-    { id: 39, name: 'West Bengal' },
+    { id: 1, name: "Andaman and Nicobar Islands" },
+    { id: 2, name: "Andhra Pradesh" },
+    { id: 3, name: "Arunachal Pradesh" },
+    { id: 4, name: "Assam" },
+    { id: 5, name: "Bihar" },
+    { id: 6, name: "Chandigarh" },
+    { id: 7, name: "Chhattisgarh" },
+    { id: 8, name: "Dadra and Nagar Haveli" },
+    { id: 9, name: "Daman and Diu" },
+    { id: 10, name: "Delhi" },
+    { id: 11, name: "Goa" },
+    { id: 12, name: "Gujarat" },
+    { id: 13, name: "Haryana" },
+    { id: 14, name: "Himachal Pradesh" },
+    { id: 15, name: "Jammu and Kashmir" },
+    { id: 16, name: "Jharkhand" },
+    { id: 17, name: "Karnataka" },
+    { id: 18, name: "Kenmore" },
+    { id: 19, name: "Kerala" },
+    { id: 20, name: "Lakshadweep" },
+    { id: 21, name: "Madhya Pradesh" },
+    { id: 22, name: "Maharashtra" },
+    { id: 23, name: "Manipur" },
+    { id: 24, name: "Meghalaya" },
+    { id: 25, name: "Mizoram" },
+    { id: 26, name: "Nagaland" },
+
+    { id: 27, name: "Odisha" },
+    { id: 28, name: "Paschim Medinipur " },
+    { id: 29, name: "Pondicherry" },
+    { id: 30, name: "Punjab" },
+    { id: 31, name: "Rajasthan" },
+    { id: 32, name: "Sikkim" },
+    { id: 33, name: "Tamil Nadu" },
+    { id: 34, name: "Telangana" },
+    { id: 35, name: "Tripura" },
+    { id: 36, name: "Uttar Pradesh" },
+    { id: 37, name: "Uttarakhand" },
+    { id: 38, name: "Vaisali" },
+    { id: 39, name: "West Bengal" },
   ];
 
   const cities = {
     //Andaman and Nicobar Islands
-    1: ['Bombuflat', 'Garacharma', 'Port Blair', 'Rangat' ],
+    1: ["Bombuflat", "Garacharma", "Port Blair", "Rangat"],
     //'Andhra Pradesh'
-    2: ['Adoni','Amalapuram','Anantapur','Bhimavaram','Chittoor',' Chirala','Dharmavaram','Eluru',
-       'Guntur','Gudivada','Hindupur','Kakinada','Kavali','Kurnool','Machilipatnam',
-        'Machilipatnam','Mangalagiri',' Markapur',' Narasaraopet','Narsipatnam','Nellore','  Nidadavole','Nuzvid','Ongole','Palasa','Piduguralla','Pithapuram','Ponnur','Proddatur',
-        'Pulivendula','Punganur','Puttur',' Rajahmundry',' Rayachoti','Samalkot','Srikakulam',
-        'Sullurpeta','Tadepalligudem','Tadpatri','Tenali','Tirupati','Tuni','Venkatagiri','Vijayawada','Vinukonda','Visakhapatnam','Vizianagaram','Yemmiganur'],
-     
-   //'Arunachal Pradesh'
-    3: ['Aalo', 'Anini', 'Bomdila', 'Changlang', 'Daporijo', 'Hawai', 'Itanagar', 'Khonsa', 'Koloriang', 'Longding', 'Naharlagun', 'Namsai', 'Pasighat', 'Roing', 'Seppa', 'Tawang', 'Tezu', 'Yingkiong', 'Ziro'],
-// 'Assam' 
-    4: ['Abhayapuri', 'Amguri', 'Badarpur', 'Baihata', 'Baksa', 'Barpeta', 'Barpeta', 'Biswanath Chariali', 'Bongaigaon', 'Dhekiajuli', 'Dhubri', 'Dibrugarh', 'Diphu', 'Doom Dooma', 'Gauripur', 'Goalpara', 'Golaghat', 'Haflong', 'Hailakandi', 'Hojai', 'Jorhat', 'Karimganj', 'Kokrajhar', 'Lakhimpur', 'Lanka', 'Lumding', 'Mangaldoi', 'Morigaon', 'Nagaon', 'Nalbari', 'North Lakhimpur', 'Pathsala', 'Rangia', 'ibsagar',  'Silchar', 'Tinsukia', 'Tezpur'],
-//'Bihar'
-    5: ['Arrah', 'Aurangabad', 'Bagaha', 'Barauni',  'Bettiah', 'habua', 'Bhagalpur', ' Sharif', 'Buxar', 'Chhapra', 'Darbhanga', 'Dehri', 'Gaya', 'Gopalganj', 'Hajipur', 'Jamui', 'Jehanabad', 'Katihar', 'Kishanganj', 'Lakhisarai', 'Madhepura', 'Madhubani', 'Motihari', 'Munger', 'Muzaffarpur','Nawada', 'Patna', 'Purnia', 'Samastipur', 'Sasaram', 'Sheikhpura', 'Sheohar', 'Sitamarhi', 'Siwan', 'Supaul'],
-//'Chandigarh'
-    6: ['Behlana', 'Burail', 'Daria', 'Dhanas', 'Hallo Majra', 'Kaimbwala', 'Khuda Alisher', 'Khuda Jassu', 'Kishangarh', 'Maloya', 'Manimajra', 'Mauli Jagran', 'Raipur Kalan', 'Raipur ', 'Sarangpur'],
-//'Chhattisgarh'
-    7: ['Ambagarh Chowki',  'Arang', 'Bade Bacheli', 'Balod', 'Baloda', 'Baloda Bazar',  'Bhairamgarh', 'Bhatapara',  'Bhilai Charoda', 'Bhilai Nagar', 'Bilaspur', 'Birgaon', 'Chhuikhadan', 'Dalli-Rajhara', 'Dhamtari', 'Dongargarh', 'Durg', 'Gariaband', 'Jagdalpur', 'Janjgir', 'Jashpurnagar', 'Kanker', 'Kawardha', 'Kondagaon', 'Korba', 'Mahasamund', 'Mungeli', 'Naila Janjgir', 'Pandaria', 'Pendra', 'Raigarh','Raipur', 'Rajnandgaon', 'Ramanujganj', 'Saraipali', 'Simga', 'Takhatpur'],
-//'Dadra and Nagar Haveli'
-    8: ["Amli", "Dadra","Naroli","Silvassa"],
-//'Daman and Diu'
-    9: ["Daman","Diu"],
+    2: [
+      "Adoni",
+      "Amalapuram",
+      "Anantapur",
+      "Bhimavaram",
+      "Chittoor",
+      " Chirala",
+      "Dharmavaram",
+      "Eluru",
+      "Guntur",
+      "Gudivada",
+      "Hindupur",
+      "Kakinada",
+      "Kavali",
+      "Kurnool",
+      "Machilipatnam",
+      "Machilipatnam",
+      "Mangalagiri",
+      " Markapur",
+      " Narasaraopet",
+      "Narsipatnam",
+      "Nellore",
+      "  Nidadavole",
+      "Nuzvid",
+      "Ongole",
+      "Palasa",
+      "Piduguralla",
+      "Pithapuram",
+      "Ponnur",
+      "Proddatur",
+      "Pulivendula",
+      "Punganur",
+      "Puttur",
+      " Rajahmundry",
+      " Rayachoti",
+      "Samalkot",
+      "Srikakulam",
+      "Sullurpeta",
+      "Tadepalligudem",
+      "Tadpatri",
+      "Tenali",
+      "Tirupati",
+      "Tuni",
+      "Venkatagiri",
+      "Vijayawada",
+      "Vinukonda",
+      "Visakhapatnam",
+      "Vizianagaram",
+      "Yemmiganur",
+    ],
+
+    //'Arunachal Pradesh'
+    3: [
+      "Aalo",
+      "Anini",
+      "Bomdila",
+      "Changlang",
+      "Daporijo",
+      "Hawai",
+      "Itanagar",
+      "Khonsa",
+      "Koloriang",
+      "Longding",
+      "Naharlagun",
+      "Namsai",
+      "Pasighat",
+      "Roing",
+      "Seppa",
+      "Tawang",
+      "Tezu",
+      "Yingkiong",
+      "Ziro",
+    ],
+    // 'Assam'
+    4: [
+      "Abhayapuri",
+      "Amguri",
+      "Badarpur",
+      "Baihata",
+      "Baksa",
+      "Barpeta",
+      "Barpeta",
+      "Biswanath Chariali",
+      "Bongaigaon",
+      "Dhekiajuli",
+      "Dhubri",
+      "Dibrugarh",
+      "Diphu",
+      "Doom Dooma",
+      "Gauripur",
+      "Goalpara",
+      "Golaghat",
+      "Haflong",
+      "Hailakandi",
+      "Hojai",
+      "Jorhat",
+      "Karimganj",
+      "Kokrajhar",
+      "Lakhimpur",
+      "Lanka",
+      "Lumding",
+      "Mangaldoi",
+      "Morigaon",
+      "Nagaon",
+      "Nalbari",
+      "North Lakhimpur",
+      "Pathsala",
+      "Rangia",
+      "ibsagar",
+      "Silchar",
+      "Tinsukia",
+      "Tezpur",
+    ],
+    //'Bihar'
+    5: [
+      "Arrah",
+      "Aurangabad",
+      "Bagaha",
+      "Barauni",
+      "Bettiah",
+      "habua",
+      "Bhagalpur",
+      " Sharif",
+      "Buxar",
+      "Chhapra",
+      "Darbhanga",
+      "Dehri",
+      "Gaya",
+      "Gopalganj",
+      "Hajipur",
+      "Jamui",
+      "Jehanabad",
+      "Katihar",
+      "Kishanganj",
+      "Lakhisarai",
+      "Madhepura",
+      "Madhubani",
+      "Motihari",
+      "Munger",
+      "Muzaffarpur",
+      "Nawada",
+      "Patna",
+      "Purnia",
+      "Samastipur",
+      "Sasaram",
+      "Sheikhpura",
+      "Sheohar",
+      "Sitamarhi",
+      "Siwan",
+      "Supaul",
+    ],
+    //'Chandigarh'
+    6: [
+      "Behlana",
+      "Burail",
+      "Daria",
+      "Dhanas",
+      "Hallo Majra",
+      "Kaimbwala",
+      "Khuda Alisher",
+      "Khuda Jassu",
+      "Kishangarh",
+      "Maloya",
+      "Manimajra",
+      "Mauli Jagran",
+      "Raipur Kalan",
+      "Raipur ",
+      "Sarangpur",
+    ],
+    //'Chhattisgarh'
+    7: [
+      "Ambagarh Chowki",
+      "Arang",
+      "Bade Bacheli",
+      "Balod",
+      "Baloda",
+      "Baloda Bazar",
+      "Bhairamgarh",
+      "Bhatapara",
+      "Bhilai Charoda",
+      "Bhilai Nagar",
+      "Bilaspur",
+      "Birgaon",
+      "Chhuikhadan",
+      "Dalli-Rajhara",
+      "Dhamtari",
+      "Dongargarh",
+      "Durg",
+      "Gariaband",
+      "Jagdalpur",
+      "Janjgir",
+      "Jashpurnagar",
+      "Kanker",
+      "Kawardha",
+      "Kondagaon",
+      "Korba",
+      "Mahasamund",
+      "Mungeli",
+      "Naila Janjgir",
+      "Pandaria",
+      "Pendra",
+      "Raigarh",
+      "Raipur",
+      "Rajnandgaon",
+      "Ramanujganj",
+      "Saraipali",
+      "Simga",
+      "Takhatpur",
+    ],
+    //'Dadra and Nagar Haveli'
+    8: ["Amli", "Dadra", "Naroli", "Silvassa"],
+    //'Daman and Diu'
+    9: ["Daman", "Diu"],
     //delhi
-    10:[
-      "Delhi Cantonment",
-      "New Delhi"],
+    10: ["Delhi Cantonment", "New Delhi"],
     //goa
     11: [
       "Curchorem",
@@ -84,10 +275,10 @@ const RegistrationForm = () => {
       "Panaji",
       "Ponda",
       "Sancoale",
-      "Valpoi"
+      "Valpoi",
     ],
     //gujarat
-    12:[
+    12: [
       "Ahmedabad",
       "Amreli",
       "Anand",
@@ -136,7 +327,7 @@ const RegistrationForm = () => {
       "Valsad",
       "Vapi",
       "Veraval",
-      "Visnagar"
+      "Visnagar",
     ],
     //haryana
     13: [
@@ -168,9 +359,9 @@ const RegistrationForm = () => {
       "Sonipat",
       "Thanesar",
       "Tohana",
-      "Yamunanagar"
+      "Yamunanagar",
     ],
-   //himachal pradesh 
+    //himachal pradesh
     14: [
       "Baddi",
       "Bilaspur",
@@ -185,7 +376,7 @@ const RegistrationForm = () => {
       "Palampur",
       "Shimla",
       "Solan",
-      "Una"
+      "Una",
     ],
     //jammu kashmir
     15: [
@@ -205,7 +396,7 @@ const RegistrationForm = () => {
       "Samba",
       "Sopore",
       "Srinagar",
-      "Udhampur"
+      "Udhampur",
     ],
     //jharkhand
     16: [
@@ -237,10 +428,10 @@ const RegistrationForm = () => {
       "Sahibganj",
       "Saunda",
       "Simdega",
-      "Tenu dam-cum-Kathhara"
+      "Tenu dam-cum-Kathhara",
     ],
     //karnataka
-    17:[
+    17: [
       "Bagalkot",
       "Bengaluru",
       "Belagavi",
@@ -263,12 +454,10 @@ const RegistrationForm = () => {
       "Tumakuru",
       "Udupi",
       "Vijayapura",
-      "Yadgir"
+      "Yadgir",
     ],
     //kenmore
-    18: [
-      "Kenmore"
-    ],
+    18: ["Kenmore"],
     //kerala
     19: [
       "Adoor",
@@ -304,7 +493,7 @@ const RegistrationForm = () => {
       "Thrissur",
       "Tirur",
       "Tiruvalla",
-      "Vadakara"
+      "Vadakara",
     ],
     //lakshadweep
     20: [
@@ -317,10 +506,10 @@ const RegistrationForm = () => {
       "Kalpeni",
       "Kavaratti",
       "Kiltan",
-      "Minicoy"
+      "Minicoy",
     ],
-   //mp 
-    21:[
+    //mp
+    21: [
       "Alirajpur",
       "Ashoknagar",
       "Balaghat",
@@ -361,9 +550,9 @@ const RegistrationForm = () => {
       "Shivpuri",
       "Singrauli",
       "Ujjain",
-      "Vidisha"
+      "Vidisha",
     ],
-   //maharastra 
+    //maharastra
     22: [
       "Ahmednagar",
       "Akola",
@@ -402,9 +591,9 @@ const RegistrationForm = () => {
       "Ulhasnagar",
       "Vasai-Virar",
       "Wardha",
-      "Yavatmal"
+      "Yavatmal",
     ],
-   // manipur
+    // manipur
     23: [
       "Bishnupur",
       "Churachandpur",
@@ -414,7 +603,7 @@ const RegistrationForm = () => {
       "Mayang Imphal",
       "Nambol",
       "Thoubal",
-      "Ukhrul"
+      "Ukhrul",
     ],
     //meghalaya
     24: [
@@ -426,9 +615,9 @@ const RegistrationForm = () => {
       "Resubelpara",
       "Shillong",
       "Tura",
-      "Williamnagar"
+      "Williamnagar",
     ],
-   // mizoram
+    // mizoram
     25: [
       "Aizawl",
       "Champhai",
@@ -437,22 +626,12 @@ const RegistrationForm = () => {
       "Lunglei",
       "Mamit",
       "Saiha",
-      "Serchhip"
+      "Serchhip",
     ],
     //nagaland
-    26: [
-      "Dimapur",
-      "Kohima",
-      "Mokokchung",
-      "Tuensang",
-      "Wokha",
-      "Zunheboto"
-    ],
-    
-   
-  
-  
-   //udisha
+    26: ["Dimapur", "Kohima", "Mokokchung", "Tuensang", "Wokha", "Zunheboto"],
+
+    //udisha
     27: [
       "Balangir",
       "Baleshwar (Balasore)",
@@ -468,10 +647,9 @@ const RegistrationForm = () => {
       "Puri",
       "Rourkela",
       "Sambalpur",
-      
-  ],
-  //paschim madinipur
-    28:  [
+    ],
+    //paschim madinipur
+    28: [
       "Belda",
       "Chandrakona",
       "Garbeta",
@@ -483,17 +661,11 @@ const RegistrationForm = () => {
       "Salboni",
       "Sankrail",
       "Sutahata",
-     
-  ],
-  //pondicherry
-    29:  [
-      "Karaikal",
-      "Mahe",
-      "Pondicherry",
-      "Yanam",
-     ],
-  //panjab
-    30:[
+    ],
+    //pondicherry
+    29: ["Karaikal", "Mahe", "Pondicherry", "Yanam"],
+    //panjab
+    30: [
       "Amritsar",
       "Bathinda",
       "Faridkot",
@@ -506,9 +678,9 @@ const RegistrationForm = () => {
       "Pathankot",
       "Patiala",
       "Sangrur",
-     ],
-  //Rajeshthan
-    31:[
+    ],
+    //Rajeshthan
+    31: [
       "Ajmer",
       "Alwar",
       "Banswara",
@@ -538,18 +710,11 @@ const RegistrationForm = () => {
       "Sri Ganganagar",
       "Tonk",
       "Udaipur",
-     
-  ],
-  //sikkim
-    32:[
-      "Gangtok",
-      "Gyalshing",
-      "Mangan",
-      "Namchi",
-      "Singtam",
-      ],
-  //tamil nadu
-    33:[
+    ],
+    //sikkim
+    32: ["Gangtok", "Gyalshing", "Mangan", "Namchi", "Singtam"],
+    //tamil nadu
+    33: [
       "Chennai",
       "Coimbatore",
       "Erode",
@@ -561,11 +726,10 @@ const RegistrationForm = () => {
       "Tirunelveli",
       "Tiruppur",
       "Vellore",
-  
-  ],
-  
-  //telangana
-    34:[
+    ],
+
+    //telangana
+    34: [
       "Adilabad",
       "Hyderabad",
       "Jagtial",
@@ -581,74 +745,62 @@ const RegistrationForm = () => {
       "Siddipet",
       "Suryapet",
       "Warangal",
-      ],
-      //tripura
-      35:[
-        "Agartala",
-        "Belonia",
-        "Dharmanagar",
-        "Kailasahar",
-        "Udaipur",
-      ],
-      //uttar pradesh
-      36:[
-        "Agra",
-        "Aligarh",
-        "Allahabad",
-        "Amroha",
-        "Azamgarh",
-        "Bareilly",
-        "Basti",
-        "Bijnor",
-        "Bulandshahr",
-        "Etawah",
-        "Faizabad",
-        "Firozabad",
-        "Ghaziabad",
-        "Gorakhpur",
-        "Hapur",
-        "Jhansi",
-        "Kanpur",
-        "Lucknow",
-        "Mathura",
-        "Meerut",
-        "Mirzapur",
-        "Moradabad",
-        "Muzaffarnagar",
-        "Noida",
-        "Prayagraj",
-        "Rampur",
-        "Saharanpur",
-        "Sambhal",
-        "Shahjahanpur",
-        "Varanasi",
-         ],
-         //uttarakhand
-        37:[
-          "Almora",
-          "Dehradun",
-          "Haridwar",
-          "Haldwani",
-          "Mussoorie",
-          "Nainital",
-          "Pauri",
-          "Rishikesh",
-          "Roorkee",
-          "Rudrapur",
-          "Tehri",
-          "Udham Singh Nagar",
-          "Uttarkashi",
-        ],
-        //vaisali
-     38:[
-      "Hajipur",
-      "Lalganj",
-      "Mahua",
-      "Raghopur",
-      "Vaishali",
     ],
+    //tripura
+    35: ["Agartala", "Belonia", "Dharmanagar", "Kailasahar", "Udaipur"],
+    //uttar pradesh
+    36: [
+      "Agra",
+      "Aligarh",
+      "Allahabad",
+      "Amroha",
+      "Azamgarh",
+      "Bareilly",
+      "Basti",
+      "Bijnor",
+      "Bulandshahr",
+      "Etawah",
+      "Faizabad",
+      "Firozabad",
+      "Ghaziabad",
+      "Gorakhpur",
+      "Hapur",
+      "Jhansi",
+      "Kanpur",
+      "Lucknow",
+      "Mathura",
+      "Meerut",
+      "Mirzapur",
+      "Moradabad",
+      "Muzaffarnagar",
+      "Noida",
+      "Prayagraj",
+      "Rampur",
+      "Saharanpur",
+      "Sambhal",
+      "Shahjahanpur",
+      "Varanasi",
+    ],
+    //uttarakhand
+    37: [
+      "Almora",
+      "Dehradun",
+      "Haridwar",
+      "Haldwani",
+      "Mussoorie",
+      "Nainital",
+      "Pauri",
+      "Rishikesh",
+      "Roorkee",
+      "Rudrapur",
+      "Tehri",
+      "Udham Singh Nagar",
+      "Uttarkashi",
+    ],
+    //vaisali
+    38: ["Hajipur", "Lalganj", "Mahua", "Raghopur", "Vaishali"],
     // west bengal
-    39:[
+    39: [
       "Asansol",
       "Baharampur",
       "Bally",
@@ -669,79 +821,120 @@ const RegistrationForm = () => {
       "Siliguri",
       "South Dumdum",
       "Titagarh",
-      ]
-    };
+    ],
+  };
 
   return (
-    
- 
-     <div className="text-justify mx-auto mx-0 sm:px-10 px-5 md:px-20 py-0 ">
-        <div className='mt-4'>
-          <h2 className="text-white bg-red-500 text-center text-3xl py-3 px-4 sm:px-10">
+    <div className="text-justify mx-auto sm:px-10 px-5 md:px-10 lg:px-20 py-0 ">
+      <div className="mt-4">
+        <h2 className="text-white bg-red-500 text-center text-3xl py-3 px-4 sm:px-10">
           SUPER 30 FAST TRACK BATCH
-          </h2>
-        </div>
+        </h2>
+      </div>
 
-        <form className="mt-5 ">
-          <div className="space-y-6 sm:px-10 md:px-2 ">
-            <div className="sm:flex items-center">
-              <label htmlFor="choose-picture" className="block text-left font-bold text-lg md:w-1/3 sm:w-1/4">
-                Choose picture
-              </label>
-              <input type="file" name="choose-picture" id="choose-picture" className="border rounded w-full p-2" />
-            </div>
+      <form className="mt-5 ">
+        <div className="space-y-6 sm:px-10 md:px-2 ">
+          <div className="sm:flex items-center">
+            <label
+              htmlFor="choose-picture"
+              className="block text-left font-bold text-lg md:w-1/3 sm:w-1/4"
+            >
+              Choose picture
+            </label>
+            <input
+              type="file"
+              name="choose-picture"
+              id="choose-picture"
+              className="border rounded w-full p-2"
+            />
+          </div>
 
-            <div className="sm:flex items-center">
-              <label htmlFor="name" className="block text-left font-bold text-lg md:w-1/3 sm:w-1/4">
-                Name:
-              </label>
-              <input type="text" name="name" id="name" className="border rounded w-full p-2" />
-            </div>
+          <div className="sm:flex items-center">
+            <label
+              htmlFor="name"
+              className="block text-left font-bold text-lg md:w-1/3 sm:w-1/4"
+            >
+              Name:
+            </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              className="border rounded w-full p-2"
+            />
+          </div>
 
-            <div className="sm:flex items-center">
-              <label htmlFor="place-of-birth" className="block text-left font-bold text-lg md:w-1/3 sm:w-1/4">
-                Place Of Birth:
-              </label>
-              <input type="text" name="place-of-birth" id="place-of-birth"  className="border rounded w-full p-2" />
-            </div>
+          <div className="sm:flex items-center">
+            <label
+              htmlFor="place-of-birth"
+              className="block text-left font-bold text-lg md:w-1/3 sm:w-1/4"
+            >
+              Place Of Birth:
+            </label>
+            <input
+              type="text"
+              name="place-of-birth"
+              id="place-of-birth"
+              className="border rounded w-full p-2"
+            />
+          </div>
 
-            <div className="sm:flex items-center">
-              <label htmlFor="date-of-birth" className="block text-left font-bold text-lg  sm:w-1/4 md:w-1/3">
-                Date Of Birth:
-              </label>
-              <input type="date" name="date-of-birth" id="date-of-birth" className="border rounded w-full p-2" />
-            </div>
+          <div className="sm:flex items-center">
+            <label
+              htmlFor="date-of-birth"
+              className="block text-left font-bold text-lg  sm:w-1/4 md:w-1/3"
+            >
+              Date Of Birth:
+            </label>
+            <input
+              type="date"
+              name="date-of-birth"
+              id="date-of-birth"
+              className="border rounded w-full p-2"
+            />
+          </div>
 
-            <div className="sm:flex items-center">
-              <label htmlFor="full-address" className="block text-left font-bold text-lg  sm:w-1/4 md:w-1/3">
-                Full Address:
-              </label>
-              <textarea type="text" name="full-address" id="full-address"  className="border rounded w-full p-2" />
-            </div>
+          <div className="sm:flex items-center">
+            <label
+              htmlFor="full-address"
+              className="block text-left font-bold text-lg  sm:w-1/4 md:w-1/3"
+            >
+              Full Address:
+            </label>
+            <textarea
+              type="text"
+              name="full-address"
+              id="full-address"
+              className="border rounded w-full p-2"
+            />
+          </div>
 
-            <div className="sm:flex items-center">
-              <label htmlFor="state" className="block text-left font-bold text-lg 
-              4  md:w-1/3 sm:w-1/4">
-                State:
-              </label>
-              <select
-                className="form-control border rounded w-full p-2"
-                name="f_state"
-                id="fstate"
-                onChange={(e) => setSelectedState(e.target.value)}
-              >
-                <option selected hidden disabled>
-                  Select State
+          <div className="sm:flex items-center">
+            <label
+              htmlFor="state"
+              className="block text-left font-bold text-lg 
+              4  md:w-1/3 sm:w-1/4"
+            >
+              State:
+            </label>
+            <select
+              className="form-control border rounded w-full p-2"
+              name="f_state"
+              id="fstate"
+              onChange={(e) => setSelectedState(e.target.value)}
+            >
+              <option selected hidden disabled>
+                Select State
+              </option>
+              {states.map((state) => (
+                <option key={state.id} value={state.id}>
+                  {state.name}
                 </option>
-                {states.map((state) => (
-                  <option key={state.id} value={state.id}>
-                    {state.name}
-                  </option>
-                ))}
-              </select>
-            </div>
+              ))}
+            </select>
+          </div>
 
-       {/*     <div className="sm:flex items-center">
+          {/*     <div className="sm:flex items-center">
               <label htmlFor="city" className="block text-left font-bold text-lg  w-1/5  sm:w-1/4">
                 City:
               </label>
@@ -763,192 +956,387 @@ const RegistrationForm = () => {
               </select>
             </div>
         */}
-            <div className="sm:flex items-center">
-              <label htmlFor="pin-code" className="block text-left font-bold text-lg sm:w-1/4 md:w-1/3">
-                Pin Code:
-              </label>
-              <input type="number" name="pin-code" id="pin-code" className="border rounded w-full p-2" />
-            </div>
-
-            <div className="sm:flex items-center">
-              <label htmlFor="qualification" className="block text-left font-bold text-lg  md:w-1/3  sm:w-1/4">
-                Qualification:
-              </label>
-              <input type="text" name="qualification" id="qualification"  className="border rounded w-full p-2" />
-            </div>
-
-            <div className="sm:flex items-center">
-              <label htmlFor="college-university" className="block text-left font-bold text-lg md:w-1/3 sm:w-1/4">
-                College/University:
-              </label>
-              <input type="text" name="college-university" id="college-university"  className="border rounded w-full p-2" />
-            </div>
-       
-            <div className='sm:flex items-center'>
-         <label className="block text-left font-bold text-lg md:w-1/3 sm:w-1/5">Pursuing LL.B:</label>
-          <div className="flex space-x-4">
-            <label>
-              <input type="radio" name="pursuingLLB" value="yes" className="mr-2"/> Yes
+          <div className="sm:flex items-center">
+            <label
+              htmlFor="pin-code"
+              className="block text-left font-bold text-lg sm:w-1/4 md:w-1/3"
+            >
+              Pin Code:
             </label>
-            <label>
-              <input type="radio" name="pursuingLLB" value="no" className="mr-2"/> No
-           </label>
-           </div>
-
-        </div>
-         <div className='sm:flex items-center'>
-          <label htmlFor="year-of-passing" className="block text-left font-bold text-lg  sm:w-1/4 md:w-1/3">Year Of Passing:</label>
-          <input type="number" name="year-of-passing" id="year-of-passing"  className="border rounded w-full p-2"/>
-        </div>
-
-        <div className='sm:flex items-center'>
-          <label htmlFor="email" className="block text-left font-bold text-lg md:w-1/3  sm:w-1/4">Email:</label>
-          <input type="email" name="email" id="email"  className="border rounded w-full p-2"/>
+            <input
+              type="number"
+              name="pin-code"
+              id="pin-code"
+              className="border rounded w-full p-2"
+            />
           </div>
-          {/* personal details */} 
-       
-           
+
+          <div className="sm:flex items-center">
+            <label
+              htmlFor="qualification"
+              className="block text-left font-bold text-lg  md:w-1/3  sm:w-1/4"
+            >
+              Qualification:
+            </label>
+            <input
+              type="text"
+              name="qualification"
+              id="qualification"
+              className="border rounded w-full p-2"
+            />
+          </div>
+
+          <div className="sm:flex items-center">
+            <label
+              htmlFor="college-university"
+              className="block text-left font-bold text-lg md:w-1/3 sm:w-1/4"
+            >
+              College/University:
+            </label>
+            <input
+              type="text"
+              name="college-university"
+              id="college-university"
+              className="border rounded w-full p-2"
+            />
+          </div>
+
+          <div className="sm:flex items-center">
+            <label className="block text-left font-bold text-lg md:w-1/3 sm:w-1/5">
+              Pursuing LL.B:
+            </label>
+            <div className="flex space-x-4">
+              <label>
+                <input
+                  type="radio"
+                  name="pursuingLLB"
+                  value="yes"
+                  className="mr-2"
+                />{" "}
+                Yes
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="pursuingLLB"
+                  value="no"
+                  className="mr-2"
+                />{" "}
+                No
+              </label>
+            </div>
+          </div>
+          <div className="sm:flex items-center">
+            <label
+              htmlFor="year-of-passing"
+              className="block text-left font-bold text-lg  sm:w-1/4 md:w-1/3"
+            >
+              Year Of Passing:
+            </label>
+            <input
+              type="number"
+              name="year-of-passing"
+              id="year-of-passing"
+              className="border rounded w-full p-2"
+            />
+          </div>
+
+          <div className="sm:flex items-center">
+            <label
+              htmlFor="email"
+              className="block text-left font-bold text-lg md:w-1/3  sm:w-1/4"
+            >
+              Email:
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              className="border rounded w-full p-2"
+            />
+          </div>
+          {/* personal details */}
+
           <div>
-          <h2 className="text-white bg-red-500 text-center text-3xl py-3 px-4">Personal Information</h2>
-        </div>
-        <div className='sm:flex items-center'>
-          <label htmlFor="father-name" className="block text-left font-bold text-lg  sm:w-1/4 md:w-1/3">Father's Name:</label>
-          <input type="text" name="father-name" id="father-name" className="border rounded w-full p-2"/>
-        </div>
-
-        <div className='sm:flex items-center'>
-          <label htmlFor="mother-name" className="block text-left font-bold text-lg sm:w-1/4 md:w-1/3">Mother's Name:</label>
-          <input type="text" name="mother-name" id="mother-name" className="border rounded w-full p-2"/>
-        </div>
-
-        <div className='sm:flex items-center'>
-          <label htmlFor="permanent-address" className="block text-left font-bold text-lg sm:w-1/4 md:w-1/3">Permanent Address:</label>
-          <textarea type="text" name="permanent-address" id="permanent-address" className="border rounded w-full p-2"/>
-        </div>
-
-        <div className='sm:flex items-center'>
-          <label htmlFor="state" className="block text-left font-bold text-lg sm:w-1/4 md:w-1/3">State:</label>
-         
-          <select
-          className="form-control border rounded w-full p-2"
-          name="f_state"
-          id="fstate"
-          onChange={(e) => setSelectedState(e.target.value)}
-        >
-          <option selected hidden disabled>
-            Select State
-          </option>
-          {states.map((state) => (
-            <option key={state.id} value={state.id}>
-              {state.name}
-            </option>
-          ))}
-        </select>
-     
-        </div>
-
-        <div className='sm:flex items-center'>
-          <label htmlFor="city" className="block text-left font-bold text-lg sm:w-1/4 md:w-1/3">City:</label>
-
-          <select
-          className="form-control border rounded w-full p-2"
-          name="f_city"
-          id="fcity"
-          onChange={(e) => setSelectedCity(e.target.value)}
-          disabled={!selectedState}
-        >
-          <option selected hidden disabled>
-            Select City
-          </option>
-          {selectedState && cities[selectedState].map((city, index) => (
-            <option key={index} value={city}>
-              {city}
-            </option>
-          ))}
-        </select>
-         
-        </div>
-
-        <div className='sm:flex items-center'>
-          <label htmlFor="aadhar-card" className="block text-left font-bold text-lg  sm:w-1/4 md:w-1/3">Upload Aadhar<br></br> (Front and Back):</label>
-          <input type="file" name="aadhar-card" id="aadhar-card" className="border rounded w-full p-2"/>
-        </div>
-
-   {/* last exam */}     
-           <div>
-             <h2 className="text-white bg-red-500 text-center text-3xl py-3 px-4 sm:px-10"> Details Of Last Qualified Exam</h2>
-           </div>
-           <div className='flex justify-around items-center space-x-4'>
-           <div className='flex justify-between items-center'>
-             <label className="flex  text-left font-bold text-lg w-1/6 px-5">Prelims:  
-             <input type="radio" name="prelims" value="yes" className="mx-2 mt-1"/> 
-            </label>
-             </div>
-             <div className='flex justify-between items-center'>
-
-             <label className="flex text-left font-bold text-lg w-1/6">Mains:
-             <input type="radio" name="mains" value="yes" className="mx-2 mt-1"/> </label>
-           </div>
-           </div>
-           
-           <div className='sm:flex items-center'>
-           <label htmlFor="state" className="block text-left font-bold text-lg  sm:w-1/4 ">State:</label>
-           <input type="text" name="state" id="state"  className="border rounded w-full p-2"/>
-         </div>
-           
-          
-          <div className='sm:flex items-center'>
-          <label htmlFor="score" className="block text-left font-bold text-lg  sm:w-1/4 ">Score:</label>
-          <input type="number" name="score" id="score"  className="border rounded w-full p-2"/>
-        </div>
-          
-          <div className='sm:flex items-center'>
-          <label htmlFor="year" className="block text-left font-bold text-lg  sm:w-1/4 ">Year:</label>
-          <input type="number" name="year" id="year"  className="border rounded w-full p-2"/>
-        </div>
-        
-   {/* fees paid  */}
-        <div>
-           <h2 className="text-white bg-red-500 text-center text-3xl py-3 px-4 sm:px-10">Fees Paid ( First Installment )</h2>
-         </div>
-        <div className='sm:flex justify-between items-center'>
-
-       <label className="flex text-left font-bold text-lg sm:w-1/6"> Online / UPI:
-         <input type="radio" name="mains" value="yes" className="mx-2 mt-1"/> </label>
-      </div>
-    
-      <div className='sm:flex items-center'>
-      <label htmlFor=" amount-paid" className="block text-left font-bold text-lg  sm:w-1/4">Amount Paid :</label>
-      <input type="number" name=" amount-paid" id=" amount-paid "  className="border rounded w-full p-2"/>
-      </div>
-      
-      <div className='sm:flex items-center'>
-      <label className="block text-left font-bold text-lg  sm:w-1/6">Old Student of Shubham Sir :</label>
-       <div className="flex space-x-4 sm:ml-8">
-         <label>
-           <input type="radio" name="pursuingLLB" value="yes" className="mr-2"/> Yes
-         </label>
-         <label>
-           <input type="radio" name="pursuingLLB" value="no" className="mr-2"/> No
-        </label>
-        </div>
-      </div>
-  
-  
-  <div className='sm:flex items-center'>
-          <label htmlFor="institution" className="block text-left font-bold text-lg sm:w-1/4">Institution :</label>
-          <input type="text" name="institution " id="institution "  className="border rounded w-full p-2"/>
+            <h2 className="text-white bg-red-500 text-center text-3xl py-3 px-4">
+              Personal Information
+            </h2>
           </div>
- 
- <div className="flex justify-center mt-6">
- <button type='submit' className='bg-red-500 border text-white font-bold py-2 px-4 rounded mb-10'>
-   Submit
- </button>
-</div>
+          <div className="sm:flex items-center">
+            <label
+              htmlFor="father-name"
+              className="block text-left font-bold text-lg  sm:w-1/4 md:w-1/3"
+            >
+              Father's Name:
+            </label>
+            <input
+              type="text"
+              name="father-name"
+              id="father-name"
+              className="border rounded w-full p-2"
+            />
+          </div>
+
+          <div className="sm:flex items-center">
+            <label
+              htmlFor="mother-name"
+              className="block text-left font-bold text-lg sm:w-1/4 md:w-1/3"
+            >
+              Mother's Name:
+            </label>
+            <input
+              type="text"
+              name="mother-name"
+              id="mother-name"
+              className="border rounded w-full p-2"
+            />
+          </div>
+
+          <div className="sm:flex items-center">
+            <label
+              htmlFor="permanent-address"
+              className="block text-left font-bold text-lg sm:w-1/4 md:w-1/3"
+            >
+              Permanent Address:
+            </label>
+            <textarea
+              type="text"
+              name="permanent-address"
+              id="permanent-address"
+              className="border rounded w-full p-2"
+            />
+          </div>
+
+          <div className="sm:flex items-center">
+            <label
+              htmlFor="state"
+              className="block text-left font-bold text-lg sm:w-1/4 md:w-1/3"
+            >
+              State:
+            </label>
+
+            <select
+              className="form-control border rounded w-full p-2"
+              name="f_state"
+              id="fstate"
+              onChange={(e) => setSelectedState(e.target.value)}
+            >
+              <option selected hidden disabled>
+                Select State
+              </option>
+              {states.map((state) => (
+                <option key={state.id} value={state.id}>
+                  {state.name}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div className="sm:flex items-center">
+            <label
+              htmlFor="city"
+              className="block text-left font-bold text-lg sm:w-1/4 md:w-1/3"
+            >
+              City:
+            </label>
+
+            <select
+              className="form-control border rounded w-full p-2"
+              name="f_city"
+              id="fcity"
+              onChange={(e) => setSelectedCity(e.target.value)}
+              disabled={!selectedState}
+            >
+              <option selected hidden disabled>
+                Select City
+              </option>
+              {selectedState &&
+                cities[selectedState].map((city, index) => (
+                  <option key={index} value={city}>
+                    {city}
+                  </option>
+                ))}
+            </select>
+          </div>
+
+          <div className="sm:flex items-center">
+            <label
+              htmlFor="aadhar-card"
+              className="block text-left font-bold text-lg  sm:w-1/4 md:w-1/3"
+            >
+              Upload Aadhar<br></br> (Front and Back):
+            </label>
+            <input
+              type="file"
+              name="aadhar-card"
+              id="aadhar-card"
+              className="border rounded w-full p-2"
+            />
+          </div>
+
+          {/* last exam */}
+          <div>
+            <h2 className="text-white bg-red-500 text-center text-3xl py-3 px-4 sm:px-10">
+              {" "}
+              Details Of Last Qualified Exam
+            </h2>
+          </div>
+          <div className="flex justify-around items-center space-x-4">
+            <div className="flex justify-between items-center">
+              <label className="flex  text-left font-bold text-lg w-1/6 px-5">
+                Prelims:
+                <input
+                  type="radio"
+                  name="prelims"
+                  value="yes"
+                  className="mx-2 mt-1"
+                />
+              </label>
+            </div>
+            <div className="flex justify-between items-center">
+              <label className="flex text-left font-bold text-lg w-1/6">
+                Mains:
+                <input
+                  type="radio"
+                  name="mains"
+                  value="yes"
+                  className="mx-2 mt-1"
+                />{" "}
+              </label>
+            </div>
+          </div>
+
+          <div className="sm:flex items-center">
+            <label
+              htmlFor="state"
+              className="block text-left font-bold text-lg  sm:w-1/4 "
+            >
+              State:
+            </label>
+            <input
+              type="text"
+              name="state"
+              id="state"
+              className="border rounded w-full p-2"
+            />
+          </div>
+
+          <div className="sm:flex items-center">
+            <label
+              htmlFor="score"
+              className="block text-left font-bold text-lg  sm:w-1/4 "
+            >
+              Score:
+            </label>
+            <input
+              type="number"
+              name="score"
+              id="score"
+              className="border rounded w-full p-2"
+            />
+          </div>
+
+          <div className="sm:flex items-center">
+            <label
+              htmlFor="year"
+              className="block text-left font-bold text-lg  sm:w-1/4 "
+            >
+              Year:
+            </label>
+            <input
+              type="number"
+              name="year"
+              id="year"
+              className="border rounded w-full p-2"
+            />
+          </div>
+
+          {/* fees paid  */}
+          <div>
+            <h2 className="text-white bg-red-500 text-center text-3xl py-3 px-4 sm:px-10">
+              Fees Paid ( First Installment )
+            </h2>
+          </div>
+          <div className="sm:flex justify-between items-center">
+            <label className="flex text-left font-bold text-lg sm:w-1/6">
+              {" "}
+              Online / UPI:
+              <input
+                type="radio"
+                name="mains"
+                value="yes"
+                className="mx-2 mt-1"
+              />{" "}
+            </label>
+          </div>
+
+          <div className="sm:flex items-center">
+            <label
+              htmlFor=" amount-paid"
+              className="block text-left font-bold text-lg  sm:w-1/4"
+            >
+              Amount Paid :
+            </label>
+            <input
+              type="number"
+              name=" amount-paid"
+              id=" amount-paid "
+              className="border rounded w-full p-2"
+            />
+          </div>
+
+          <div className="sm:flex items-center">
+            <label className="block text-left font-bold text-lg  sm:w-1/6">
+              Old Student of Shubham Sir :
+            </label>
+            <div className="flex space-x-4 sm:ml-8">
+              <label>
+                <input
+                  type="radio"
+                  name="pursuingLLB"
+                  value="yes"
+                  className="mr-2"
+                />{" "}
+                Yes
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="pursuingLLB"
+                  value="no"
+                  className="mr-2"
+                />{" "}
+                No
+              </label>
+            </div>
+          </div>
+
+          <div className="sm:flex items-center">
+            <label
+              htmlFor="institution"
+              className="block text-left font-bold text-lg sm:w-1/4"
+            >
+              Institution :
+            </label>
+            <input
+              type="text"
+              name="institution "
+              id="institution "
+              className="border rounded w-full p-2"
+            />
+          </div>
+
+          <div className="flex justify-center mt-6">
+            <button
+              type="submit"
+              className="bg-red-500 border text-white font-bold py-2 px-4 rounded mb-10"
+            >
+              Submit
+            </button>
+          </div>
         </div>
-        </form>
-      </div>
-    
+      </form>
+    </div>
   );
 };
 

@@ -682,12 +682,12 @@ const EmpowermentBatch = () => {
  
   return (
     
-    <div className="px-5 md:px-20 py-0">
-      <div>
+    <div className="">
+      <div className='px-5 md:px-10 lg:px-20 py-0'>
         <Registration />
       </div>
 
-      <div className="text-justify mx-auto mx-4  sm:px-20 ">
+      <div className="text-justify mx-auto sm:px-10 px-5 md:px-10 lg:px-20 py-0 ">
         <div className='mt-4 '>
           <h2 className="text-white bg-red-500 text-center text-3xl py-3 px-4 sm:px-20  ">
             EMPOWERMENT BATCH 01
@@ -696,7 +696,7 @@ const EmpowermentBatch = () => {
         
 
         <form className="mt-0">
-          <div className="space-y-5 sm:px-10">
+          <div className="space-y-5">
             <div className="sm:flex items-center">
               <label htmlFor="choose-picture" className="block text-left font-bold text-lg  sm:w-1/4">
                 Choose picture:
