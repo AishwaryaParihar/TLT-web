@@ -5,13 +5,13 @@ import Headings from "./utiliti/heading/Heading";
 const PrivacyPolicy = () => {
   return (
     <div className="px-5 md:px-20 py-8">
-      <Headings heading={"h2"} style="pb-10 text-shadow text-center">
+      <Headings heading={"h2"} style="pb-10  text-center">
         <span className="text-primary">Privacy Policy</span> for TLT Judicial{" "}
         <span className="text-primary">Academy</span>
       </Headings>
       {privacyPolicyData.map((section, index) => (
         <section key={index}>
-          <h2 className="text-2xl font-semibold mb-2 text-shadow">
+          <h2 className="text-2xl font-semibold mb-2 ">
             {section.title}
           </h2>
           {section.details && (
