@@ -26,7 +26,7 @@ const AboutFirm = () => {
             <img
               src={data.image3}
               alt="justice image"
-              className="lg:w-[300px] lg:h-[465px] md:w-[350px] md:h-[610px] sm:w-[170px] sm:h-[315px] w-[150px] h-[250px] object-cover mt-10 md:mt-12"
+              className="lg:w-[300px] lg:h-[465px] md:w-[350px] md:h-[610px] sm:w-[170px] sm:h-[315px] w-[150px] h-[300px] object-cover mt-10 md:mt-12"
             />
           </div>
         </div>
