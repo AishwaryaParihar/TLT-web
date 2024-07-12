@@ -6,7 +6,7 @@ const TnC = () => {
   return (
     <div className="px-5 md:px-20 py-8">
       <Headings heading={"h2"} style="pb-10 text-center">
-        <span className="text-primary">Terms and Conditions</span> for Admission to
+        <span className="text-primary">Terms and Conditions</span> for Admission to <br />
         <span className="text-primary"> TLT</span> Judicial Academy:
       </Headings>
       {courseDetails.map((section, index) => (
