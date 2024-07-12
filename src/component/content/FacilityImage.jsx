@@ -8,7 +8,7 @@ const FacilityImage = () => {
     <div className="flex flex-wrap justify-evenly gap-2 relative">
       <div className="flex flex-wrap sm:flex-nowrap justify-center gap-2 sm:mt-10">
         <div className="flex flex-col px- gap-3 md:gap-2 mt-[50px] md:mt-0 lg:mt-[0px]">
-          <div className="w-[160px] h-[120px] md:w-[350px] md:h-[250px] lg:w-[250px] lg:h-[200px]">
+          <div className="w-[150px] h-[120px] sm:w-[160px] sm:h-[120px] md:w-[350px] md:h-[250px] lg:w-[250px] lg:h-[200px]">
             <img
               src={facility}
               alt="pen image"
@@ -16,7 +16,7 @@ const FacilityImage = () => {
             />
           </div>
 
-          <div className="w-[160px] h-[120px] md:w-[350px] md:h-[240px] lg:w-[250px] lg:h-[200px]">
+          <div className="w-[150px] h-[120px] sm:w-[160px] sm:h-[120px] md:w-[350px] md:h-[240px] lg:w-[250px] lg:h-[200px]">
             <img
               src={fc}
               alt="hammer image"
@@ -29,7 +29,7 @@ const FacilityImage = () => {
           <img
             src={court}
             alt="justice image"
-            className="w-[160px] h-[255px] md:w-[350px] md:h-[500px] lg:w-[250px] lg:h-[400px] object-cover"
+            className="w-[150px] h-[255px] sm:w-[160px] sm:h-[255px] md:w-[350px] md:h-[500px] lg:w-[250px] lg:h-[400px] object-cover"
           />
         </div>
       </div>
