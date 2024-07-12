@@ -104,7 +104,7 @@ const AboutUs = () => {
           <div className="w-full lg:w-2/3">
             <div className="">
               <div className="flex flex-wrap justify-center lg:justify-start mb-6">
-                <div className="menu flex flex-wrap gap-4 md:gap-6">
+                <div className="menu flex flex-wrap gap-6 md:gap-6">
                   {tabContent.map((tab, index) => (
                     <div
                       key={index}

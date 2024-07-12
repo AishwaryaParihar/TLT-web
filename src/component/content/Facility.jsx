@@ -6,13 +6,15 @@ import Headings from "../utiliti/heading/Heading";
 const Listsection = () => {
   return (
     <div className="mx-5 md:mx-20">
-      <Headings heading={"h2"}>Amenities</Headings>
-      <div className=" w-full flex flex-wrap lg:gap-10 lg:flex-nowrap mt-5">
-        <div className="lg:w-1/2 w-full">
+      <div className="flex flex-wrap lg:gap-10 gap-5 lg:flex-nowrap mt-5">
+        <div className="">
           <FacilityImage />
         </div>
-        <div className="lg:w-1/2 w-full mt-10 lg:mt-8">
+        <div className="" >
+        <Headings heading={"h2"}>Amenities</Headings>
+        <div className="mt-5 lg:mt-8">
           <ListItemHoverEffect />
+          </div>
         </div>
       </div>
     </div>
