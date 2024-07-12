@@ -52,7 +52,7 @@ const Feature = () => {
   return (
     <>
       <div className="mt-16">
-        <div className="py-5 px-5 md:px-20">
+        <div className="py-5 px-5 md:px-20 mb-10">
           <Headings heading={"h6"} style={"text-shadow"}>
             Let's make your dream into reality
           </Headings>

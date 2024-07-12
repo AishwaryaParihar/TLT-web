@@ -20,7 +20,7 @@ const freedata = [
 const Fee = () => {
   return (
     <>
-      <div className="flex flex-col justify-items-center items-center mx-3 md:mx-8 ">
+      <div className="flex flex-col justify-items-center items-center mx-3 md:mx-8 my-20 ">
         <div className="flex flex-col justify-items-start self-start md:ms-16">
         <Headings heading={"h5"}>Study Essentials</Headings>
           <Headings heading={"h2"} style={"text-shadow"}> <span className="text-primary">Get</span> Your <span className="text-primary">study</span> Pack</Headings>

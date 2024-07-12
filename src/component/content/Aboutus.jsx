@@ -90,7 +90,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <section className="about-us mb-10" id="about">
+    <section className="about-us my-20" id="about">
       <div className="container mx-auto px-5 md:px-20 mb-10 md:mb-20">
         <div className="mb-16">
           <Headings heading={"h5"} style={"text-shadow"}>
@@ -108,7 +108,7 @@ const AboutUs = () => {
                   {tabContent.map((tab, index) => (
                     <div
                       key={index}
-                      className={`shadow-md cursor-pointer py-3 px-5 md:px-7 rounded font-bold ${
+                      className={`shadow-md cursor-pointer py-3 px-5 rounded font-bold ${
                         activeTab === index ? "bg-primary text-white " : ""
                       }`}
                       onClick={() => setActiveTab(index)}
