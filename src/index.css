@@ -34,7 +34,7 @@
   @media (max-width: 1024px) {
     .full-border::before {
       width: 200px; /* Adjust border length */
-      left: 40%;
+      left: 50%;
       transform: translateX(-50%);
     }
   }
@@ -106,7 +106,7 @@ color: white;
 
 @media (max-width: 1024px) {
   .aboutMentor {
-    display: flex;
+  display: flex;
   flex-wrap: nowrap;
   }
 }
