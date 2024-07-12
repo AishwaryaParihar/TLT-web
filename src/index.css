@@ -28,19 +28,21 @@
     left: 100%;
     transform: translateX(-50%);
     height: 4px; /* Border thickness */
-    width: 410px; /* Border length */
+    width: 400px; /* Border length */
     background-color: #000; 
   }
   
   @media (max-width: 768px) {
     .full-border::before {
-      width: 300px; /* Reduced border length for small screens */
+      width: 200px;
+      left: 40%; /* Reduced border length for small screens */
     }
   }
   
   @media (max-width: 480px) {
     .full-border::before {
-      width: 200px; /* Further reduced border length for very small screens */
+      width: 200px;
+      left: 50%; /* Further reduced border length for very small screens */
     }
   }
   
