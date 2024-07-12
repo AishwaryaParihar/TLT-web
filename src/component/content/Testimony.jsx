@@ -53,7 +53,7 @@ const Testimony = () => {
   };
 
   return (
-    <div className="m-3 md:m-20">
+    <div className="m-5 md:m-20">
       <Headings heading={"h6"} style={"text-shadow"}>
         Testimonials
       </Headings>

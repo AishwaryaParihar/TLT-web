@@ -51,11 +51,11 @@ const YoutubeGallery = () => {
   };
 
   return (
-    <section className="">
-      <div className="mx-3 md:mx-20 my-5 md:my-10">
-        <Headings heading={"h6"} style={"text-shadow"}>FROM OUR</Headings>
+    <section className="mt-20">
+      <div className="mx-5 md:mx-20 my-5 md:my-20">
+        <Headings heading={"h5"} style={"text-shadow"}>From Our</Headings>
         <Headings heading={"h2"} style={"text-shadow"}>Youtube <span className="text-primary">Gallery</span></Headings>
-        <Slider {...settings} className="testimony-slider mt-20">
+        <Slider {...settings} className="testimony-slider md:mt-20 mt-10">
           {videos.map((video, index) => (
             <div
               key={video.id}

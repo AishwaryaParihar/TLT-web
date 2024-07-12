@@ -90,9 +90,9 @@ const AboutUs = () => {
   ];
 
   return (
-    <section className="about-us mb-10" id="about">
+    <section className="md:my-20 my-5" id="about">
       <div className="container mx-auto px-5 md:px-20 mb-10 md:mb-20">
-        <div className="mb-16">
+        <div className="md:mb-16 mb-7">
           <Headings heading={"h5"} style={"text-shadow"}>
             About Us
           </Headings>
@@ -100,15 +100,15 @@ const AboutUs = () => {
             Know Us <span className="text-shadow text-primary">Better</span>{" "}
           </Headings>
         </div>
-        <div className="w-full flex flex-col lg:flex-row gap-10">
+        <div className="w-full flex flex-col md:flex-col lg:flex-row gap-10">
           <div className="w-full lg:w-2/3">
-            <div className="tabs">
+            <div className="">
               <div className="flex flex-wrap justify-center lg:justify-start mb-6">
                 <div className="menu flex flex-wrap gap-4 md:gap-6">
                   {tabContent.map((tab, index) => (
                     <div
                       key={index}
-                      className={`shadow-md cursor-pointer py-3 px-5 md:px-7 rounded font-bold ${
+                      className={`shadow-md cursor-pointer py-3 px-5 rounded font-bold ${
                         activeTab === index ? "bg-primary text-white " : ""
                       }`}
                       onClick={() => setActiveTab(index)}
