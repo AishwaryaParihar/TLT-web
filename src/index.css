@@ -31,10 +31,17 @@
     width: 400px; /* Border length */
     background-color: #000; 
   }
+  @media (max-width: 1024px) {
+    .full-border::before {
+      width: 200px; /* Adjust border length */
+      left: 40%;
+      transform: translateX(-50%);
+    }
+  }
   
   @media (max-width: 768px) {
     .full-border::before {
-      width: 200px;
+      width: 100px;
       left: 40%; /* Reduced border length for small screens */
     }
   }
@@ -91,3 +98,22 @@ color: white;
   width: 90%;
   height: 30px;
 }}
+
+.aboutMentor{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+  .aboutMentor {
+    display: flex;
+  flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutMentor {
+    display: flex;
+  flex-wrap: wrap;
+  }
+}
