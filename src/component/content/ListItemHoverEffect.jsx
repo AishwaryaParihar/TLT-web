@@ -1,13 +1,9 @@
-
 import React from "react";
 
 const ListItemHoverEffect = () => {
   return (
-
-    <div className="flex flex-wrap sm:flex-wrap items-center px-4 sm:px-8 lg:px-18 sm:mx-4 lg:mx-20">
-   
-      <div className=" ">
-     
+    <div className="flex flex-wrap">
+      <div>
         <ul className="relative mb-8 w-full">
           {[
             "Air Conditioned and ventilated classrooms.",
