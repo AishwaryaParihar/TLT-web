@@ -12,18 +12,21 @@ const ContactDetails = () => {
       heading: "Contact :",
       icon: phoneImg,
       info: "9238176156",
+      link: "tel:+919238176156", // Telephone link
     },
     {
       heading: "Location :",
       icon: locationImg,
       info:
         "2nd floor, Jyoti Talkies Shopping Complex, Zone-I, Maharana Pratap Nagar, Bhopal, Madhya Pradesh 462023",
+      link: "https://maps.app.goo.gl/fAcQ4mFsxkzvXXe28", 
     },
     {
-        heading: "Email :",
-        icon: emailImg,
-        info: "support@thelawtales.com",
-      },
+      heading: "Email :",
+      icon: emailImg,
+      info: "support@thelawtales.com",
+      link: "mailto:support@thelawtales.com", // Email link
+    },
   ];
 
   return (
@@ -39,10 +42,20 @@ const ContactDetails = () => {
             >
               <div className="flex flex-col items-center">
                 <span>
-                  <img src={detail.icon} alt="" className="w-10 h-10" />
+                  <a href={detail.link} target="_blank" rel="noopener noreferrer">
+                    <img src={detail.icon} alt="" className="w-10 h-10" />
+                  </a>
                 </span>
                 <Headings style={"h4"}>{detail.heading}</Headings>
-                <p className="text-white text-justify">{detail.info}</p>
+                <p className="text-white text-justify">
+                  {detail.link.startsWith("tel:") ? (
+                    <a href={detail.link} className="text-white">
+                      {detail.info}
+                    </a>
+                  ) : (
+                    detail.info
+                  )}
+                </p>
               </div>
             </div>
           ))}

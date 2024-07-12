@@ -53,11 +53,11 @@ const MockTestCard = () => {
           </div>
           <div className="md:w-1/2 flex justify-center mt-5 md:mt-0 relative">
             <img src={writtenImg} alt="Written Test" className="object-cover" />
-            <div className="absolute bottom-2 right-2 bg-red-500 text-white p-2 rounded">
+            <div className="absolute bottom-2 right-2 bg-red-500 text-white font-bold py-3 px-5 rounded">
               ₹ 4999 only
             </div>
             <div className="absolute top-2 left-2 bg-red-500 text-white p-4 rounded flex flex-col justify-center items-center">
-              <span>Starting Date</span> <span>15th March</span>
+              <span className="font-bold">Starting Date</span> <span className="font-bold">15th March</span>
             </div>
           </div>
         </div>
