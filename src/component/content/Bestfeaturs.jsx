@@ -38,13 +38,13 @@ export const Bestfeaturs = () => {
             </div>
           </div>
           <div className="w-full lg:w-1/2 flex items-center ps-0 lg:ps-10">
-            <div className="mt-0">
+            <div className="mt-10">
               <Headings
                 heading={"h4"}
                 style={"inline-block tracking-wider text-shadow "}
               >
                 Learn with us
-              </Headings>
+              </Headings><br />
               <Headings
                 heading={"h2"}
                 style={"inline-block tracking-wider text-shadow"}
