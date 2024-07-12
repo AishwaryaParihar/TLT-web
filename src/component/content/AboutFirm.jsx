@@ -7,14 +7,14 @@ const AboutFirm = () => {
       <div className="flex flex-wrap justify-evenly gap-10 items-center relative ">
         <div className="flex flex-wrap justify-center gap-3">
           <div className="flex flex-wrap flex-col md:gap-3 gap-3 md:mt-12 mt-[110px]">
-            <div className="lg:w-[250px] lg:h-[200px] md:w-[350px] md:h-[300px] w-[160px] h-[150px]">
+            <div className="lg:w-[250px] lg:h-[200px] md:w-[350px] md:h-[300px] sm:w-[160px] sm:h-[150px] w-[150px] h-[140px]">
               <img
                 src={data.image1}
                 alt="pen image"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="lg:w-[250px] lg:h-[250px] md:w-[350px] md:h-[300px] w-[160px] h-[150px]">
+            <div className="lg:w-[250px] lg:h-[250px] md:w-[350px] md:h-[300px] sm:w-[160px] sm:h-[150px] w-[150px] h-[140px]">
               <img
                 src={data.image2}
                 alt="hammer image"
@@ -26,7 +26,7 @@ const AboutFirm = () => {
             <img
               src={data.image3}
               alt="justice image"
-              className="lg:w-[300px] lg:h-[465px] md:w-[350px] md:h-[610px] w-[170px] h-[315px] object-cover mt-10 md:mt-12"
+              className="lg:w-[300px] lg:h-[465px] md:w-[350px] md:h-[610px] sm:w-[170px] sm:h-[315px] w-[150px] h-[250px] object-cover mt-10 md:mt-12"
             />
           </div>
         </div>
