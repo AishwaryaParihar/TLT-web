@@ -25,7 +25,7 @@ export const Bestfeaturs = () => {
 
   return (
     <section className="py-5">
-      <div className="container mx-auto px-5 md:px-8 xl:px-20 ">
+      <div className="px-5 md:px-8 xl:px-20 ">
         <div className="flex flex-wrap">
           <div className="w-full lg:w-1/2 flex">
             <div
