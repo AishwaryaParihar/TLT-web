@@ -101,7 +101,7 @@ const AboutUs = () => {
           </Headings>
         </div>
         <div className="w-full flex flex-col lg:flex-row gap-10">
-          <div className="w-full lg:w-1/2">
+          <div className="w-full lg:w-2/3">
             <div className="">
               <div className="flex flex-wrap justify-center lg:justify-start mb-6">
                 <div className="menu flex flex-wrap gap-4 md:gap-6">
