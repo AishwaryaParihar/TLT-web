@@ -825,7 +825,7 @@ const RegistrationForm = () => {
   };
 
   return (
-    <div className="text-justify mx-auto sm:px-10 px-5 md:px-10 lg:px-20 py-0 ">
+    <div className="text-justify mx-auto sm:px-10 px-5 md:px-10 lg:px-40 py-0 ">
       <div className="mt-4">
         <h2 className="text-white bg-red-500 text-center text-3xl py-3 px-4 sm:px-10">
           SUPER 30 FAST TRACK BATCH
@@ -837,7 +837,7 @@ const RegistrationForm = () => {
           <div className="sm:flex items-center">
             <label
               htmlFor="choose-picture"
-              className="block text-left font-bold text-lg md:w-1/3 sm:w-1/4"
+              className="block text-left font-bold text-lg  sm:w-1/4 md:w-1/4"
             >
               Choose picture
             </label>
@@ -852,7 +852,7 @@ const RegistrationForm = () => {
           <div className="sm:flex items-center">
             <label
               htmlFor="name"
-              className="block text-left font-bold text-lg md:w-1/3 sm:w-1/4"
+              className="block text-left font-bold text-lg  sm:w-1/4"
             >
               Name:
             </label>
@@ -867,7 +867,7 @@ const RegistrationForm = () => {
           <div className="sm:flex items-center">
             <label
               htmlFor="place-of-birth"
-              className="block text-left font-bold text-lg md:w-1/3 sm:w-1/4"
+              className="block text-left font-bold text-lg  sm:w-1/4"
             >
               Place Of Birth:
             </label>
@@ -882,7 +882,7 @@ const RegistrationForm = () => {
           <div className="sm:flex items-center">
             <label
               htmlFor="date-of-birth"
-              className="block text-left font-bold text-lg  sm:w-1/4 md:w-1/3"
+              className="block text-left font-bold text-lg  sm:w-1/4 "
             >
               Date Of Birth:
             </label>
@@ -897,7 +897,7 @@ const RegistrationForm = () => {
           <div className="sm:flex items-center">
             <label
               htmlFor="full-address"
-              className="block text-left font-bold text-lg  sm:w-1/4 md:w-1/3"
+              className="block text-left font-bold text-lg  sm:w-1/4 "
             >
               Full Address:
             </label>
@@ -913,7 +913,7 @@ const RegistrationForm = () => {
             <label
               htmlFor="state"
               className="block text-left font-bold text-lg 
-              4  md:w-1/3 sm:w-1/4"
+              4   sm:w-1/4"
             >
               State:
             </label>
@@ -959,7 +959,7 @@ const RegistrationForm = () => {
           <div className="sm:flex items-center">
             <label
               htmlFor="pin-code"
-              className="block text-left font-bold text-lg sm:w-1/4 md:w-1/3"
+              className="block text-left font-bold text-lg sm:w-1/4 "
             >
               Pin Code:
             </label>
@@ -974,7 +974,7 @@ const RegistrationForm = () => {
           <div className="sm:flex items-center">
             <label
               htmlFor="qualification"
-              className="block text-left font-bold text-lg  md:w-1/3  sm:w-1/4"
+              className="block text-left font-bold text-lg    sm:w-1/4"
             >
               Qualification:
             </label>
@@ -989,7 +989,7 @@ const RegistrationForm = () => {
           <div className="sm:flex items-center">
             <label
               htmlFor="college-university"
-              className="block text-left font-bold text-lg md:w-1/3 sm:w-1/4"
+              className="block text-left font-bold text-lg  sm:w-1/4"
             >
               College/University:
             </label>
@@ -1002,7 +1002,7 @@ const RegistrationForm = () => {
           </div>
 
           <div className="sm:flex items-center">
-            <label className="block text-left font-bold text-lg md:w-1/3 sm:w-1/5">
+            <label className="block text-left font-bold text-lg  sm:w-1/5">
               Pursuing LL.B:
             </label>
             <div className="flex space-x-4">
@@ -1029,7 +1029,7 @@ const RegistrationForm = () => {
           <div className="sm:flex items-center">
             <label
               htmlFor="year-of-passing"
-              className="block text-left font-bold text-lg  sm:w-1/4 md:w-1/3"
+              className="block text-left font-bold text-lg  sm:w-1/4 "
             >
               Year Of Passing:
             </label>
@@ -1044,7 +1044,7 @@ const RegistrationForm = () => {
           <div className="sm:flex items-center">
             <label
               htmlFor="email"
-              className="block text-left font-bold text-lg md:w-1/3  sm:w-1/4"
+              className="block text-left font-bold text-lg   sm:w-1/4"
             >
               Email:
             </label>
@@ -1065,7 +1065,7 @@ const RegistrationForm = () => {
           <div className="sm:flex items-center">
             <label
               htmlFor="father-name"
-              className="block text-left font-bold text-lg  sm:w-1/4 md:w-1/3"
+              className="block text-left font-bold text-lg  sm:w-1/4 "
             >
               Father's Name:
             </label>
@@ -1080,7 +1080,7 @@ const RegistrationForm = () => {
           <div className="sm:flex items-center">
             <label
               htmlFor="mother-name"
-              className="block text-left font-bold text-lg sm:w-1/4 md:w-1/3"
+              className="block text-left font-bold text-lg sm:w-1/4 "
             >
               Mother's Name:
             </label>
@@ -1095,7 +1095,7 @@ const RegistrationForm = () => {
           <div className="sm:flex items-center">
             <label
               htmlFor="permanent-address"
-              className="block text-left font-bold text-lg sm:w-1/4 md:w-1/3"
+              className="block text-left font-bold text-lg sm:w-1/4 "
             >
               Permanent Address:
             </label>
@@ -1110,7 +1110,7 @@ const RegistrationForm = () => {
           <div className="sm:flex items-center">
             <label
               htmlFor="state"
-              className="block text-left font-bold text-lg sm:w-1/4 md:w-1/3"
+              className="block text-left font-bold text-lg sm:w-1/4 "
             >
               State:
             </label>
@@ -1135,7 +1135,7 @@ const RegistrationForm = () => {
           <div className="sm:flex items-center">
             <label
               htmlFor="city"
-              className="block text-left font-bold text-lg sm:w-1/4 md:w-1/3"
+              className="block text-left font-bold text-lg sm:w-1/4 "
             >
               City:
             </label>
@@ -1162,7 +1162,7 @@ const RegistrationForm = () => {
           <div className="sm:flex items-center">
             <label
               htmlFor="aadhar-card"
-              className="block text-left font-bold text-lg  sm:w-1/4 md:w-1/3"
+              className="block text-left font-bold text-lg  sm:w-1/4 "
             >
               Upload Aadhar<br></br> (Front and Back):
             </label>
@@ -1183,7 +1183,7 @@ const RegistrationForm = () => {
           </div>
           <div className="flex justify-around items-center space-x-4">
             <div className="flex justify-between items-center">
-              <label className="flex  text-left font-bold text-lg w-1/6 px-5">
+              <label className="flex  text-left font-bold text-lg  px-5">
                 Prelims:
                 <input
                   type="radio"
@@ -1194,7 +1194,7 @@ const RegistrationForm = () => {
               </label>
             </div>
             <div className="flex justify-between items-center">
-              <label className="flex text-left font-bold text-lg w-1/6">
+              <label className="flex text-left font-bold text-lg ">
                 Mains:
                 <input
                   type="radio"

@@ -733,7 +733,7 @@ const EmpowermentBatch = () => {
             </div>
 
             <div className="sm:flex items-center">
-              <label htmlFor="state" className="block text-left font-bold text-lg   sm:w-1/4">
+              <label htmlFor="state" className="block text-left font-bold text-lg sm:w-1/4">
                 State:
               </label>
               <select
@@ -898,7 +898,7 @@ const EmpowermentBatch = () => {
       </div>
   
       <div className='sm:flex items-center'>
-      <label className="block text-left font-bold text-lg sm:w-1/5">Old Student of Shubham Sir :</label>
+      <label className="block text-left font-bold text-lg sm:w-1/5">Old Student of <br></br>Shubham Sir :</label>
        <div className="flex space-x-4">
          <label>
            <input type="radio" name="pursuingLLB" value="yes" className="mr-2"/> Yes
