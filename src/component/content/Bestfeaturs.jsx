@@ -27,7 +27,7 @@ export const Bestfeaturs = () => {
     <section className="py-5">
       <div className="container mx-auto px-5 md:px-8 xl:px-20 ">
         <div className="flex flex-wrap">
-          <div className="w-full md:w-1/2 flex">
+          <div className="w-full lg:w-1/2 flex">
             <div
               className="w-full bg-cover bg-center "
 
@@ -37,7 +37,7 @@ export const Bestfeaturs = () => {
               <img src={imgbest} alt="" className="h-full w-full cover" />
             </div>
           </div>
-          <div className="w-full md:w-1/2 flex items-center ps-0 md:ps-10">
+          <div className="w-full lg:w-1/2 flex items-center ps-0 lg:ps-10">
             <div className="mt-0">
               <Headings
                 heading={"h4"}
