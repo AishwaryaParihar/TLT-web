@@ -14,38 +14,39 @@ const freedata = [
     price: "Explore More",
     description: "We are providing you best study Essentials",
   },
-
 ];
 
 const Fee = () => {
   return (
     <>
-      <div className="flex flex-col justify-items-center items-center mx-3 md:mx-8 my-20 ">
+      <div className="flex flex-col justify-items-center items-center mx-5 md:mx-8 my-20 ">
         <div className="flex flex-col justify-items-start self-start md:ms-16">
-        <Headings heading={"h5"}>Study Essentials</Headings>
-          <Headings heading={"h2"} style={"text-shadow"}> <span className="text-primary">Get</span> Your <span className="text-primary">study</span> Pack</Headings>
+          <Headings heading={"h5"} style={"text-shadow"}>Study Essentials</Headings>
+          <Headings heading={"h2"} style={"text-shadow"}>
+            {" "}
+            <span className="text-primary">Get</span> Your{" "}
+            <span className="text-primary">study</span> Pack
+          </Headings>
 
           {/* <Headings heading={"h3"}>Exclusive Practice Material</Headings> */}
-
-    
         </div>
 
-      <NavLink  to="/study-Essentials">
-      <div className="flex justify-center items-center flex-wrap">
-          {freedata.map((items) => (
-            <div className={styless.card_style}>
-              <div className={styless.content}>
-                <div className={styless.icons_div}>
-                  <img src={items.img} className={styless.icons} />
+        <NavLink to="/study-Essentials">
+          <div className="flex justify-center items-center flex-wrap mt-7">
+            {freedata.map((items) => (
+              <div className={styless.card_style}>
+                <div className={styless.content}>
+                  <div className={styless.icons_div}>
+                    <img src={items.img} className={styless.icons} />
+                  </div>
+                  <div className={styless.title}>{items.title}</div>
+                  <div className={styless.price}>{items.price}</div>
+                  <div className={styless.description}>{items.description}</div>
                 </div>
-                <div className={styless.title}>{items.title}</div>
-                <div className={styless.price}>{items.price}</div>
-                <div className={styless.description}>{items.description}</div>
               </div>
-            </div>
-          ))}
-        </div>
-      </NavLink>
+            ))}
+          </div>
+        </NavLink>
       </div>
     </>
   );

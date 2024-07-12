@@ -90,9 +90,9 @@ const AboutUs = () => {
   ];
 
   return (
-    <section className="about-us my-20" id="about">
+    <section className="about-us md:my-20 my-5" id="about">
       <div className="container mx-auto px-5 md:px-20 mb-10 md:mb-20">
-        <div className="mb-16">
+        <div className="md:mb-16 mb-7">
           <Headings heading={"h5"} style={"text-shadow"}>
             About Us
           </Headings>
