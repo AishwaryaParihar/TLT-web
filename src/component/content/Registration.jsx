@@ -34,10 +34,10 @@ const Registration = () => {
         <h3 className='text-black text-sm sm:text-lg lg:text-xl font-bold sm:font-semibold mt-3'>
           ZONE 1, BHOPAL, MOB: 9238176156
         </h3>
-        <h1 className={`${styles.formBorder} text-2xl sm:text-3xl lg:text-4xl mt-6`}>
+        <h1 className={`${styles.formBorder} text-2xl sm:text-3xl lg:text-4xl mt-4`}>
           REGISTRATION FORM
         </h1>
-        <h3 className='text-black text-sm sm:text-lg lg:text-xl font-bold sm:font-semibold mt-6'>
+        <h3 className='text-black text-sm sm:text-lg lg:text-xl font-bold sm:font-semibold mt-3'>
           2024-2025 Session
         </h3>
       </div>

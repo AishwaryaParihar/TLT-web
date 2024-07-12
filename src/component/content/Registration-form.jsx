@@ -22,116 +22,706 @@ const RegistrationForm = () => {
     { id: 15, name: 'Jammu and Kashmir' },
     { id: 16, name: 'Jharkhand' },
     { id: 17, name: 'Karnataka' },
-    { id: 18, name: 'Kerala' },
-    { id: 19, name: 'Lakshadweep' },
-    { id: 20, name: 'Madhya Pradesh' },
-    { id: 21, name: 'Maharashtra' },
-    { id: 22, name: 'Manipur' },
-    { id: 23, name: 'Meghalaya' },
-    { id: 24, name: 'Mizoram' },
-    { id: 25, name: 'Nagaland' },
-    { id: 26, name: 'Odisha' },
-    { id: 27, name: 'Puducherry' },
-    { id: 28, name: 'Punjab' },
-    { id: 29, name: 'Rajasthan' },
-    { id: 30, name: 'Sikkim' },
-    { id: 31, name: 'Tamil Nadu' },
-    { id: 32, name: 'Telangana' },
-    { id: 33, name: 'Tripura' },
-    { id: 34, name: 'Uttar Pradesh' },
-    { id: 35, name: 'Uttarakhand' },
-    { id: 36, name: 'West Bengal' },
+    { id: 18, name:  'Kenmore'},
+    { id: 19, name: 'Kerala' },
+    { id: 20, name: 'Lakshadweep' },
+    { id: 21, name: 'Madhya Pradesh' },
+    { id: 22, name: 'Maharashtra' },
+    { id: 23, name: 'Manipur' },
+    { id: 24, name: 'Meghalaya' },
+    { id: 25, name: 'Mizoram' },
+    { id: 26, name: 'Nagaland' },
+  
+    { id: 27, name: 'Odisha' },
+    { id: 28, name: 'Paschim Medinipur ' },
+    { id: 29, name: 'Pondicherry' },
+    { id: 30, name: 'Punjab' },
+    { id: 31, name: 'Rajasthan' },
+    { id: 32, name: 'Sikkim' },
+    { id: 33, name: 'Tamil Nadu' },
+    { id: 34, name: 'Telangana' },
+    { id: 35, name: 'Tripura' },
+    { id: 36, name: 'Uttar Pradesh' },
+    { id: 37, name: 'Uttarakhand' },
+    { id: 38, name: 'Vaisali' },
+    { id: 39, name: 'West Bengal' },
   ];
 
   const cities = {
-    1: ['Port Blair'],
-    2: ['Hyderabad', 'Vishakhapatnam'],
-    3: ['Itanagar'],
-    4: ['Guwahati', 'Dispur'],
-    5: ['Patna', 'Gaya'],
-    6: ['Chandigarh'],
-    7: ['Raipur', 'Bilaspur'],
-    8: ['Silvassa'],
-    9: ['Daman'],
-    10: ['New Delhi'],
-    11: ['Panaji', 'Margao'],
-    12: ['Ahmedabad', 'Surat'],
-    13: ['Chandigarh', 'Faridabad'],
-    14: ['Shimla', 'Manali'],
-    15: ['Srinagar', 'Jammu'],
-    16: ['Ranchi', 'Jamshedpur'],
-    17: ['Bengaluru', 'Mysuru'],
-    18: ['Thiruvananthapuram', 'Kochi'],
-    19: ['Kavaratti'],
-    20: ['Bhopal', 'Indore'],
-    21: ['Mumbai', 'Pune'],
-    22: ['Imphal'],
-    23: ['Shillong'],
-    24: ['Aizawl'],
-    25: ['Kohima'],
-    26: ['Bhubaneswar', 'Cuttack'],
-    27: ['Puducherry'],
-    28: ['Ludhiana', 'Amritsar'],
-    29: ['Jaipur', 'Udaipur'],
-    30: ['Gangtok'],
-    31: ['Chennai', 'Coimbatore'],
-    32: ['Hyderabad', 'Warangal'],
-    33: ['Agartala'],
-    34: ['Lucknow', 'Kanpur'],
-    35: ['Dehradun', 'Nainital'],
-    36: ['Kolkata', 'Darjeeling'],
-  };
+    //Andaman and Nicobar Islands
+    1: ['Bombuflat', 'Garacharma', 'Port Blair', 'Rangat' ],
+    //'Andhra Pradesh'
+    2: ['Adoni','Amalapuram','Anantapur','Bhimavaram','Chittoor',' Chirala','Dharmavaram','Eluru',
+       'Guntur','Gudivada','Hindupur','Kakinada','Kavali','Kurnool','Machilipatnam',
+        'Machilipatnam','Mangalagiri',' Markapur',' Narasaraopet','Narsipatnam','Nellore','  Nidadavole','Nuzvid','Ongole','Palasa','Piduguralla','Pithapuram','Ponnur','Proddatur',
+        'Pulivendula','Punganur','Puttur',' Rajahmundry',' Rayachoti','Samalkot','Srikakulam',
+        'Sullurpeta','Tadepalligudem','Tadpatri','Tenali','Tirupati','Tuni','Venkatagiri','Vijayawada','Vinukonda','Visakhapatnam','Vizianagaram','Yemmiganur'],
+     
+   //'Arunachal Pradesh'
+    3: ['Aalo', 'Anini', 'Bomdila', 'Changlang', 'Daporijo', 'Hawai', 'Itanagar', 'Khonsa', 'Koloriang', 'Longding', 'Naharlagun', 'Namsai', 'Pasighat', 'Roing', 'Seppa', 'Tawang', 'Tezu', 'Yingkiong', 'Ziro'],
+// 'Assam' 
+    4: ['Abhayapuri', 'Amguri', 'Badarpur', 'Baihata', 'Baksa', 'Barpeta', 'Barpeta', 'Biswanath Chariali', 'Bongaigaon', 'Dhekiajuli', 'Dhubri', 'Dibrugarh', 'Diphu', 'Doom Dooma', 'Gauripur', 'Goalpara', 'Golaghat', 'Haflong', 'Hailakandi', 'Hojai', 'Jorhat', 'Karimganj', 'Kokrajhar', 'Lakhimpur', 'Lanka', 'Lumding', 'Mangaldoi', 'Morigaon', 'Nagaon', 'Nalbari', 'North Lakhimpur', 'Pathsala', 'Rangia', 'ibsagar',  'Silchar', 'Tinsukia', 'Tezpur'],
+//'Bihar'
+    5: ['Arrah', 'Aurangabad', 'Bagaha', 'Barauni',  'Bettiah', 'habua', 'Bhagalpur', ' Sharif', 'Buxar', 'Chhapra', 'Darbhanga', 'Dehri', 'Gaya', 'Gopalganj', 'Hajipur', 'Jamui', 'Jehanabad', 'Katihar', 'Kishanganj', 'Lakhisarai', 'Madhepura', 'Madhubani', 'Motihari', 'Munger', 'Muzaffarpur','Nawada', 'Patna', 'Purnia', 'Samastipur', 'Sasaram', 'Sheikhpura', 'Sheohar', 'Sitamarhi', 'Siwan', 'Supaul'],
+//'Chandigarh'
+    6: ['Behlana', 'Burail', 'Daria', 'Dhanas', 'Hallo Majra', 'Kaimbwala', 'Khuda Alisher', 'Khuda Jassu', 'Kishangarh', 'Maloya', 'Manimajra', 'Mauli Jagran', 'Raipur Kalan', 'Raipur ', 'Sarangpur'],
+//'Chhattisgarh'
+    7: ['Ambagarh Chowki',  'Arang', 'Bade Bacheli', 'Balod', 'Baloda', 'Baloda Bazar',  'Bhairamgarh', 'Bhatapara',  'Bhilai Charoda', 'Bhilai Nagar', 'Bilaspur', 'Birgaon', 'Chhuikhadan', 'Dalli-Rajhara', 'Dhamtari', 'Dongargarh', 'Durg', 'Gariaband', 'Jagdalpur', 'Janjgir', 'Jashpurnagar', 'Kanker', 'Kawardha', 'Kondagaon', 'Korba', 'Mahasamund', 'Mungeli', 'Naila Janjgir', 'Pandaria', 'Pendra', 'Raigarh','Raipur', 'Rajnandgaon', 'Ramanujganj', 'Saraipali', 'Simga', 'Takhatpur'],
+//'Dadra and Nagar Haveli'
+    8: ["Amli", "Dadra","Naroli","Silvassa"],
+//'Daman and Diu'
+    9: ["Daman","Diu"],
+    //delhi
+    10:[
+      "Delhi Cantonment",
+      "New Delhi"],
+    //goa
+    11: [
+      "Curchorem",
+      "Madgaon",
+      "Mapusa",
+      "Marmagao",
+      "Panaji",
+      "Ponda",
+      "Sancoale",
+      "Valpoi"
+    ],
+    //gujarat
+    12:[
+      "Ahmedabad",
+      "Amreli",
+      "Anand",
+      "Anjar",
+      "Ankleshwar",
+      "Bharuch",
+      "Bhavnagar",
+      "Bhuj",
+      "Bilimora",
+      "Borsad",
+      "Botad",
+      "Chhapra",
+      "Dahod",
+      "Deesa",
+      "Dhoraji",
+      "Gandhidham",
+      "Gandhinagar",
+      "Godhra",
+      "Gondal",
+      "Himatnagar",
+      "Jamnagar",
+      "Jetpur",
+      "Junagadh",
+      "Kadi",
+      "Kalol",
+      "Kapadvanj",
+      "Keshod",
+      "Khambhat",
+      "Kundla",
+      "Mahuva",
+      "Mandvi",
+      "Mangrol",
+      "Mehmedabad",
+      "Morbi",
+      "Nadiad",
+      "Navsari",
+      "Palanpur",
+      "Patan",
+      "Porbandar",
+      "Rajkot",
+      "Savarkundla",
+      "Sidhpur",
+      "Surat",
+      "Surendranagar",
+      "Vadodara",
+      "Valsad",
+      "Vapi",
+      "Veraval",
+      "Visnagar"
+    ],
+    //haryana
+    13: [
+      "Ambala",
+      "Ambala Cantt",
+      "Bahadurgarh",
+      "Bhiwani",
+      "Charkhi Dadri",
+      "Faridabad",
+      "Fatehabad",
+      "Gohana",
+      "Gurgaon",
+      "Hansi",
+      "Hisar",
+      "Jagadhri",
+      "Jind",
+      "Kaithal",
+      "Karnal",
+      "Kurukshetra",
+      "Mahendragarh",
+      "Narnaul",
+      "Narwana",
+      "Palwal",
+      "Panchkula",
+      "Panipat",
+      "Rewari",
+      "Rohtak",
+      "Sirsa",
+      "Sonipat",
+      "Thanesar",
+      "Tohana",
+      "Yamunanagar"
+    ],
+   //himachal pradesh 
+    14: [
+      "Baddi",
+      "Bilaspur",
+      "Chamba",
+      "Dalhousie",
+      "Dharamshala",
+      "Hamirpur",
+      "Kangra",
+      "Kullu",
+      "Mandi",
+      "Nahan",
+      "Palampur",
+      "Shimla",
+      "Solan",
+      "Una"
+    ],
+    //jammu kashmir
+    15: [
+      "Anantnag",
+      "Baramulla",
+      "Bari Brahmana",
+      "Batote",
+      "Doda",
+      "Ganderbal",
+      "Jammu",
+      "Kathua",
+      "Kishtwar",
+      "Leh",
+      "Poonch",
+      "Pulwama",
+      "Rajauri",
+      "Samba",
+      "Sopore",
+      "Srinagar",
+      "Udhampur"
+    ],
+    //jharkhand
+    16: [
+      "Adityapur",
+      "Bokaro Steel City",
+      "Chaibasa",
+      "Chirkunda",
+      "Deoghar",
+      "Dhanbad",
+      "Dumka",
+      "Giridih",
+      "Hazaribagh",
+      "Jamshedpur",
+      "Jharia",
+      "Jhumri Tilaiya",
+      "Jorapokhar",
+      "Kanke",
+      "Katras",
+      "Khunti",
+      "Lohardaga",
+      "Madhupur",
+      "Mihijam",
+      "Musabani",
+      "Pakaur",
+      "Patratu",
+      "Phusro",
+      "Ramgarh Cantonment",
+      "Ranchi",
+      "Sahibganj",
+      "Saunda",
+      "Simdega",
+      "Tenu dam-cum-Kathhara"
+    ],
+    //karnataka
+    17:[
+      "Bagalkot",
+      "Bengaluru",
+      "Belagavi",
+      "Bellary",
+      "Bidar",
+      "Chikkamagaluru",
+      "Davanagere",
+      "Dharwad",
+      "Gadag",
+      "Gulbarga",
+      "Hassan",
+      "Hospet",
+      "Hubballi-Dharwad",
+      "Kolar",
+      "Mandya",
+      "Mangaluru",
+      "Mysuru",
+      "Raichur",
+      "Shivamogga",
+      "Tumakuru",
+      "Udupi",
+      "Vijayapura",
+      "Yadgir"
+    ],
+    //kenmore
+    18: [
+      "Kenmore"
+    ],
+    //kerala
+    19: [
+      "Adoor",
+      "Alappuzha",
+      "Attingal",
+      "Changanassery",
+      "Cherthala",
+      "Chittur-Thathamangalam",
+      "Guruvayoor",
+      "Kanhangad",
+      "Kannur",
+      "Kasaragod",
+      "Kayamkulam",
+      "Kochi",
+      "Kollam",
+      "Koothuparamba",
+      "Kottayam",
+      "Kozhikode",
+      "Kunnamkulam",
+      "Malappuram",
+      "Manjeri",
+      "Nedumangad",
+      "Neyyattinkara",
+      "Nilambur",
+      "Ottappalam",
+      "Palakkad",
+      "Ponnani",
+      "Punalur",
+      "Shoranur",
+      "Taliparamba",
+      "Thalassery",
+      "Thiruvananthapuram",
+      "Thrissur",
+      "Tirur",
+      "Tiruvalla",
+      "Vadakara"
+    ],
+    //lakshadweep
+    20: [
+      "Agatti",
+      "Amini",
+      "Andrott",
+      "Bitra",
+      "Chetlat",
+      "Kadmat",
+      "Kalpeni",
+      "Kavaratti",
+      "Kiltan",
+      "Minicoy"
+    ],
+   //mp 
+    21:[
+      "Alirajpur",
+      "Ashoknagar",
+      "Balaghat",
+      "Betul",
+      "Bhind",
+      "Bhopal",
+      "Burhanpur",
+      "Chhatarpur",
+      "Chhindwara",
+      "Damoh",
+      "Datia",
+      "Dewas",
+      "Dhar",
+      "Guna",
+      "Gwalior",
+      "Harda",
+      "Hoshangabad",
+      "Indore",
+      "Itarsi",
+      "Jabalpur",
+      "Jhabua",
+      "Katni",
+      "Khandwa",
+      "Khargone",
+      "Mandsaur",
+      "Morena",
+      "Nagda",
+      "Narsinghgarh",
+      "Neemuch",
+      "Pithampur",
+      "Ratlam",
+      "Rewa",
+      "Sagar",
+      "Satna",
+      "Sehore",
+      "Seoni",
+      "Shahdol",
+      "Shivpuri",
+      "Singrauli",
+      "Ujjain",
+      "Vidisha"
+    ],
+   //maharastra 
+    22: [
+      "Ahmednagar",
+      "Akola",
+      "Amravati",
+      "Aurangabad",
+      "Baramati",
+      "Bhandara",
+      "Bhiwandi",
+      "Bhusawal",
+      "Chandrapur",
+      "Dhule",
+      "Gondia",
+      "Ichalkaranji",
+      "Jalgaon",
+      "Jalna",
+      "Kalyan-Dombivli",
+      "Kolhapur",
+      "Latur",
+      "Malegaon",
+      "Mumbai",
+      "Nagpur",
+      "Nanded",
+      "Nashik",
+      "Navi Mumbai",
+      "Osmanabad",
+      "Palghar",
+      "Panvel",
+      "Parbhani",
+      "Pimpri-Chinchwad",
+      "Pune",
+      "Ratnagiri",
+      "Sangli",
+      "Satara",
+      "Solapur",
+      "Thane",
+      "Ulhasnagar",
+      "Vasai-Virar",
+      "Wardha",
+      "Yavatmal"
+    ],
+   // manipur
+    23: [
+      "Bishnupur",
+      "Churachandpur",
+      "Imphal",
+      "Kakching",
+      "Lilong",
+      "Mayang Imphal",
+      "Nambol",
+      "Thoubal",
+      "Ukhrul"
+    ],
+    //meghalaya
+    24: [
+      "Baghmara",
+      "Cherrapunji",
+      "Jowai",
+      "Nongpoh",
+      "Nongstoin",
+      "Resubelpara",
+      "Shillong",
+      "Tura",
+      "Williamnagar"
+    ],
+   // mizoram
+    25: [
+      "Aizawl",
+      "Champhai",
+      "Kolasib",
+      "Lawngtlai",
+      "Lunglei",
+      "Mamit",
+      "Saiha",
+      "Serchhip"
+    ],
+    //nagaland
+    26: [
+      "Dimapur",
+      "Kohima",
+      "Mokokchung",
+      "Tuensang",
+      "Wokha",
+      "Zunheboto"
+    ],
+    
+   
+  
+  
+   //udisha
+    27: [
+      "Balangir",
+      "Baleshwar (Balasore)",
+      "Baripada",
+      "Bhadrak",
+      "Bhubaneswar",
+      "Brahmapur",
+      "Cuttack",
+      "Dhenkanal",
+      "Jeypore",
+      "Konark",
+      "Paradip",
+      "Puri",
+      "Rourkela",
+      "Sambalpur",
+      
+  ],
+  //paschim madinipur
+    28:  [
+      "Belda",
+      "Chandrakona",
+      "Garbeta",
+      "Ghatal",
+      "Jhargram",
+      "Kharagpur",
+      "Medinipur",
+      "Nayagram",
+      "Salboni",
+      "Sankrail",
+      "Sutahata",
+     
+  ],
+  //pondicherry
+    29:  [
+      "Karaikal",
+      "Mahe",
+      "Pondicherry",
+      "Yanam",
+     ],
+  //panjab
+    30:[
+      "Amritsar",
+      "Bathinda",
+      "Faridkot",
+      "Firozpur",
+      "Gurdaspur",
+      "Hoshiarpur",
+      "Jalandhar",
+      "Ludhiana",
+      "Mohali",
+      "Pathankot",
+      "Patiala",
+      "Sangrur",
+     ],
+  //Rajeshthan
+    31:[
+      "Ajmer",
+      "Alwar",
+      "Banswara",
+      "Barmer",
+      "Bharatpur",
+      "Bhilwara",
+      "Bikaner",
+      "Chittorgarh",
+      "Churu",
+      "Dausa",
+      "Dholpur",
+      "Hanumangarh",
+      "Jaipur",
+      "Jaisalmer",
+      "Jalore",
+      "Jhalawar",
+      "Jhunjhunu",
+      "Jodhpur",
+      "Kota",
+      "Nagaur",
+      "Pali",
+      "Pratapgarh",
+      "Rajsamand",
+      "Sawai Madhopur",
+      "Sikar",
+      "Sirohi",
+      "Sri Ganganagar",
+      "Tonk",
+      "Udaipur",
+     
+  ],
+  //sikkim
+    32:[
+      "Gangtok",
+      "Gyalshing",
+      "Mangan",
+      "Namchi",
+      "Singtam",
+      ],
+  //tamil nadu
+    33:[
+      "Chennai",
+      "Coimbatore",
+      "Erode",
+      "Kanchipuram",
+      "Madurai",
+      "Salem",
+      "Thanjavur",
+      "Tiruchirappalli",
+      "Tirunelveli",
+      "Tiruppur",
+      "Vellore",
+  
+  ],
+  
+  //telangana
+    34:[
+      "Adilabad",
+      "Hyderabad",
+      "Jagtial",
+      "Karimnagar",
+      "Khammam",
+      "Mahbubnagar",
+      "Medak",
+      "Miryalaguda",
+      "Nalgonda",
+      "Nizamabad",
+      "Ramagundam",
+      "Sangareddy",
+      "Siddipet",
+      "Suryapet",
+      "Warangal",
+      ],
+      //tripura
+      35:[
+        "Agartala",
+        "Belonia",
+        "Dharmanagar",
+        "Kailasahar",
+        "Udaipur",
+      ],
+      //uttar pradesh
+      36:[
+        "Agra",
+        "Aligarh",
+        "Allahabad",
+        "Amroha",
+        "Azamgarh",
+        "Bareilly",
+        "Basti",
+        "Bijnor",
+        "Bulandshahr",
+        "Etawah",
+        "Faizabad",
+        "Firozabad",
+        "Ghaziabad",
+        "Gorakhpur",
+        "Hapur",
+        "Jhansi",
+        "Kanpur",
+        "Lucknow",
+        "Mathura",
+        "Meerut",
+        "Mirzapur",
+        "Moradabad",
+        "Muzaffarnagar",
+        "Noida",
+        "Prayagraj",
+        "Rampur",
+        "Saharanpur",
+        "Sambhal",
+        "Shahjahanpur",
+        "Varanasi",
+         ],
+         //uttarakhand
+        37:[
+          "Almora",
+          "Dehradun",
+          "Haridwar",
+          "Haldwani",
+          "Mussoorie",
+          "Nainital",
+          "Pauri",
+          "Rishikesh",
+          "Roorkee",
+          "Rudrapur",
+          "Tehri",
+          "Udham Singh Nagar",
+          "Uttarkashi",
+        ],
+        //vaisali
+     38:[
+      "Hajipur",
+      "Lalganj",
+      "Mahua",
+      "Raghopur",
+      "Vaishali",
+    ],
+    // west bengal
+    39:[
+      "Asansol",
+      "Baharampur",
+      "Bally",
+      "Baranagar",
+      "Barasat",
+      "Barrackpore",
+      "Bhatpara",
+      "Bidhannagar",
+      "Durgapur",
+      "Halisahar",
+      "Howrah",
+      "Kolkata",
+      "Kulti",
+      "Malda",
+      "North Dumdum",
+      "Panihati",
+      "Raiganj",
+      "Siliguri",
+      "South Dumdum",
+      "Titagarh",
+      ]
+    };
 
   return (
     
-    <div className="px-5 md:px-20 py-0">
-     <div className="text-justify mx-auto mx-8 sm:px-10 ">
-        <div className='mt-10'>
-          <h2 className="text-white bg-red-500 text-center text-3xl py-3 px-4 sm:px-20">
+ 
+     <div className="text-justify mx-auto mx-0 sm:px-10 px-5 md:px-20 py-0 ">
+        <div className='mt-4'>
+          <h2 className="text-white bg-red-500 text-center text-3xl py-3 px-4 sm:px-10">
           SUPER 30 FAST TRACK BATCH
           </h2>
         </div>
 
-        <form className="mt-10">
-          <div className="space-y-6 sm:px-10">
+        <form className="mt-5 ">
+          <div className="space-y-6 sm:px-10 md:px-2 ">
             <div className="sm:flex items-center">
-              <label htmlFor="choose-picture" className="block text-left font-bold text-lg  sm:w-1/4">
-                Choose picture4
+              <label htmlFor="choose-picture" className="block text-left font-bold text-lg md:w-1/3 sm:w-1/4">
+                Choose picture
               </label>
               <input type="file" name="choose-picture" id="choose-picture" className="border rounded w-full p-2" />
             </div>
 
             <div className="sm:flex items-center">
-              <label htmlFor="name" className="block text-left font-bold text-lg  sm:w-1/4">
+              <label htmlFor="name" className="block text-left font-bold text-lg md:w-1/3 sm:w-1/4">
                 Name:
               </label>
               <input type="text" name="name" id="name" className="border rounded w-full p-2" />
             </div>
 
             <div className="sm:flex items-center">
-              <label htmlFor="place-of-birth" className="block text-left font-bold text-lg  sm:w-1/4">
+              <label htmlFor="place-of-birth" className="block text-left font-bold text-lg md:w-1/3 sm:w-1/4">
                 Place Of Birth:
               </label>
               <input type="text" name="place-of-birth" id="place-of-birth"  className="border rounded w-full p-2" />
             </div>
 
             <div className="sm:flex items-center">
-              <label htmlFor="date-of-birth" className="block text-left font-bold text-lg  sm:w-1/4">
+              <label htmlFor="date-of-birth" className="block text-left font-bold text-lg  sm:w-1/4 md:w-1/3">
                 Date Of Birth:
               </label>
               <input type="date" name="date-of-birth" id="date-of-birth" className="border rounded w-full p-2" />
             </div>
 
             <div className="sm:flex items-center">
-              <label htmlFor="full-address" className="block text-left font-bold text-lg  sm:w-1/4">
+              <label htmlFor="full-address" className="block text-left font-bold text-lg  sm:w-1/4 md:w-1/3">
                 Full Address:
               </label>
-              <input type="text" name="full-address" id="full-address"  className="border rounded w-full p-2" />
+              <textarea type="text" name="full-address" id="full-address"  className="border rounded w-full p-2" />
             </div>
 
             <div className="sm:flex items-center">
               <label htmlFor="state" className="block text-left font-bold text-lg 
-              4 sm:w-1/4">
+              4  md:w-1/3 sm:w-1/4">
                 State:
               </label>
               <select
@@ -150,7 +740,8 @@ const RegistrationForm = () => {
                 ))}
               </select>
             </div>
-            <div className="sm:flex items-center">
+
+       {/*     <div className="sm:flex items-center">
               <label htmlFor="city" className="block text-left font-bold text-lg  w-1/5  sm:w-1/4">
                 City:
               </label>
@@ -171,30 +762,30 @@ const RegistrationForm = () => {
                 ))}
               </select>
             </div>
-
+        */}
             <div className="sm:flex items-center">
-              <label htmlFor="pin-code" className="block text-left font-bold text-lg sm:w-1/4">
+              <label htmlFor="pin-code" className="block text-left font-bold text-lg sm:w-1/4 md:w-1/3">
                 Pin Code:
               </label>
               <input type="number" name="pin-code" id="pin-code" className="border rounded w-full p-2" />
             </div>
 
             <div className="sm:flex items-center">
-              <label htmlFor="qualification" className="block text-left font-bold text-lg   sm:w-1/4">
+              <label htmlFor="qualification" className="block text-left font-bold text-lg  md:w-1/3  sm:w-1/4">
                 Qualification:
               </label>
               <input type="text" name="qualification" id="qualification"  className="border rounded w-full p-2" />
             </div>
 
             <div className="sm:flex items-center">
-              <label htmlFor="college-university" className="block text-left font-bold text-lg  sm:w-1/4">
+              <label htmlFor="college-university" className="block text-left font-bold text-lg md:w-1/3 sm:w-1/4">
                 College/University:
               </label>
               <input type="text" name="college-university" id="college-university"  className="border rounded w-full p-2" />
             </div>
        
             <div className='sm:flex items-center'>
-         <label className="block text-left font-bold text-lg  sm:w-1/5">Pursuing LL.B:</label>
+         <label className="block text-left font-bold text-lg md:w-1/3 sm:w-1/5">Pursuing LL.B:</label>
           <div className="flex space-x-4">
             <label>
               <input type="radio" name="pursuingLLB" value="yes" className="mr-2"/> Yes
@@ -206,12 +797,12 @@ const RegistrationForm = () => {
 
         </div>
          <div className='sm:flex items-center'>
-          <label htmlFor="year-of-passing" className="block text-left font-bold text-lg  sm:w-1/4">Year Of Passing:</label>
+          <label htmlFor="year-of-passing" className="block text-left font-bold text-lg  sm:w-1/4 md:w-1/3">Year Of Passing:</label>
           <input type="number" name="year-of-passing" id="year-of-passing"  className="border rounded w-full p-2"/>
         </div>
 
         <div className='sm:flex items-center'>
-          <label htmlFor="email" className="block text-left font-bold text-lg  sm:w-1/4">Email:</label>
+          <label htmlFor="email" className="block text-left font-bold text-lg md:w-1/3  sm:w-1/4">Email:</label>
           <input type="email" name="email" id="email"  className="border rounded w-full p-2"/>
           </div>
           {/* personal details */} 
@@ -221,22 +812,22 @@ const RegistrationForm = () => {
           <h2 className="text-white bg-red-500 text-center text-3xl py-3 px-4">Personal Information</h2>
         </div>
         <div className='sm:flex items-center'>
-          <label htmlFor="father-name" className="block text-left font-bold text-lg  sm:w-1/4">Father's Name:</label>
+          <label htmlFor="father-name" className="block text-left font-bold text-lg  sm:w-1/4 md:w-1/3">Father's Name:</label>
           <input type="text" name="father-name" id="father-name" className="border rounded w-full p-2"/>
         </div>
 
         <div className='sm:flex items-center'>
-          <label htmlFor="mother-name" className="block text-left font-bold text-lg sm:w-1/4">Mother's Name:</label>
+          <label htmlFor="mother-name" className="block text-left font-bold text-lg sm:w-1/4 md:w-1/3">Mother's Name:</label>
           <input type="text" name="mother-name" id="mother-name" className="border rounded w-full p-2"/>
         </div>
 
         <div className='sm:flex items-center'>
-          <label htmlFor="permanent-address" className="block text-left font-bold text-lg sm:w-1/4">Permanent Address:</label>
-          <input type="text" name="permanent-address" id="permanent-address" className="border rounded w-full p-2"/>
+          <label htmlFor="permanent-address" className="block text-left font-bold text-lg sm:w-1/4 md:w-1/3">Permanent Address:</label>
+          <textarea type="text" name="permanent-address" id="permanent-address" className="border rounded w-full p-2"/>
         </div>
 
         <div className='sm:flex items-center'>
-          <label htmlFor="state" className="block text-left font-bold text-lg sm:w-1/4">State:</label>
+          <label htmlFor="state" className="block text-left font-bold text-lg sm:w-1/4 md:w-1/3">State:</label>
          
           <select
           className="form-control border rounded w-full p-2"
@@ -257,7 +848,7 @@ const RegistrationForm = () => {
         </div>
 
         <div className='sm:flex items-center'>
-          <label htmlFor="city" className="block text-left font-bold text-lg sm:w-1/4">City:</label>
+          <label htmlFor="city" className="block text-left font-bold text-lg sm:w-1/4 md:w-1/3">City:</label>
 
           <select
           className="form-control border rounded w-full p-2"
@@ -279,7 +870,7 @@ const RegistrationForm = () => {
         </div>
 
         <div className='sm:flex items-center'>
-          <label htmlFor="aadhar-card" className="block text-left font-bold text-lg  sm:w-1/4">Upload Aadhar<br></br> (Front and Back):</label>
+          <label htmlFor="aadhar-card" className="block text-left font-bold text-lg  sm:w-1/4 md:w-1/3">Upload Aadhar<br></br> (Front and Back):</label>
           <input type="file" name="aadhar-card" id="aadhar-card" className="border rounded w-full p-2"/>
         </div>
 
@@ -301,18 +892,18 @@ const RegistrationForm = () => {
            </div>
            
            <div className='sm:flex items-center'>
-           <label htmlFor="state" className="block text-left font-bold text-lg  sm:w-1/4">State:</label>
-           <input type="number" name="state" id=""  className="border rounded w-full p-2"/>
+           <label htmlFor="state" className="block text-left font-bold text-lg  sm:w-1/4 ">State:</label>
+           <input type="text" name="state" id="state"  className="border rounded w-full p-2"/>
          </div>
            
           
           <div className='sm:flex items-center'>
-          <label htmlFor="score" className="block text-left font-bold text-lg  sm:w-1/4">Score:</label>
+          <label htmlFor="score" className="block text-left font-bold text-lg  sm:w-1/4 ">Score:</label>
           <input type="number" name="score" id="score"  className="border rounded w-full p-2"/>
         </div>
           
           <div className='sm:flex items-center'>
-          <label htmlFor="year" className="block text-left font-bold text-lg  sm:w-1/4">Year:</label>
+          <label htmlFor="year" className="block text-left font-bold text-lg  sm:w-1/4 ">Year:</label>
           <input type="number" name="year" id="year"  className="border rounded w-full p-2"/>
         </div>
         
@@ -332,8 +923,8 @@ const RegistrationForm = () => {
       </div>
       
       <div className='sm:flex items-center'>
-      <label className="block text-left font-bold text-lg  sm:w-1/5">Old Student of Shubham Sir :</label>
-       <div className="flex space-x-4">
+      <label className="block text-left font-bold text-lg  sm:w-1/6">Old Student of Shubham Sir :</label>
+       <div className="flex space-x-4 sm:ml-8">
          <label>
            <input type="radio" name="pursuingLLB" value="yes" className="mr-2"/> Yes
          </label>
@@ -342,6 +933,7 @@ const RegistrationForm = () => {
         </label>
         </div>
       </div>
+  
   
   <div className='sm:flex items-center'>
           <label htmlFor="institution" className="block text-left font-bold text-lg sm:w-1/4">Institution :</label>
@@ -356,7 +948,7 @@ const RegistrationForm = () => {
         </div>
         </form>
       </div>
-    </div>
+    
   );
 };
 
