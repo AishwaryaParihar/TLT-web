@@ -60,7 +60,7 @@ const Educational = () => {
     <>
       <div className="flex row w-full h-full sm:pl-[100px]">
         <div className="w-full sm:w-[60%] p-4">
-          <h1 className="mt-10 text-3xl font-bold mb-2 text-primary-marineBlue">
+          <h1 className="mt-10 text-3xl font-bold mb-10 text-primary-marineBlue">
             Educational Details
           </h1>
           <form onSubmit={handleSubmit} className="flex flex-col">
@@ -141,7 +141,7 @@ const Educational = () => {
                     myearAlert
                       ? "focus:outline-primary-strawberryRed"
                       : "focus:outline-primary-marineBlue"
-                  } outline outline-1 outline-neutral-lightGray rounded-md p-3 mb-1`}
+                  } outline outline-1 outline-neutral-lightGray rounded-md p-2 mb-1`}
                   type="text"
                   placeholder="Master Graduations year"
                 />

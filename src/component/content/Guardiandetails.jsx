@@ -144,8 +144,8 @@ const Guardiandetails = () => {
 
   return (
     <div className="flex row w-full h-full sm:pl-[120px]">
-      <div className="w-full sm:w-[60%] p-4">
-        <h1 className="mt-10 text-3xl font-bold mb-2 text-primary-marineBlue">
+      <div className="w-full sm:w-[60%] p-4 mb-10">
+        <h1 className="mt-10 text-3xl font-bold mb-5 text-primary-marineBlue">
           Guardian Details
         </h1>
 
@@ -204,7 +204,7 @@ const Guardiandetails = () => {
             </button>
 
             <button
-              className="bg-primary text-white  border-0 rounded-md px-6 py-3 transition-all duration-300 hover:opacity-75"
+              className="bg-primary text-white  lg:mr-8 border-0 rounded-md px-6 py-3 transition-all duration-300 hover:opacity-75"
               type="submit"
             >
               Next Step

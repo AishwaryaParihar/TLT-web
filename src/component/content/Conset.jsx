@@ -34,7 +34,7 @@ const Conset = () => {
       <div className="flex w-full h-full sm:pl-[120px]">
         <div className="w-full sm:w-[60%] p-4">
           <h1 className="mt-10 text-3xl font-bold mb-2 text-primary-marineBlue">
-            Conset
+            Consent
           </h1>
 
           <form onSubmit={handleSubmit} className="flex flex-col mt-10 ">
@@ -69,13 +69,14 @@ const Conset = () => {
                   <label className="flex justify-center items-center text-primary-marineBlue font-medium mb-2">
                     <input
                       onChange={(e) => setRequird(e.target.value)}
-                      className={` jinput ${
+                      className={` jinput mr-2 ${
                         requirdAlert
                           ? "focus:outline-primary-strawberryRed"
                           : "focus:outline-primary-marineBlue"
                       }`}
                       type="checkbox"
                       placeholder="Guardian Profession"
+                  
                     />
                     Yes
                   </label>
@@ -89,7 +90,7 @@ const Conset = () => {
                   <label className="flex justify-center items-center text-primary-marineBlue font-medium mb-2 ml-5">
                     <input
                       onChange={(e) => setRequird(e.target.value)}
-                      className={` jinput ${
+                      className={` jinput mr-2 ${
                         requirdAlert
                           ? "focus:outline-primary-strawberryRed"
                           : "focus:outline-primary-marineBlue"
@@ -117,7 +118,7 @@ const Conset = () => {
                 Go back
               </button>
 
-              <button className="bg-primary  text-white border-0 rounded-md px-6 py-3 transition-all duration-300  hover:opacity-75 ">
+              <button className="bg-primary mr-16 text-white border-0 rounded-md px-6 py-3 transition-all duration-300  hover:opacity-75 ">
                 Submit
               </button>
             </div>
