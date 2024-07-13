@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Registration from './Registration';
 
-
 const EmpowermentBatch = () => {
   const [selectedState, setSelectedState] = useState('');
   const [selectedCity, setSelectedCity] = useState('');
@@ -33,7 +32,6 @@ const EmpowermentBatch = () => {
     { id: 24, name: 'Meghalaya' },
     { id: 25, name: 'Mizoram' },
     { id: 26, name: 'Nagaland' },
-  
     { id: 27, name: 'Odisha' },
     { id: 28, name: 'Paschim Medinipur ' },
     { id: 29, name: 'Pondicherry' },
@@ -50,16 +48,14 @@ const EmpowermentBatch = () => {
   ];
 
   const cities = {
-    //Andaman and Nicobar Islands
+//Andaman and Nicobar Islands
     1: ['Bombuflat', 'Garacharma', 'Port Blair', 'Rangat' ],
-    //'Andhra Pradesh'
-    2: ['Adoni','Amalapuram','Anantapur','Bhimavaram','Chittoor',' Chirala','Dharmavaram','Eluru',
-       'Guntur','Gudivada','Hindupur','Kakinada','Kavali','Kurnool','Machilipatnam',
-        'Machilipatnam','Mangalagiri',' Markapur',' Narasaraopet','Narsipatnam','Nellore','  Nidadavole','Nuzvid','Ongole','Palasa','Piduguralla','Pithapuram','Ponnur','Proddatur',
-        'Pulivendula','Punganur','Puttur',' Rajahmundry',' Rayachoti','Samalkot','Srikakulam',
-        'Sullurpeta','Tadepalligudem','Tadpatri','Tenali','Tirupati','Tuni','Venkatagiri','Vijayawada','Vinukonda','Visakhapatnam','Vizianagaram','Yemmiganur'],
-     
-   //'Arunachal Pradesh'
+//'Andhra Pradesh'
+    2: ['Adoni','Amalapuram','Anantapur','Bhimavaram','Chittoor',' Chirala','Dharmavaram','Eluru','Guntur','Gudivada','Hindupur','Kakinada','Kavali','Kurnool','Machilipatnam',
+    'Machilipatnam','Mangalagiri',' Markapur',' Narasaraopet','Narsipatnam','Nellore','   Nidadavole','Nuzvid','Ongole','Palasa','Piduguralla','Pithapuram','Ponnur','Proddatur',
+    'Pulivendula','Punganur','Puttur',' Rajahmundry',' Rayachoti','Samalkot','Srikakulam',
+    'Sullurpeta','Tadepalligudem','Tadpatri','Tenali','Tirupati','Tuni','Venkatagiri','Vijayawada','Vinukonda','Visakhapatnam','Vizianagaram','Yemmiganur'],
+//'Arunachal Pradesh'
     3: ['Aalo', 'Anini', 'Bomdila', 'Changlang', 'Daporijo', 'Hawai', 'Itanagar', 'Khonsa', 'Koloriang', 'Longding', 'Naharlagun', 'Namsai', 'Pasighat', 'Roing', 'Seppa', 'Tawang', 'Tezu', 'Yingkiong', 'Ziro'],
 // 'Assam' 
     4: ['Abhayapuri', 'Amguri', 'Badarpur', 'Baihata', 'Baksa', 'Barpeta', 'Barpeta', 'Biswanath Chariali', 'Bongaigaon', 'Dhekiajuli', 'Dhubri', 'Dibrugarh', 'Diphu', 'Doom Dooma', 'Gauripur', 'Goalpara', 'Golaghat', 'Haflong', 'Hailakandi', 'Hojai', 'Jorhat', 'Karimganj', 'Kokrajhar', 'Lakhimpur', 'Lanka', 'Lumding', 'Mangaldoi', 'Morigaon', 'Nagaon', 'Nalbari', 'North Lakhimpur', 'Pathsala', 'Rangia', 'ibsagar',  'Silchar', 'Tinsukia', 'Tezpur'],
@@ -75,626 +71,67 @@ const EmpowermentBatch = () => {
     9: ["Daman","Diu"],
     //delhi
     10:[
-      "Delhi Cantonment",
-      "New Delhi"],
+      "Delhi Cantonment", "New Delhi"],
     //goa
-    11: [
-      "Curchorem",
-      "Madgaon",
-      "Mapusa",
-      "Marmagao",
-      "Panaji",
-      "Ponda",
-      "Sancoale",
-      "Valpoi"
+    11: ["Curchorem","Madgaon","Mapusa","Marmagao","Panaji", "Ponda","Sancoale","Valpoi"
     ],
     //gujarat
-    12:[
-      "Ahmedabad",
-      "Amreli",
-      "Anand",
-      "Anjar",
-      "Ankleshwar",
-      "Bharuch",
-      "Bhavnagar",
-      "Bhuj",
-      "Bilimora",
-      "Borsad",
-      "Botad",
-      "Chhapra",
-      "Dahod",
-      "Deesa",
-      "Dhoraji",
-      "Gandhidham",
-      "Gandhinagar",
-      "Godhra",
-      "Gondal",
-      "Himatnagar",
-      "Jamnagar",
-      "Jetpur",
-      "Junagadh",
-      "Kadi",
-      "Kalol",
-      "Kapadvanj",
-      "Keshod",
-      "Khambhat",
-      "Kundla",
-      "Mahuva",
-      "Mandvi",
-      "Mangrol",
-      "Mehmedabad",
-      "Morbi",
-      "Nadiad",
-      "Navsari",
-      "Palanpur",
-      "Patan",
-      "Porbandar",
-      "Rajkot",
-      "Savarkundla",
-      "Sidhpur",
-      "Surat",
-      "Surendranagar",
-      "Vadodara",
-      "Valsad",
-      "Vapi",
-      "Veraval",
-      "Visnagar"
-    ],
+    12:["Ahmedabad","Amreli","Anand","Anjar","Ankleshwar","Bharuch","Bhavnagar","Bhuj",
+      "Bilimora","Borsad","Botad","Chhapra","Dahod","Deesa","Dhoraji","Gandhidham",
+      "Gandhinagar","Godhra","Gondal","Himatnagar","Jamnagar","Jetpur","Junagadh","Kadi","Kalol","Kapadvanj","Keshod","Khambhat","Kundla","Mahuva","Mandvi","Mangrol","Mehmedabad","Morbi","Nadiad","Navsari","Palanpur","Patan","Porbandar","Rajkot","Savarkundla","Sidhpur","Surat","Surendranagar","Vadodara","Valsad","Vapi","Veraval","Visnagar"],
     //haryana
-    13: [
-      "Ambala",
-      "Ambala Cantt",
-      "Bahadurgarh",
-      "Bhiwani",
-      "Charkhi Dadri",
-      "Faridabad",
-      "Fatehabad",
-      "Gohana",
-      "Gurgaon",
-      "Hansi",
-      "Hisar",
-      "Jagadhri",
-      "Jind",
-      "Kaithal",
-      "Karnal",
-      "Kurukshetra",
-      "Mahendragarh",
-      "Narnaul",
-      "Narwana",
-      "Palwal",
-      "Panchkula",
-      "Panipat",
-      "Rewari",
-      "Rohtak",
-      "Sirsa",
-      "Sonipat",
-      "Thanesar",
-      "Tohana",
-      "Yamunanagar"
-    ],
+    13:["Ambala","Ambala Cantt","Bahadurgarh","Bhiwani","Charkhi Dadri","Faridabad","Fatehabad",
+      "Gohana","Gurgaon","Hansi","Hisar","Jagadhri","Jind","Kaithal","Karnal","Kurukshetra",
+      "Mahendragarh","Narnaul","Narwana","Palwal","Panchkula","Panipat","Rewari","Rohtak","Sirsa","Sonipat","Thanesar","Tohana","Yamunanagar"],
    //himachal pradesh 
-    14: [
-      "Baddi",
-      "Bilaspur",
-      "Chamba",
-      "Dalhousie",
-      "Dharamshala",
-      "Hamirpur",
-      "Kangra",
-      "Kullu",
-      "Mandi",
-      "Nahan",
-      "Palampur",
-      "Shimla",
-      "Solan",
-      "Una"
-    ],
-    //jammu kashmir
-    15: [
-      "Anantnag",
-      "Baramulla",
-      "Bari Brahmana",
-      "Batote",
-      "Doda",
-      "Ganderbal",
-      "Jammu",
-      "Kathua",
-      "Kishtwar",
-      "Leh",
-      "Poonch",
-      "Pulwama",
-      "Rajauri",
-      "Samba",
-      "Sopore",
-      "Srinagar",
-      "Udhampur"
-    ],
-    //jharkhand
-    16: [
-      "Adityapur",
-      "Bokaro Steel City",
-      "Chaibasa",
-      "Chirkunda",
-      "Deoghar",
-      "Dhanbad",
-      "Dumka",
-      "Giridih",
-      "Hazaribagh",
-      "Jamshedpur",
-      "Jharia",
-      "Jhumri Tilaiya",
-      "Jorapokhar",
-      "Kanke",
-      "Katras",
-      "Khunti",
-      "Lohardaga",
-      "Madhupur",
-      "Mihijam",
-      "Musabani",
-      "Pakaur",
-      "Patratu",
-      "Phusro",
-      "Ramgarh Cantonment",
-      "Ranchi",
-      "Sahibganj",
-      "Saunda",
-      "Simdega",
-      "Tenu dam-cum-Kathhara"
-    ],
-    //karnataka
-    17:[
-      "Bagalkot",
-      "Bengaluru",
-      "Belagavi",
-      "Bellary",
-      "Bidar",
-      "Chikkamagaluru",
-      "Davanagere",
-      "Dharwad",
-      "Gadag",
-      "Gulbarga",
-      "Hassan",
-      "Hospet",
-      "Hubballi-Dharwad",
-      "Kolar",
-      "Mandya",
-      "Mangaluru",
-      "Mysuru",
-      "Raichur",
-      "Shivamogga",
-      "Tumakuru",
-      "Udupi",
-      "Vijayapura",
-      "Yadgir"
-    ],
-    //kenmore
-    18: [
-      "Kenmore"
-    ],
-    //kerala
-    19: [
-      "Adoor",
-      "Alappuzha",
-      "Attingal",
-      "Changanassery",
-      "Cherthala",
-      "Chittur-Thathamangalam",
-      "Guruvayoor",
-      "Kanhangad",
-      "Kannur",
-      "Kasaragod",
-      "Kayamkulam",
-      "Kochi",
-      "Kollam",
-      "Koothuparamba",
-      "Kottayam",
-      "Kozhikode",
-      "Kunnamkulam",
-      "Malappuram",
-      "Manjeri",
-      "Nedumangad",
-      "Neyyattinkara",
-      "Nilambur",
-      "Ottappalam",
-      "Palakkad",
-      "Ponnani",
-      "Punalur",
-      "Shoranur",
-      "Taliparamba",
-      "Thalassery",
-      "Thiruvananthapuram",
-      "Thrissur",
-      "Tirur",
-      "Tiruvalla",
-      "Vadakara"
-    ],
-    //lakshadweep
-    20: [
-      "Agatti",
-      "Amini",
-      "Andrott",
-      "Bitra",
-      "Chetlat",
-      "Kadmat",
-      "Kalpeni",
-      "Kavaratti",
-      "Kiltan",
-      "Minicoy"
-    ],
-   //mp 
-    21:[
-      "Alirajpur",
-      "Ashoknagar",
-      "Balaghat",
-      "Betul",
-      "Bhind",
-      "Bhopal",
-      "Burhanpur",
-      "Chhatarpur",
-      "Chhindwara",
-      "Damoh",
-      "Datia",
-      "Dewas",
-      "Dhar",
-      "Guna",
-      "Gwalior",
-      "Harda",
-      "Hoshangabad",
-      "Indore",
-      "Itarsi",
-      "Jabalpur",
-      "Jhabua",
-      "Katni",
-      "Khandwa",
-      "Khargone",
-      "Mandsaur",
-      "Morena",
-      "Nagda",
-      "Narsinghgarh",
-      "Neemuch",
-      "Pithampur",
-      "Ratlam",
-      "Rewa",
-      "Sagar",
-      "Satna",
-      "Sehore",
-      "Seoni",
-      "Shahdol",
-      "Shivpuri",
-      "Singrauli",
-      "Ujjain",
-      "Vidisha"
-    ],
-   //maharastra 
-    22: [
-      "Ahmednagar",
-      "Akola",
-      "Amravati",
-      "Aurangabad",
-      "Baramati",
-      "Bhandara",
-      "Bhiwandi",
-      "Bhusawal",
-      "Chandrapur",
-      "Dhule",
-      "Gondia",
-      "Ichalkaranji",
-      "Jalgaon",
-      "Jalna",
-      "Kalyan-Dombivli",
-      "Kolhapur",
-      "Latur",
-      "Malegaon",
-      "Mumbai",
-      "Nagpur",
-      "Nanded",
-      "Nashik",
-      "Navi Mumbai",
-      "Osmanabad",
-      "Palghar",
-      "Panvel",
-      "Parbhani",
-      "Pimpri-Chinchwad",
-      "Pune",
-      "Ratnagiri",
-      "Sangli",
-      "Satara",
-      "Solapur",
-      "Thane",
-      "Ulhasnagar",
-      "Vasai-Virar",
-      "Wardha",
-      "Yavatmal"
-    ],
-   // manipur
-    23: [
-      "Bishnupur",
-      "Churachandpur",
-      "Imphal",
-      "Kakching",
-      "Lilong",
-      "Mayang Imphal",
-      "Nambol",
-      "Thoubal",
-      "Ukhrul"
-    ],
-    //meghalaya
-    24: [
-      "Baghmara",
-      "Cherrapunji",
-      "Jowai",
-      "Nongpoh",
-      "Nongstoin",
-      "Resubelpara",
-      "Shillong",
-      "Tura",
-      "Williamnagar"
-    ],
-   // mizoram
-    25: [
-      "Aizawl",
-      "Champhai",
-      "Kolasib",
-      "Lawngtlai",
-      "Lunglei",
-      "Mamit",
-      "Saiha",
-      "Serchhip"
-    ],
-    //nagaland
-    26: [
-      "Dimapur",
-      "Kohima",
-      "Mokokchung",
-      "Tuensang",
-      "Wokha",
-      "Zunheboto"
-    ],
-    
-   
-  
-  
-   //udisha
-    27: [
-      "Balangir",
-      "Baleshwar (Balasore)",
-      "Baripada",
-      "Bhadrak",
-      "Bhubaneswar",
-      "Brahmapur",
-      "Cuttack",
-      "Dhenkanal",
-      "Jeypore",
-      "Konark",
-      "Paradip",
-      "Puri",
-      "Rourkela",
-      "Sambalpur",
-      
-  ],
-  //paschim madinipur
-    28:  [
-      "Belda",
-      "Chandrakona",
-      "Garbeta",
-      "Ghatal",
-      "Jhargram",
-      "Kharagpur",
-      "Medinipur",
-      "Nayagram",
-      "Salboni",
-      "Sankrail",
-      "Sutahata",
-     
-  ],
-  //pondicherry
-    29:  [
-      "Karaikal",
-      "Mahe",
-      "Pondicherry",
-      "Yanam",
-     ],
-  //panjab
-    30:[
-      "Amritsar",
-      "Bathinda",
-      "Faridkot",
-      "Firozpur",
-      "Gurdaspur",
-      "Hoshiarpur",
-      "Jalandhar",
-      "Ludhiana",
-      "Mohali",
-      "Pathankot",
-      "Patiala",
-      "Sangrur",
-     ],
-  //Rajeshthan
-    31:[
-      "Ajmer",
-      "Alwar",
-      "Banswara",
-      "Barmer",
-      "Bharatpur",
-      "Bhilwara",
-      "Bikaner",
-      "Chittorgarh",
-      "Churu",
-      "Dausa",
-      "Dholpur",
-      "Hanumangarh",
-      "Jaipur",
-      "Jaisalmer",
-      "Jalore",
-      "Jhalawar",
-      "Jhunjhunu",
-      "Jodhpur",
-      "Kota",
-      "Nagaur",
-      "Pali",
-      "Pratapgarh",
-      "Rajsamand",
-      "Sawai Madhopur",
-      "Sikar",
-      "Sirohi",
-      "Sri Ganganagar",
-      "Tonk",
-      "Udaipur",
-     
-  ],
-  //sikkim
-    32:[
-      "Gangtok",
-      "Gyalshing",
-      "Mangan",
-      "Namchi",
-      "Singtam",
-      ],
-  //tamil nadu
-    33:[
-      "Chennai",
-      "Coimbatore",
-      "Erode",
-      "Kanchipuram",
-      "Madurai",
-      "Salem",
-      "Thanjavur",
-      "Tiruchirappalli",
-      "Tirunelveli",
-      "Tiruppur",
-      "Vellore",
-  
-  ],
-  
-  //telangana
-    34:[
-      "Adilabad",
-      "Hyderabad",
-      "Jagtial",
-      "Karimnagar",
-      "Khammam",
-      "Mahbubnagar",
-      "Medak",
-      "Miryalaguda",
-      "Nalgonda",
-      "Nizamabad",
-      "Ramagundam",
-      "Sangareddy",
-      "Siddipet",
-      "Suryapet",
-      "Warangal",
-      ],
-      //tripura
-      35:[
-        "Agartala",
-        "Belonia",
-        "Dharmanagar",
-        "Kailasahar",
-        "Udaipur",
-      ],
-      //uttar pradesh
-      36:[
-        "Agra",
-        "Aligarh",
-        "Allahabad",
-        "Amroha",
-        "Azamgarh",
-        "Bareilly",
-        "Basti",
-        "Bijnor",
-        "Bulandshahr",
-        "Etawah",
-        "Faizabad",
-        "Firozabad",
-        "Ghaziabad",
-        "Gorakhpur",
-        "Hapur",
-        "Jhansi",
-        "Kanpur",
-        "Lucknow",
-        "Mathura",
-        "Meerut",
-        "Mirzapur",
-        "Moradabad",
-        "Muzaffarnagar",
-        "Noida",
-        "Prayagraj",
-        "Rampur",
-        "Saharanpur",
-        "Sambhal",
-        "Shahjahanpur",
-        "Varanasi",
-         ],
-         //uttarakhand
-        37:[
-          "Almora",
-          "Dehradun",
-          "Haridwar",
-          "Haldwani",
-          "Mussoorie",
-          "Nainital",
-          "Pauri",
-          "Rishikesh",
-          "Roorkee",
-          "Rudrapur",
-          "Tehri",
-          "Udham Singh Nagar",
-          "Uttarkashi",
-        ],
-        //vaisali
-     38:[
-      "Hajipur",
-      "Lalganj",
-      "Mahua",
-      "Raghopur",
-      "Vaishali",
-    ],
-    // west bengal
-    39:[
-      "Asansol",
-      "Baharampur",
-      "Bally",
-      "Baranagar",
-      "Barasat",
-      "Barrackpore",
-      "Bhatpara",
-      "Bidhannagar",
-      "Durgapur",
-      "Halisahar",
-      "Howrah",
-      "Kolkata",
-      "Kulti",
-      "Malda",
-      "North Dumdum",
-      "Panihati",
-      "Raiganj",
-      "Siliguri",
-      "South Dumdum",
-      "Titagarh",
-      
-  ]
-  
-     
-    
-    
-  
-  };
- 
-  return (
-    
-    <div className="">
+    14:["Baddi", "Bilaspur", "Chamba", "Dalhousie", "Dharamshala", "Hamirpur", "Kangra", "Kullu", "Mandi", "Nahan", "Palampur", "Shimla", "Solan", "Una"],
+//jammu kashmir
+    15:["Anantnag", "Baramulla", "Bari Brahmana", "Batote", "Doda", "Ganderbal", "Jammu", "Kathua", "Kishtwar", "Leh", "Poonch", "Pulwama", "Rajauri", "Samba", "Sopore", "Srinagar", "Udhampur"],
+//jharkhand
+    16:["Adityapur", "Bokaro Steel City", "Chaibasa", "Chirkunda", "Deoghar", "Dhanbad", "Dumka", "Giridih", "Hazaribagh", "Jamshedpur", "Jharia", "Jhumri Tilaiya", "Jorapokhar", "Kanke", "Katras", "Khunti", "Lohardaga", "Madhupur", "Mihijam", "Musabani", "Pakaur", "Patratu", "Phusro", "Ramgarh Cantonment", "Ranchi", "Sahibganj", "Saunda", "Simdega", "Tenu dam-cum-Kathhara"],
+//karnataka
+    17:["Bagalkot", "Bengaluru", "Belagavi", "Bellary", "Bidar", "Chikkamagaluru", "Davanagere", "Dharwad", "Gadag", "Gulbarga", "Hassan", "Hospet", "Hubballi-Dharwad", "Kolar", "Mandya", "Mangaluru", "Mysuru", "Raichur", "Shivamogga", "Tumakuru", "Udupi", "Vijayapura", "Yadgir"],
+//kenmore
+    18: ["Kenmore"],
+//kerala
+    19:["Adoor", "Alappuzha", "Attingal", "Changanassery", "Cherthala", "Chittur-Thathamangalam", "Guruvayoor", "Kanhangad", "Kannur", "Kasaragod", "Kayamkulam", "Kochi", "Kollam", "Koothuparamba", "Kottayam", "Kozhikode", "Kunnamkulam", "Malappuram", "Manjeri", "Nedumangad", "Neyyattinkara", "Nilambur", "Ottappalam", "Palakkad", "Ponnani", "Punalur", "Shoranur", "Taliparamba", "Thalassery", "Thiruvananthapuram", "Thrissur", "Tirur", "Tiruvalla", "Vadakara"],
+//lakshadweep
+    20: ["Agatti", "Amini", "Andrott", "Bitra", "Chetlat", "Kadmat", "Kalpeni", "Kavaratti", "Kiltan", "Minicoy"],
+//mp 
+    21:["Alirajpur", "Ashoknagar", "Balaghat", "Betul", "Bhind", "Bhopal", "Burhanpur", "Chhatarpur", "Chhindwara", "Damoh", "Datia", "Dewas", "Dhar", "Guna", "Gwalior", "Harda", "Hoshangabad", "Indore", "Itarsi", "Jabalpur", "Jhabua", "Katni", "Khandwa", "Khargone", "Mandsaur", "Morena", "Nagda", "Narsinghgarh", "Neemuch", "Pithampur", "Ratlam", "Rewa", "Sagar", "Satna", "Sehore", "Seoni", "Shahdol", "Shivpuri", "Singrauli", "Ujjain", "Vidisha"],
+//maharastra 
+    22: ["Ahmednagar", "Akola", "Amravati", "Aurangabad", "Baramati", "Bhandara", "Bhiwandi", "Bhusawal", "Chandrapur", "Dhule", "Gondia", "Ichalkaranji", "Jalgaon", "Jalna", "Kalyan-Dombivli", "Kolhapur", "Latur", "Malegaon", "Mumbai", "Nagpur", "Nanded", "Nashik", "Navi Mumbai", "Osmanabad", "Palghar", "Panvel", "Parbhani", "Pimpri-Chinchwad", "Pune", "Ratnagiri", "Sangli", "Satara", "Solapur", "Thane", "Ulhasnagar", "Vasai-Virar", "Wardha", "Yavatmal"],
+// manipur
+23: ["Bishnupur", "Churachandpur", "Imphal", "Kakching", "Lilong", "Mayang Imphal", "Nambol", "Thoubal", "Ukhrul"],
+24: ["Baghmara", "Cherrapunji", "Jowai", "Nongpoh", "Nongstoin", "Resubelpara", "Shillong", "Tura", "Williamnagar"],
+25: ["Aizawl", "Champhai", "Kolasib", "Lawngtlai", "Lunglei", "Mamit", "Saiha", "Serchhip"],
+26: ["Dimapur", "Kohima", "Mokokchung", "Tuensang", "Wokha", "Zunheboto"],
+27: ["Balangir", "Baleshwar (Balasore)", "Baripada", "Bhadrak", "Bhubaneswar", "Brahmapur", "Cuttack", "Dhenkanal", "Jeypore", "Konark", "Paradip", "Puri", "Rourkela", "Sambalpur"],
+28: ["Belda", "Chandrakona", "Garbeta", "Ghatal", "Jhargram", "Kharagpur", "Medinipur", "Nayagram", "Salboni", "Sankrail", "Sutahata"],
+29: ["Karaikal", "Mahe", "Pondicherry", "Yanam"],
+30: ["Amritsar", "Bathinda", "Faridkot", "Firozpur", "Gurdaspur", "Hoshiarpur", "Jalandhar", "Ludhiana", "Mohali", "Pathankot", "Patiala", "Sangrur"],
+31: ["Ajmer", "Alwar", "Banswara", "Barmer", "Bharatpur", "Bhilwara", "Bikaner", "Chittorgarh", "Churu", "Dausa", "Dholpur", "Hanumangarh", "Jaipur", "Jaisalmer", "Jalore", "Jhalawar", "Jhunjhunu", "Jodhpur", "Kota", "Nagaur", "Pali", "Pratapgarh", "Rajsamand", "Sawai Madhopur", "Sikar", "Sirohi", "Sri Ganganagar", "Tonk", "Udaipur"],
+32: ["Gangtok", "Gyalshing", "Mangan", "Namchi", "Singtam"],
+33: ["Chennai", "Coimbatore", "Erode", "Kanchipuram", "Madurai", "Salem", "Thanjavur", "Tiruchirappalli", "Tirunelveli", "Tiruppur", "Vellore"],
+34: ["Adilabad", "Hyderabad", "Jagtial", "Karimnagar", "Khammam", "Mahbubnagar", "Medak", "Miryalaguda", "Nalgonda", "Nizamabad", "Ramagundam", "Sangareddy", "Siddipet", "Suryapet", "Warangal"],
+35: ["Agartala", "Belonia", "Dharmanagar", "Kailasahar", "Udaipur"],
+36: ["Agra", "Aligarh", "Allahabad", "Amroha", "Azamgarh", "Bareilly", "Basti", "Bijnor", "Bulandshahr", "Etawah", "Faizabad", "Firozabad", "Ghaziabad", "Gorakhpur", "Hapur", "Jhansi", "Kanpur", "Lucknow", "Mathura", "Meerut", "Mirzapur", "Moradabad", "Muzaffarnagar", "Noida", "Prayagraj", "Rampur", "Saharanpur", "Sambhal", "Shahjahanpur", "Varanasi"],
+37: ["Almora", "Dehradun", "Haridwar", "Haldwani", "Mussoorie", "Nainital", "Pauri", "Rishikesh", "Roorkee", "Rudrapur", "Tehri", "Udham Singh Nagar", "Uttarkashi"],
+38: ["Hajipur", "Lalganj", "Mahua", "Raghopur", "Vaishali"],
+39: ["Asansol", "Baharampur", "Bally", "Baranagar", "Barasat", "Barrackpore", "Bhatpara", "Bidhannagar", "Durgapur", "Halisahar", "Howrah", "Kolkata", "Kulti", "Malda", "North Dumdum", "Panihati", "Raiganj", "Siliguri", "South Dumdum", "Titagarh"]
+};
+ return (
+  <div className="">
       <div className='px-5 md:px-10 lg:px-20 py-0'>
         <Registration />
       </div>
 
-      <div className="text-justify mx-auto sm:px-10 px-5 md:px-10 lg:px-20 py-0 ">
+      <div className="text-justify mx-auto sm:px-10 px-5 md:px-10 lg:px-40 py-0 ">
         <div className='mt-4 '>
           <h2 className="text-white bg-red-500 text-center text-3xl py-3 px-4 sm:px-20  ">
             EMPOWERMENT BATCH 01
           </h2>
         </div><br></br>
-        
-
         <form className="mt-0">
           <div className="space-y-5">
             <div className="sm:flex items-center">
@@ -753,29 +190,7 @@ const EmpowermentBatch = () => {
               </select>
             </div>
 
-         {/*   <div className="sm:flex items-center">
-              <label htmlFor="city" className="block text-left font-bold text-lg  sm:w-1/4">
-                City:
-              </label>
-              <select
-                className="form-control border rounded w-full p-2"
-                name="f_city"
-                id="fcity"
-                onChange={(e) => setSelectedCity(e.target.value)}
-                disabled={!selectedState}
-              >
-                <option selected hidden disabled>
-                  Select City
-                </option>
-                {selectedState && cities[selectedState].map((city, index) => (
-                  <option key={index} value={city}>
-                    {city}
-                  </option>
-                ))}
-              </select>
-            </div>
-          */}
-            <div className="sm:flex items-center">
+         <div className="sm:flex items-center">
               <label htmlFor="pin-code" className="block text-left font-bold text-lg   sm:w-1/4">
                 Pin Code:
               </label>
@@ -819,8 +234,7 @@ const EmpowermentBatch = () => {
           </div>
           {/* personal details */} 
        
-           
-          <div>
+      <div>
           <h2 className="text-white bg-red-500 text-center text-3xl py-3 px-4">Personal Information</h2>
         </div>
         <div className='sm:flex items-center'>
