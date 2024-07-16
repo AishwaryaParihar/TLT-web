@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
+import writtenImg from "../../assets/written.jpg";
 
+const dwfile = writtenImg;
 export const PYpaperform = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -19,10 +21,18 @@ export const PYpaperform = () => {
     } else {
       setEmailAlert(false);
     }
-    const dw = () => {
-      if (name !== "" && email !== "") {
-      }
-    };
+  };
+
+  const dw = (url) => {
+    if (name !== "" && email !== "") {
+      const filename = url.split("/").pop();
+      const aTag = document.createElement("a");
+      aTag.href = url;
+      aTag.setAttribute("download", filename);
+      document.body.appendChild(aTag);
+      aTag.click();
+      aTag.remove();
+    }
   };
   return (
     <>
@@ -75,7 +85,12 @@ export const PYpaperform = () => {
                 This field is required
               </span>
             </div>
-            <button className="text-sm font-bold text-white bg-primary px-1 w-[190px] py-1 mt-2 rounded-sm ">
+            <button
+              className="text-sm font-bold text-white bg-primary px-1 w-[190px] py-1 mt-2 rounded-sm "
+              onClick={() => {
+                dw(dwfile);
+              }}
+            >
               Submit
             </button>
           </div>
