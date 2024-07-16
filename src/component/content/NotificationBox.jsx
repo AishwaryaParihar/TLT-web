@@ -31,11 +31,11 @@ const NotificationBox = () => {
       >
         <ul>
           {notificationsData.map((notification, index) => (
-            <li key={index} className="mb-2">
+            <li key={index} className="mb-2 text-primary">
               <span>
                 {notification.title}
                 <a href={notification.link} target="_blank" rel="noopener noreferrer">
-                  <span className="latest"> Click Here!</span>
+                  <span className="latest text-yellow-400 text-shadow"> Click Here!</span>
                 </a>
               </span>
             </li>
