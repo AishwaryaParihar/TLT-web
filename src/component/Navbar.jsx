@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className="bg-gray-100 bg-opacity-50 mx-14 my-3 hidden md:block rounded-md">
       <nav className="container mx-auto flex justify-between items-center">
-        <div className="flex space-x-4 ps-20 gap-8">
+        <div className="flex space-x-4 ps-5 gap-4">
           <NavLink
             className="text-red-500 font-semibold hover:text-red-500"
             to="/"
@@ -23,6 +23,12 @@ const Navbar = () => {
           </NavLink>
           <NavLink className="textWhite hover:text-red-500" to="/gallery">
             Gallery
+          </NavLink>
+          <NavLink className="textWhite hover:text-red-500" to="/previous-year">
+            Previous Year Paper
+          </NavLink>
+          <NavLink className="textWhite hover:text-red-500" to="/gallery">
+            Mock Test
           </NavLink>
         </div>
         <div className="relative flex space-x-4 items-center p-0 m-0 z-10">

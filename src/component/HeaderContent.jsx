@@ -22,14 +22,14 @@ export const HeaderContent = ({ isHome }) => {
             <p className="tracking-wider py-3">
               Far far away, behind the word mountains, far from the countries Vokalia <br /> and Consonantia, there live the blind texts.
             </p>
-            <div className="flex gap-2 py-3">
+            {/* <div className="flex gap-2 py-3">
               <Link to="/contact-support"><Button color="red">
                 get started now <i className="fa-solid fa-arrow-right"></i>
               </Button></Link>
               <Link to="study-Essentials"><Button  color="white">
                 view course <i className="fa-solid fa-arrow-right"></i>
               </Button></Link>
-            </div>
+            </div> */}
           </div>
         </div>
       ) : (
