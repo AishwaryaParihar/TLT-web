@@ -17,7 +17,7 @@ const NotificationBox = () => {
   };
 
   return (
-    <div className="w-[350px] h-[400px]  text-black p-4 overflow-hidden">
+    <div className="h-[400px] text-black p-4 overflow-hidden">
       <h2 className="text-3xl font-bold mb-4 text-center zoom-in-out">Latest <span className="text-primary">Notifications</span></h2>
       <marquee
         ref={marqueeRef}
