@@ -18,7 +18,7 @@ const NotificationBox = () => {
 
   return (
     <div className="absolute right-0 top-[200px] w-[350px] h-[400px] bg-gray-800 text-white p-4 overflow-hidden">
-      <h2 className="text-xl font-bold mb-4">Latest Notifications</h2>
+      <h2 className="text-2xl font-bold mb-4 text-center zoom">Latest Notifications</h2>
       <marquee
         ref={marqueeRef}
         height="100%"
@@ -31,7 +31,7 @@ const NotificationBox = () => {
       >
         <ul>
           {notificationsData.map((notification, index) => (
-            <li key={index} className="mb-2 text-primary">
+            <li key={index} className="mb-6 text-primary">
               <span>
                 {notification.title}
                 <a href={notification.link} target="_blank" rel="noopener noreferrer">

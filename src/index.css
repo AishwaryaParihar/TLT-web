@@ -118,15 +118,15 @@ color: white;
   }
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateY(100%);
+@keyframes zoom {
+  0%, 100% {
+    transform: scale(1);
   }
-  100% {
-    transform: translateY(-100%);
+  50% {
+    transform: scale(1.1);
   }
 }
 
-.animate-scroll {
-  animation: scroll 10s linear infinite;
+.zoom-in-out {
+  animation: zoom 3s infinite;
 }
