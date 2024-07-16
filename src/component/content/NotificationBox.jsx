@@ -17,8 +17,8 @@ const NotificationBox = () => {
   };
 
   return (
-    <div className="absolute right-0 top-[200px] w-[350px] h-[400px] bg-gray-800 text-white p-4 overflow-hidden">
-      <h2 className="text-2xl font-bold mb-4 text-center zoom">Latest Notifications</h2>
+    <div className="w-[350px] h-[400px]  text-black p-4 overflow-hidden">
+      <h2 className="text-2xl font-bold mb-4 text-center zoom-in-out">Latest Notifications</h2>
       <marquee
         ref={marqueeRef}
         height="100%"
@@ -35,7 +35,7 @@ const NotificationBox = () => {
               <span>
                 {notification.title}
                 <a href={notification.link} target="_blank" rel="noopener noreferrer">
-                  <span className="latest text-yellow-400 text-shadow"> Click Here!</span>
+                  <span className="latest text-yellow-400"> Click Here!</span>
                 </a>
               </span>
             </li>
