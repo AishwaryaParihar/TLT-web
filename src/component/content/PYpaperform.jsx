@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import uk from "../../assets/uk.png";
 
 export const PYpaperform = () => {
   const [name, setName] = useState("");
@@ -76,7 +75,7 @@ export const PYpaperform = () => {
                 This field is required
               </span>
             </div>
-            <button className="text-sm font-bold text-white bg-primary px-2 py-1 mt-1 rounded-sm">
+            <button className="text-sm font-bold text-white bg-primary px-1 w-[190px] py-1 mt-2 rounded-sm ">
               Submit
             </button>
           </div>
