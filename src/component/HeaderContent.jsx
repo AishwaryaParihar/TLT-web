@@ -23,7 +23,7 @@ export const HeaderContent = ({ isHome }) => {
                   Best <br /> <span className="text-primary">Education</span> Expertise
                 </Headings>
                 <p className="tracking-wider py-3">
-                  Far far away, behind the word mountains, far from the countries Vokalia <br /> and Consonantia, there live the blind texts.
+                  Far far away, behind the word mountains, far from the countries Vokalia <br /> and Consonantia there live the blind texts.
                 </p>
               </div>
               <div className="w-full md:w-1/2">
