@@ -46,8 +46,13 @@ const MockTestCard = () => {
             <Headings heading={"h5"}>
               {arrowSpan} Leaderboard Projection after every week
             </Headings>
-            <Headings heading={"h5"}>{arrowSpan} In Both Languages Hindi + English</Headings>
-            <button className=" w-52 bg-red-500 text-center text-white p-2 rounded" onClick={handleBuyNowClick}>
+            <Headings heading={"h5"}>
+              {arrowSpan} In Both Languages Hindi + English
+            </Headings>
+            <button
+              className=" w-52 bg-red-500 text-center text-white p-2 rounded"
+              onClick={handleBuyNowClick}
+            >
               Buy Now
             </button>
           </div>
@@ -57,7 +62,8 @@ const MockTestCard = () => {
               ₹ 4999 only
             </div>
             <div className="absolute top-2 left-2 bg-red-500 text-white p-4 rounded flex flex-col justify-center items-center">
-              <span className="font-bold">Starting Date</span> <span className="font-bold">15th March</span>
+              <span className="font-bold">Starting Date</span>{" "}
+              <span className="font-bold">15th March</span>
             </div>
           </div>
         </div>
@@ -65,11 +71,16 @@ const MockTestCard = () => {
 
       {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-opacity-50">
-        <div className="bg-white p-3 rounded-lg max-w-full w-full bg-opacity-75">
-          <button className="absolute text-3xl  font-bold z-50 m-7 sm:right-16 sm:top-8 right-4 top-3  text-black" onClick={handleCloseModal}>X</button>
-          <MpcjContactForm />
+          <div className="bg-white p-3 rounded-lg max-w-full w-full bg-opacity-75">
+            <button
+              className="absolute text-3xl  font-bold z-50 m-7 sm:right-16 sm:top-8 right-4 top-3  text-black"
+              onClick={handleCloseModal}
+            >
+              X
+            </button>
+            <MpcjContactForm />
+          </div>
         </div>
-      </div>
       )}
     </>
   );

@@ -10,10 +10,10 @@ const Listsection = () => {
         <div className="">
           <FacilityImage />
         </div>
-        <div className="mt-5" >
-        <Headings heading={"h2"}>Amenities</Headings>
-        <div className="mt-5 lg:mt-8">
-          <ListItemHoverEffect />
+        <div className="mt-5">
+          <Headings heading={"h2"}>Amenities</Headings>
+          <div className="mt-5 lg:mt-8">
+            <ListItemHoverEffect />
           </div>
         </div>
       </div>

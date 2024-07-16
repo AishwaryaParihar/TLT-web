@@ -22,7 +22,7 @@ import ThankYou from "../content/ThankYou";
 import PersonalInfo from "../content/PersonalInfo";
 import Gallery from "../Gallery";
 import { PYpapers } from "../content/PYpapers";
-
+import { PYpaperform } from "../content/PYpaperform";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -58,11 +58,15 @@ export const router = createBrowserRouter([
       },
       {
         path: "gallery",
-        element: <Gallery/>,
+        element: <Gallery />,
       },
       {
-       path: "previous-year",
-       element: <PYpapers/> ,
+        path: "previous-year",
+        element: <PYpapers />,
+      },
+      {
+        path: "PYpaperform",
+        element: <PYpaperform />,
       },
       {
         path: "contact-support",
@@ -113,4 +117,3 @@ export const router = createBrowserRouter([
     ],
   },
 ]);
-

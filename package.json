@@ -19,6 +19,7 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.24.0",
     "react-slick": "^0.30.2",
+    "reactstrap": "^9.2.2",
     "slick-carousel": "^1.8.1",
     "state-cities": "^1.0.6"
   },
