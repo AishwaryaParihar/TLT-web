@@ -26,7 +26,9 @@ const navlogo = () => {
                <div className="font-semibold "> Call Us <br />9238176156 </div>
             </div>
             <div className="gap-2 hidden sm:flex">
-              <SocialMedia />
+            <div className=""><i class="fa-solid fa-phone fa-xl text-4xl text-red-500"></i></div>
+            <div className="font-semibold "> Contact Us <br />9238176156 </div>
+              {/* <SocialMedia /> */}
             </div>
           </div>
 
