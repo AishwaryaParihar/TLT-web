@@ -3,7 +3,7 @@ import Headings from './utiliti/heading/Heading';
 import Button from './utiliti/buttons/Button';
 import { Link } from 'react-router-dom';
 import NotificationBox from './content/NotificationBox';
-import img1 from '../assets/Mentor.jpg'
+
 
 export const HeaderContent = ({ isHome }) => {
   return (

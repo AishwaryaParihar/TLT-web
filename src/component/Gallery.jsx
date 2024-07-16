@@ -4,7 +4,7 @@ import Slider from './content/Slider'
 
 const Gallery = () => {
   return (
-    <div>
+    <div className=''>
       <Slider/>
     </div>
   )
