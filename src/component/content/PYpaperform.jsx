@@ -6,9 +6,12 @@ const dwfile = writtenImg;
 export const PYpaperform = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [number, setNumer] = useState("");
 
   const [nameAlert, setNameAlert] = useState(false);
   const [emailAlert, setEmailAlert] = useState(false);
+  const [numAlert, setNumAlert] = useState(false);
+
   const handleSumbit = (event) => {
     event.preventDefault();
     if (name === "") {
@@ -21,10 +24,15 @@ export const PYpaperform = () => {
     } else {
       setEmailAlert(false);
     }
+    if (number === "number") {
+      setNumAlert(true);
+    } else {
+      setNumAlert(false);
+    }
   };
 
   const dw = (url) => {
-    if (name !== "" && email !== "") {
+    if (name !== "" && email !== "" && number !== "number") {
       const filename = url.split("/").pop();
       const aTag = document.createElement("a");
       aTag.href = url;
@@ -85,6 +93,31 @@ export const PYpaperform = () => {
                 This field is required
               </span>
             </div>
+
+            {/*----------- Number  --------- */}
+            <div className="flex flex-col w-[100%] mb-2">
+              <label className="text-primary-marineBlue font-[500] mb-2 mt-5">
+                Phone Number
+              </label>
+              <input
+                onChange={(e) => setEmail(e.target.value)}
+                className={` jinput ${
+                  number
+                    ? "focus:outline-primary-strawberryRed"
+                    : "focus:outline-primary-marineBlue"
+                } outline outline-1 outline-neutral-lightGray rounded-[4px] p-3 `}
+                type="Number"
+                placeholder="e.g.stephenking@lorem.com"
+              />
+              <span
+                className={`${
+                  numAlert ? "inline" : "hidden"
+                } text-primary-strawberryRed font-[500] text-sm `}
+              >
+                This field is required
+              </span>
+            </div>
+
             <button
               className="text-sm font-bold text-white bg-primary px-1 w-[190px] py-1 mt-2 rounded-sm "
               onClick={() => {
