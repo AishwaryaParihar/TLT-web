@@ -1021,7 +1021,7 @@ const EmpowermentBatch = () => {
                 type="text"
                 name="qualification"
                 id="qualification"
-                value={data.birthplace}
+                value={data.birth}
                   onChange={handleOnChange}
                 className="border rounded w-full p-2"
               />
