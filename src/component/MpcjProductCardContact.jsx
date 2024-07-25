@@ -34,7 +34,7 @@ const MpcjproductCardContact = () => {
                   required
                 />
                 <label className="absolute left-0 bottom-1 text-gray-500 transition-all">
-                  Email
+                  Email :
                 </label>
                 <div className="underline"></div>
               </div>
